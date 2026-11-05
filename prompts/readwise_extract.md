@@ -11,7 +11,7 @@ Use the schema, categories, canonical names, `interface` / `interface_explicit` 
 - Add `"url": "<article url>"` to every line.
 
 Output: one JSONL file (path in your task) with lines only for `uses`/`left`. Additionally write a summary file (path in your task) with one markdown bullet per article that HAS at least one output line:
-`- [Title](url) — Author, YYYY-MM-DD: <1–2 sentences in SLOVAK summarizing the author's setup>`
+`- [Title](url) — Author, YYYY-MM-DD: <1–2 sentences in English summarizing the author's setup>`
 (keep tool names in English).
 
 Read every article yourself. Verify JSONL parses with python3. Reply with ONLY: input articles, articles with output, output lines, top 5 tools.

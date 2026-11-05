@@ -1,50 +1,48 @@
-# AI Setup Census 2026: čo IT komunita reálne používa
+# AI Setups Review 2026: what the IT community actually uses for AI work
 
-Status: ready-for-human
+Infographic: [site/index.html](../site/index.html) · live at <https://aisetups.ringil.cc/>. Decisions and source list: [spec.md](./spec.md). Data: [mentions.csv](../data/mentions.csv) (4,104 rows, each with a link and a quote).
 
-Infografika: [site/index.html](../site/index.html). Rozhodnutia a zoznam zdrojov: [spec.md](./spec.md). Dáta: [mentions.csv](../data/mentions.csv) (4 104 riadkov, každý s odkazom a citáciou).
-
-Okno: **1. 1. – 5. 11. 2026**. Zdroje: Hacker News (21 schválených vlákien Ask HN, z toho 19 s komentármi z roku 2026), Lobste.rs a Tildes (213 diskusií) a 66 autorov osobných blogov (HN + Readwise Reader). Ankety SO, JetBrains a Pragmatic Engineer slúžia iba na kalibráciu. Reddit je vynechaný (pozri metodiku).
+Window: **Jan 1 – Nov 5, 2026**. Sources: Hacker News (21 approved Ask HN threads, 19 of them with 2026 comments), Lobste.rs and Tildes (213 discussions) and 66 personal-blog authors (HN + Readwise Reader). Stack Overflow, JetBrains and Pragmatic Engineer surveys are used for calibration only. Reddit is excluded (see methodology).
 
 ## TL;DR
 
-- **1 119 autorov** opísalo vlastný AI setup (HN 811, Lobste.rs 161, Tildes 81, blogy 66).
-- **Claude Code** používa 356 autorov (32 %), 2,8× viac ako druhý **Codex CLI** (129). Nasledujú **OpenCode** (100), **Pi** (83), **GitHub Copilot** (66) a **Cursor** (43).
-- **Komunity sa líšia v chvoste:** HN je baštou Codexu a open-source agentov, Lobste.rs viac používa chat (Claude app 8 % oproti 3 % na HN) a Tildes má najviac používateľov Copilotu (11 %).
-- **Rozhrania:** terminál/TUI uvádza 504 autorov (117 výslovne). Ďalej web (125), rozšírenie v IDE (77), AI editor (73) a desktop app (71). Pri Claude Code, kde autor rozhranie uviedol (n=130), je terminál 62 %, no desktop app a mobil už nie sú okrajové.
-- **Kalibrácia:** oproti anketám je komunita výrazne terminálová a open-source. Pi má 13 % oproti 4,4 % v SO. OpenCode je so 13 % na úrovni SO (13,6 %), ale 2× nad JetBrains (7 %). Copilot (9 % oproti 58,7 %) a Cursor (6 % oproti 25,5 %) sú hlboko pod priemerom.
-- **Peniaze:** platený plán Anthropicu má 161 autorov, OpenAI 88. Medián uvedenej mesačnej útraty je **$87** (n=127).
+- **1,119 authors** described their own AI setup (HN 811, Lobste.rs 161, Tildes 81, blogs 66).
+- **Claude Code** is used by 356 authors (32%), 2.8× more than the runner-up **Codex CLI** (129). Next: **OpenCode** (100), **Pi** (83), **GitHub Copilot** (66) and **Cursor** (43).
+- **Communities differ in the long tail:** HN is the stronghold of Codex and open-source agents, Lobste.rs leans more on chat (Claude app 8% vs 3% on HN) and Tildes has the most GitHub Copilot users (11%).
+- **Interfaces:** 504 authors use a terminal/TUI (117 explicitly), then web (125), IDE extension (77), AI editor (73) and desktop app (71). For Claude Code, where the author named the interface (n=130), the terminal is 62%, but the desktop app and mobile are no longer niche.
+- **Calibration:** compared with the surveys the community is strongly terminal- and open-source-oriented. Pi: 13% vs 4.4% in Stack Overflow. OpenCode at 13% matches Stack Overflow (13.6%) but is 2× JetBrains (7%). Copilot (9% vs 58.7%) and Cursor (6% vs 25.5%) are far below.
+- **Money:** 161 authors have a paid Anthropic plan, 88 a paid OpenAI plan. Median stated monthly spend is **$87** (n=127).
 
-## 1. Harnessy a coding nástroje
+## 1. Harnesses and coding tools
 
-| # | Harness | Autori | % |
+| # | Harness | Authors | % |
 |---|---|---|---|
-| 1 | Claude Code | 356 | 32 % |
-| 2 | Codex CLI | 129 | 12 % |
-| 3 | OpenCode | 100 | 9 % |
-| 4 | Pi | 83 | 7 % |
-| 5 | GitHub Copilot | 66 | 6 % |
-| 6 | Cursor | 43 | 4 % |
-| 7 | Hermes Agent | 27 | 2 % |
-| 8 | Antigravity | 18 | 2 % |
-| 9 | Herdr | 18 | 2 % |
-| 10 | Codex (app/cloud) | 16 | 1 % |
-| 11 | OpenClaw | 14 | 1 % |
-| 12 | oh-my-pi | 14 | 1 % |
-| 13 | Zed | 12 | 1 % |
-| 14 | DeepSeek Harness | 10 | 1 % |
-| 15 | Kiro | 7 | 1 % |
-| 16 | Cline | 5 | 0 % |
-| 17 | Custom harness (own) | 5 | 0 % |
-| 18 | Orca | 5 | 0 % |
-| 19 | Paseo | 5 | 0 % |
-| 20 | T3 Code | 5 | 0 % |
+| 1 | Claude Code | 356 | 32% |
+| 2 | Codex CLI | 129 | 12% |
+| 3 | OpenCode | 100 | 9% |
+| 4 | Pi | 83 | 7% |
+| 5 | GitHub Copilot | 66 | 6% |
+| 6 | Cursor | 43 | 4% |
+| 7 | Hermes Agent | 27 | 2% |
+| 8 | Antigravity | 18 | 2% |
+| 9 | Herdr | 18 | 2% |
+| 10 | Codex (app/cloud) | 16 | 1% |
+| 11 | OpenClaw | 14 | 1% |
+| 12 | oh-my-pi | 14 | 1% |
+| 13 | Zed | 12 | 1% |
+| 14 | DeepSeek Harness | 10 | 1% |
+| 15 | Kiro | 7 | 1% |
+| 16 | Cline | 5 | 0% |
+| 17 | Custom harness (own) | 5 | 0% |
+| 18 | Orca | 5 | 0% |
+| 19 | Paseo | 5 | 0% |
+| 20 | T3 Code | 5 | 0% |
 
-Claude Code + Codex CLI naraz: 79 autorov.
+Claude Code and Codex CLI together: 79 authors.
 
-## 2. Komunity vedľa seba (podiel autorov v zdroji, %)
+## 2. Communities side by side (share of authors within each source, %)
 
-| Tool | Hacker News (n=811) | Lobste.rs (n=161) | Tildes (n=81) | Blogy (autori) (n=66) |
+| Tool | Hacker News (n=811) | Lobste.rs (n=161) | Tildes (n=81) | Blogs (authors) (n=66) |
 |---|---|---|---|---|
 | Claude Code | 31 | 34 | 22 | 48 |
 | Codex CLI | 13 | 3 | 7 | 17 |
@@ -61,53 +59,53 @@ Claude Code + Codex CLI naraz: 79 autorov.
 | Gemini (app/web) | 2 | 0 | 5 | 2 |
 | Codex (app/cloud) | 2 | 1 | 0 | 3 |
 
-Blogy (n=66) = autori článkov o vlastnom setupe. Píšu najmä nadšenci, preto majú vyššie podiely naprieč tools.
+Blogs (n=66) = authors of articles about their own setup. They are mostly enthusiasts, so their shares are higher across tools.
 
-## 3. Rozhrania
+## 3. Interfaces
 
-Výslovne = autor rozhranie uviedol. Doplnené = odvodené z predvoleného rozhrania nástroja (napríklad „Codex CLI“ → terminál).
+Explicit = the author named the interface. Inferred = derived from the tool's default interface (e.g. "Codex CLI" → terminal).
 
-| Typ rozhrania | Autori spolu | z toho výslovne |
+| Interface type | Authors total | of which explicit |
 |---|---|---|
-| Terminál / TUI | 504 | 117 |
+| Terminal / TUI | 504 | 117 |
 | Web | 125 | 51 |
-| Rozšírenie v IDE | 77 | 44 |
+| IDE extension | 77 | 44 |
 | AI editor | 73 | 11 |
 | Desktop app | 71 | 43 |
-| Vlastné skripty / API | 53 | 22 |
+| Own scripts / API | 53 | 22 |
 | Chat bot (Telegram, Slack…) | 45 | 13 |
-| Mobil | 12 | 10 |
+| Mobile | 12 | 10 |
 | Vim / Emacs | 12 | 12 |
-| ACP (agent v editore) | 3 | 3 |
+| ACP (agent in editor) | 3 | 3 |
 
-**Claude Code podľa rozhrania** (iba výslovne uvedené, n=130 z 356 používateľov):
+**Claude Code by interface** (explicit only, n=130 of 356 users):
 
-| Rozhranie | Autori |
+| Interface | Authors |
 |---|---|
-| Terminál / TUI | 80 |
+| Terminal / TUI | 80 |
 | Desktop app | 17 |
-| Rozšírenie v IDE | 12 |
-| Mobil | 8 |
+| IDE extension | 12 |
+| Mobile | 8 |
 | Web | 5 |
-| Vlastné skripty / API | 3 |
+| Own scripts / API | 3 |
 | Vim / Emacs | 3 |
 | Chat bot (Telegram, Slack…) | 2 |
 
-**GitHub Copilot podľa rozhrania** (výslovne):
+**GitHub Copilot by interface** (explicit):
 
-| Rozhranie | Autori |
+| Interface | Authors |
 |---|---|
-| Rozšírenie v IDE | 17 |
-| Terminál / TUI | 10 |
+| IDE extension | 17 |
+| Terminal / TUI | 10 |
 | Desktop app | 5 |
 | Web | 4 |
-| ACP (agent v editore) | 1 |
+| ACP (agent in editor) | 1 |
 
-**Hostiteľ** (v čom nástroj beží, výslovne): VS Code 36, browser 32, tmux 21, GitHub 13, Herdr 10, Emacs 9, Telegram 8, Ghostty 7, Slack 5, Visual Studio 5, JetBrains 4, Zed 4, GitHub Actions 3, T3 Code 3.
+**Host** (what the tool runs in, explicit): VS Code 36, browser 32, tmux 21, GitHub 13, Herdr 10, Emacs 9, Telegram 8, Ghostty 7, Slack 5, Visual Studio 5, JetBrains 4, Zed 4, GitHub Actions 3, T3 Code 3.
 
-### Model × cez čo ho autor používa (výslovné párovanie)
+### Model × what it is used through (explicit pairing)
 
-| Model | Claude Code | Pi | OpenCode | OpenRouter | own scripts/API | GitHub Copilot | Cursor | Codex CLI | llama.cpp | iné | spolu |
+| Model | Claude Code | Pi | OpenCode | OpenRouter | own scripts/API | GitHub Copilot | Cursor | Codex CLI | llama.cpp | other | total |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Claude | 64 | 1 | 6 | 2 | 5 | 11 | 9 | · | · | 29 | 127 |
 | Qwen | 5 | 21 | 12 | 1 | 8 | 3 | · | · | 10 | 36 | 96 |
@@ -119,48 +117,48 @@ Výslovne = autor rozhranie uviedol. Doplnené = odvodené z predvoleného rozhr
 | Kimi | · | 2 | 3 | 3 | · | · | · | · | · | · | 8 |
 | Mistral/Devstral | · | 1 | 1 | 2 | 1 | · | · | · | · | 1 | 6 |
 
-## 4. Trend 2026 po kvartáloch (podiel aktívnych autorov)
+## 4. 2026 trend by quarter (share of active authors)
 
 | Tool | Q1 (n=277) | Q2 (n=405) | Q3 (n=206) | Q4 (n=347) |
 |---|---|---|---|---|
-| Claude Code | 42 % | 25 % | 21 % | 33 % |
-| Codex CLI | 8 % | 8 % | 9 % | 17 % |
-| OpenCode | 4 % | 10 % | 7 % | 11 % |
-| Pi | 1 % | 8 % | 5 % | 12 % |
-| GitHub Copilot | 8 % | 5 % | 5 % | 4 % |
-| OpenRouter | 1 % | 1 % | 2 % | 10 % |
-| ChatGPT (app/web) | 5 % | 2 % | 4 % | 4 % |
-| Cursor | 8 % | 2 % | 3 % | 3 % |
-| Claude (app/web) | 4 % | 3 % | 4 % | 4 % |
-| Hermes Agent | 0 % | 2 % | 0 % | 5 % |
+| Claude Code | 42% | 25% | 21% | 33% |
+| Codex CLI | 8% | 8% | 9% | 17% |
+| OpenCode | 4% | 10% | 7% | 11% |
+| Pi | 1% | 8% | 5% | 12% |
+| GitHub Copilot | 8% | 5% | 5% | 4% |
+| OpenRouter | 1% | 1% | 2% | 10% |
+| ChatGPT (app/web) | 5% | 2% | 4% | 4% |
+| Cursor | 8% | 2% | 3% | 3% |
+| Claude (app/web) | 4% | 3% | 4% | 4% |
+| Hermes Agent | 0% | 2% | 0% | 5% |
 
-Q4 = do 5. 11. a tvorí ho najmä jedno veľké HN vlákno z novembra.
+Q4 runs to Nov 5 and consists mostly of one large HN thread from November.
 
-## 5. Modely
+## 5. Models
 
-| Skupina | Výslovne | Implicitne (z harnessu) | Spolu | Otvorené váhy |
+| Group | Explicit | Implicit (from harness) | Total | Open weights |
 |---|---|---|---|---|
 | Claude | 327 | 277 | 604 |  |
 | GPT (OpenAI) | 97 | 148 | 245 |  |
-| Qwen | 157 | 0 | 157 | áno |
-| DeepSeek | 97 | 0 | 97 | áno |
+| Qwen | 157 | 0 | 157 | yes |
+| DeepSeek | 97 | 0 | 97 | yes |
 | Gemini | 40 | 26 | 66 |  |
-| GLM | 49 | 0 | 49 | áno |
-| Gemma | 40 | 0 | 40 | áno |
-| Kimi | 16 | 0 | 16 | áno |
-| Mistral/Devstral | 10 | 0 | 10 | áno |
+| GLM | 49 | 0 | 49 | yes |
+| Gemma | 40 | 0 | 40 | yes |
+| Kimi | 16 | 0 | 16 | yes |
+| Mistral/Devstral | 10 | 0 | 10 | yes |
 | Grok | 8 | 0 | 8 |  |
-| Whisper | 7 | 0 | 7 | áno |
+| Whisper | 7 | 0 | 7 | yes |
 | Cursor Composer | 5 | 0 | 5 |  |
 | Local models (unspecified) | 5 | 0 | 5 |  |
-| MiniMax | 5 | 0 | 5 | áno |
-| gpt-oss (open) | 5 | 0 | 5 | áno |
+| MiniMax | 5 | 0 | 5 | yes |
+| gpt-oss (open) | 5 | 0 | 5 | yes |
 
-Rodiny (výslovne): Claude Opus 157 (5.5, 4.6), Qwen 157 (3.6 27B, 3.6), Claude (unspecified) 153 (4.5, 4.6), DeepSeek 97 (V4 Flash, Flash), GPT-5 / GPT (OpenAI) 97 (5.5, 5.4), GLM 49 (5.3, 5.2), Gemma 40 (4, 4 31B), Claude Sonnet 35 (4.6, 5), Claude Fable 31 (5, 5.1), Gemini (unspecified) 24 (Argon, 3.1), Kimi 16 (K2.6, K2.5), Gemini Flash 11 (3.5, 3 Flash), Mistral/Devstral 10 (2, 14B), Grok 8 (4.6), Whisper 7 (distil-large-v3.5, Distil-Whisper Large V3.5), Claude Haiku 5 (4.5, 5), Cursor Composer 5 (2.5, 2.5 fast), Gemini Pro 5 (3 Pro, 4), Local models (unspecified) 5, MiniMax 5 (M2.7, M3), gpt-oss 5 (OSS 20B, 20B).
+Families (explicit): Claude Opus 157 (5.5, 4.6), Qwen 157 (3.6 27B, 3.6), Claude (unspecified) 153 (4.5, 4.6), DeepSeek 97 (V4 Flash, Flash), GPT-5 / GPT (OpenAI) 97 (5.5, 5.4), GLM 49 (5.3, 5.2), Gemma 40 (4, 4 31B), Claude Sonnet 35 (4.6, 5), Claude Fable 31 (5, 5.1), Gemini (unspecified) 24 (Argon, 3.1), Kimi 16 (K2.6, K2.5), Gemini Flash 11 (3.5, 3 Flash), Mistral/Devstral 10 (2, 14B), Grok 8 (4.6), Whisper 7 (distil-large-v3.5, Distil-Whisper Large V3.5), Claude Haiku 5 (4.5, 5), Cursor Composer 5 (2.5, 2.5 fast), Gemini Pro 5 (3 Pro, 4), Local models (unspecified) 5, MiniMax 5 (M2.7, M3), gpt-oss 5 (OSS 20B, 20B).
 
-## 6. Predplatné a útrata
+## 6. Subscriptions and spend
 
-| Plán / platba | Autori |
+| Plan / payment | Authors |
 |---|---|
 | Claude Pro | 47 |
 | API pay-as-you-go (other) | 44 |
@@ -181,13 +179,13 @@ Rodiny (výslovne): Claude Opus 157 (5.5, 4.6), Qwen 157 (3.6 27B, 3.6), Claude 
 | Gemini/Google AI Pro | 11 |
 | API pay-as-you-go (OpenAI) | 10 |
 
-Podľa poskytovateľa: Anthropic 161 (Pro 47, Max 62, Ultra 27) · OpenAI 88 (Plus 26, Pro 27) · API / OpenRouter 88 · Platí zamestnávateľ 68
+By provider: Anthropic 161 (Pro 47, Max 62, Ultra 27) · OpenAI 88 (Plus 26, Pro 27) · API / OpenRouter 88 · Employer pays 68
 
-Mesačná útrata (n=127): medián **$87**, priemer $260. Pásma: <$20 23 · $20–100 41 · $100–250 40 · >$250 23.
+Monthly spend (n=127): median **$87**, mean $260. Bands: <$20 23 · $20–100 41 · $100–250 40 · >$250 23.
 
-## 7. Odchody (najčastejšie toky so známym cieľom)
+## 7. Churn (most common moves with a known destination)
 
-| Z | Na | Autori |
+| From | To | Authors |
 |---|---|---|
 | Cursor | Claude Code | 6 |
 | Codex CLI | Claude Code | 5 |
@@ -205,37 +203,37 @@ Mesačná útrata (n=127): medián **$87**, priemer $260. Pásma: <$20 23 · $20
 | OpenCode | Pi | 2 |
 | OpenCode | oh-my-pi | 2 |
 
-Spolu 248 prípadov typu autor × tool so stavom „prestal používať“.
+In total 248 author × tool cases with status "stopped using".
 
-## 8. Lokálne modely
+## 8. Local models
 
-203 autorov spomína lokálnu inferenciu. Runtime: llama.cpp 36, Ollama 23, LM Studio 13, vLLM 7, Strata 4, MLX 3, ds4 (antirez) 3, llama-swap 3. Hardvér: Apple Silicon Mac 50, NVIDIA GeForce 42, AMD Radeon GPU 19, DGX Spark / GB10 18, AMD Strix Halo 16, NVIDIA RTX Pro / DC 15.
+203 authors mention running models locally. Runtimes: llama.cpp 36, Ollama 23, LM Studio 13, vLLM 7, Strata 4, MLX 3, ds4 (antirez) 3, llama-swap 3. Hardware: Apple Silicon Mac 50, NVIDIA GeForce 42, AMD Radeon GPU 19, DGX Spark / GB10 18, AMD Strix Halo 16, NVIDIA RTX Pro / DC 15.
 
-## 9. Kalibrácia oproti anketám 2026
+## 9. Calibration against 2026 surveys
 
-Komunita = podiel z 754 autorov, ktorí uviedli aspoň jeden coding harness.
+Community = share of the 754 authors who named at least one coding harness.
 
-| Tool | Komunita | Stack Overflow 2026 | JetBrains 2026 | Pragmatic Eng. 2026 |
+| Tool | Community | Stack Overflow 2026 | JetBrains 2026 | Pragmatic Eng. 2026 |
 |---|---|---|---|---|
-| Claude Code | 47 % | 65,5 % | 39 % | 71 % |
-| GitHub Copilot | 9 % | 58,7 % | 21 % | 46 % |
-| Codex | 19 % | 29,5 % | 16 % | – |
-| Cursor | 6 % | 25,5 % | 12 % | 39 % |
-| Antigravity | 2 % | 16,0 % | 6 % | – |
-| OpenCode | 13 % | 13,6 % | 7 % | – |
-| JetBrains AI | 0 % | 12,8 % | 9 % | – |
-| Windsurf | 0 % | 6,5 % | – | – |
-| Pi | 13 % | 4,4 % | – | – |
-| Cline | 1 % | 4,5 % | – | – |
-| Aider | 0 % | 2,1 % | – | – |
+| Claude Code | 47% | 65.5% | 39% | 71% |
+| GitHub Copilot | 9% | 58.7% | 21% | 46% |
+| Codex | 19% | 29.5% | 16% | – |
+| Cursor | 6% | 25.5% | 12% | 39% |
+| Antigravity | 2% | 16.0% | 6% | – |
+| OpenCode | 13% | 13.6% | 7% | – |
+| JetBrains AI | 0% | 12.8% | 9% | – |
+| Windsurf | 0% | 6.5% | – | – |
+| Pi | 13% | 4.4% | – | – |
+| Cline | 1% | 4.5% | – | – |
+| Aider | 0% | 2.1% | – | – |
 
-Zdroje: [Stack Overflow Developer Survey 2026](https://survey.stackoverflow.co/2026/ai/data/ai-code-agent) (n≈12 260, „used in the past year“) · [JetBrains Developer Ecosystem 2026](https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/) (n>15 000, máj–júl, „at work“) · [Pragmatic Engineer AI Tooling 2026](https://newsletter.pragmaticengineer.com/p/ai-tooling-2026) (n=507 pravidelných používateľov agentov). Formulácie otázok sa líšia, porovnávaj poradie a smer.
+Sources: [Stack Overflow Developer Survey 2026](https://survey.stackoverflow.co/2026/ai/data/ai-code-agent) (n≈12,260, "used in the past year") · [JetBrains Developer Ecosystem 2026](https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/) (n>15,000, May–Jul, "at work") · [Pragmatic Engineer AI Tooling 2026](https://newsletter.pragmaticengineer.com/p/ai-tooling-2026) (n=507 regular agent users). Question wording differs, so compare rank and direction, not absolute percentages.
 
-## Metodika a limity
+## Methodology and limitations
 
-- **Korpus:** HN 21 vlákien Ask HN. Lobste.rs a Tildes: 213 diskusií o AI v praxi z roku 2026 (Lobste.rs podľa tagov, Tildes podľa vyhľadávania). Iba komentáre z roku 2026.
-- **Spracovanie:** každý komentár prečítal LLM bez predfiltra a určil tool, stav (uses/left), rozhranie (výslovne/doplnené), hostiteľa a párovanie model → harness. 99,6 % citácií je overených doslovne proti zdroju.
-- **Počítanie:** unikátny autor × tool v rámci zdroja, posledný stav vyhráva. Ráta sa iba vlastné aktuálne používanie.
-- **Skreslenia:** diskusné komunity nie sú reprezentatívne. HN vlákno o lokálnych modeloch (jún) nadhodnocuje Qwen, DeepSeek, Pi a OpenCode. Lobste.rs a Tildes dodali menej setupov na komentár, pretože ide o diskusie pod článkami, nie Ask vlákna.
-- **Reddit vynechaný:** [Reddit Responsible Builder Policy](https://support.reddithelp.com/hc/en-us/articles/42728983564564-Responsible-Builder-Policy) vyžaduje schválenie prístupu k API a výskum mimo programu Reddit for Researchers zakazuje.
-- **Blogy:** 11 článkov z HN titulky + Readwise Reader (knižnica later/starred/archive a 100 ITech feedov vrátane Swamp Club, 1 916 kandidátov → triedenie → 321 plných textov). Ráta sa iba autor. Swamp je produkt komunity Swamp Club, preto je v porovnaní zdrojov vynechaný.
+- **Corpus:** HN: 21 Ask HN threads. Lobste.rs and Tildes: 213 discussions about AI in practice from 2026 (Lobste.rs by tag, Tildes by search). 2026 comments only.
+- **Processing:** every comment was read by an LLM without a pre-filter, extracting tool, status (uses/left), interface (explicit/inferred), host and model → harness pairing. 99.6% of quotes were verified verbatim against the source.
+- **Counting:** unique author × tool within a source; the latest status wins. Only first-person current use counts.
+- **Biases:** discussion communities are not representative. The HN thread about local models (June) inflates Qwen, DeepSeek, Pi and OpenCode. Lobste.rs and Tildes yield fewer setups per comment because they are discussions under articles, not Ask threads.
+- **Reddit excluded:** the [Reddit Responsible Builder Policy](https://support.reddithelp.com/hc/en-us/articles/42728983564564-Responsible-Builder-Policy) requires approval for API access and forbids research outside the Reddit for Researchers program.
+- **Blogs:** 11 articles from the HN front page + Readwise Reader (later/starred/archive library and 100 ITech feeds including Swamp Club; 1,916 candidates → screening → 321 full texts). Only the article author counts. Swamp is a product of the Swamp Club community, so it is excluded from the cross-source comparison.

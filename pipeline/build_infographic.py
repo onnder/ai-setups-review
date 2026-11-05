@@ -1,4 +1,4 @@
-"""Build infographic v2 (calendar 2026, multi-source, interfaces) from v2/viz2.json + mentions.csv. Run after aggregate_v2.py."""
+"""Build site/index.html from data/viz2.json + data/mentions.csv into pipeline/infographic_tpl.html. Run after aggregate.py."""
 from paths import ROOT, PIPE, DATA, SITE, DOCS
 import json, csv, os, re, glob
 from collections import Counter, defaultdict
@@ -58,7 +58,7 @@ for a in uniq: by_author.setdefault(a["author"].lower(), a)
 V["n_blog_articles"], V["n_blog_authors"] = len(uniq), len(by_author)
 V["articles"] = sorted(by_author.values(), key=lambda a: (-len(a["chips"]), a["date"]))[:24]
 
-tpl = open(f"{PIPE}/infographic_v2_tpl.html").read()
+tpl = open(f"{PIPE}/infographic_tpl.html").read()
 html = tpl.replace("__DATA__", json.dumps(V, ensure_ascii=False).replace("</", "<\\/"))
 open(f"{SITE}/index.html", "w").write(html)
 print("ok", len(html), "read", V["n_read"], {s["id"]: (s["threads"], s["read"], s["authors"]) for s in V["src_summary"]}, "articles", len(V["articles"]))

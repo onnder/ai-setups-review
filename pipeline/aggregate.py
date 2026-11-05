@@ -1,14 +1,14 @@
-"""v2 aggregation: calendar 2026, sources hn/lobsters/tildes/blogs, with interface + via. Writes v2/viz2.json and mentions.csv (v2)."""
+"""Aggregate classified JSONL (calendar 2026; hn/lobsters/tildes/blogs) -> data/mentions.csv + data/viz2.json."""
 from paths import ROOT, PIPE, DATA, SITE, DOCS
 import json, glob, csv, os, re, statistics
 from collections import defaultdict, Counter
 from normalize import IMPLIED, model_group, norm, hw_class, RUNTIMES, BLOG_AUTHOR
 
 SRC = ["hn", "lobsters", "tildes", "blogs"]
-SRC_LABEL = {"hn": "Hacker News", "lobsters": "Lobste.rs", "tildes": "Tildes", "blogs": "Blogy (autori)"}
+SRC_LABEL = {"hn": "Hacker News", "lobsters": "Lobste.rs", "tildes": "Tildes", "blogs": "Blogs (authors)"}
 IFACES = ["terminal", "ide-extension", "ai-editor", "desktop-app", "web", "chat-bot", "api-script", "vim-emacs", "acp", "mobile"]
-IF_LABEL = {"terminal": "Terminál / TUI", "ide-extension": "Rozšírenie v IDE", "ai-editor": "AI editor", "desktop-app": "Desktop app", "web": "Web",
-            "chat-bot": "Chat bot (Telegram, Slack…)", "api-script": "Vlastné skripty / API", "vim-emacs": "Vim / Emacs", "acp": "ACP (agent v editore)", "mobile": "Mobil"}
+IF_LABEL = {"terminal": "Terminal / TUI", "ide-extension": "IDE extension", "ai-editor": "AI editor", "desktop-app": "Desktop app", "web": "Web",
+            "chat-bot": "Chat bot (Telegram, Slack…)", "api-script": "Own scripts / API", "vim-emacs": "Vim / Emacs", "acp": "ACP (agent in editor)", "mobile": "Mobile"}
 SOURCE_SPECIFIC = {"Swamp"}  # Q25: product-community tools excluded from cross-source comparison
 
 def vnorm(v):
@@ -128,7 +128,7 @@ for g, d in mv.items():
     for v, a in d.items(): vtot[v] += len(a)
 vias = [v for v, _ in sorted(vtot.items(), key=lambda x: (-x[1], x[0]))[:9]]
 mgs = [g for g in sorted(mv, key=lambda g: (-sum(len(a) for a in mv[g].values()), g)) if sum(len(a) for a in mv[g].values()) >= 5][:9]
-V["via"] = {"models": mgs, "vias": vias + ["iné"],
+V["via"] = {"models": mgs, "vias": vias + ["other"],
             "m": [[len(mv[g][v]) for v in vias] + [sum(len(a) for v2, a in mv[g].items() if v2 not in vias)] for g in mgs],
             "tot": [sum(len(a) for a in mv[g].values()) for g in mgs]}
 
@@ -163,7 +163,7 @@ V["providers"] = [
     {"name": "Anthropic", "n": len(su(lambda t: t.startswith("Claude") and "Free" not in t)), "detail": {"Pro": len(su(lambda t: t == "Claude Pro")), "Max": len(maxu), "Ultra": len(su(lambda t: t == "Claude Ultra"))}},
     {"name": "OpenAI", "n": len(su(lambda t: t.startswith("ChatGPT"))), "detail": {"Plus": len(su(lambda t: t == "ChatGPT Plus")), "Pro": len(su(lambda t: t == "ChatGPT Pro"))}},
     {"name": "API / OpenRouter", "n": len(su(lambda t: "pay-as-you-go" in t or "OpenRouter" in t)), "detail": {}},
-    {"name": "Platí zamestnávateľ", "n": len(su(lambda t: "mployer" in t or "Team/Enterprise" in t or "Business" in t)), "detail": {}},
+    {"name": "Employer pays", "n": len(su(lambda t: "mployer" in t or "Team/Enterprise" in t or "Business" in t)), "detail": {}},
 ]
 cc, cx = users.get("Claude Code", set()), users.get("Codex CLI", set())
 V["venn"] = {"both": len(cc & cx), "cc": len(cc - cx), "cx": len(cx - cc), "none": len(all_authors - cc - cx)}

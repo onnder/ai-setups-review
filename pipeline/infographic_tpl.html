@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="sk">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Setup Census 2026 — čo IT komunita reálne používa (HN · Lobste.rs · Tildes)</title>
+<title>AI Setups Review 2026 — what the IT community actually uses (HN · Lobste.rs · Tildes)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -221,20 +221,20 @@ footer{padding:36px 0 64px;font-family:var(--mono);font-size:12px;color:var(--mu
 <body>
 <div class="wrap">
   <header class="mast">
-    <span><span class="y">Y</span><b>AI Setup Census</b> · Ročník 2026</span>
-    <span>1. 1. – 5. 11. 2026</span>
-    <span>Hacker News · Lobste.rs · Tildes · blogy</span>
+    <span><span class="y">Y</span><b>AI Setups Review</b> · 2026 edition</span>
+    <span>Jan 1 – Nov 5, 2026</span>
+    <span>Hacker News · Lobste.rs · Tildes · blogs</span>
   </header>
 
   <div class="hero">
     <div class="rv">
-      <div class="kicker">Infografický report · štatistika podľa unikátnych autorov</div>
-      <h1>Čo IT komunita <em>naozaj</em> používa na prácu s&nbsp;AI</h1>
-      <p class="dek">Prečítali sme <strong id="h-com"></strong> komentárov z Hacker News, Lobste.rs a Tildes za rok 2026 a k tomu osobné blogy. Každý autor sa ráta raz na tool a iba vtedy, keď ho <strong>sám aktuálne používa</strong>. Novinka tejto verzie: <strong>cez aké rozhranie</strong> ľudia s AI pracujú a <strong>ako sa líšia komunity</strong>.</p>
+      <div class="kicker">Infographic report · counted by unique authors</div>
+      <h1>What the IT community <em>actually</em> uses for AI&nbsp;work</h1>
+      <p class="dek">We read <strong id="h-com"></strong> comments from Hacker News, Lobste.rs and Tildes posted in 2026, plus personal blogs. Each author counts once per tool, and only if they <strong>currently use it themselves</strong>. New in this edition: <strong>which interface</strong> people use to work with AI and <strong>how the communities differ</strong>.</p>
     </div>
     <div class="big rv">
       <span class="num" id="h-big"></span>
-      <div class="cap">autorov, ktorí opísali svoj setup, používa <b>Claude Code</b>.<small id="h-bigsub"></small></div>
+      <div class="cap">of authors who described their setup use <b>Claude Code</b>.<small id="h-bigsub"></small></div>
     </div>
   </div>
   <div class="stats rv" id="stats"></div>
@@ -242,17 +242,17 @@ footer{padding:36px 0 64px;font-family:var(--mono);font-size:12px;color:var(--mu
   <!-- 1 harness -->
   <section>
     <div class="sh rv"><div class="sec-no">01</div><div>
-      <h2>Harnessy: Claude Code a potom dlho nič</h2>
-      <p class="lede">Agenti a coding nástroje zoradení podľa počtu autorov, ktorí ich aktuálne používajú. Percentá sa rátajú z <span class="mono" id="n-auth"></span> autorov s aspoň jedným uvedeným toolom.</p>
+      <h2>Harnesses: Claude Code, then a long gap</h2>
+      <p class="lede">Agents and coding tools ranked by the number of authors who currently use them. Percentages are out of <span class="mono" id="n-auth"></span> authors who named at least one tool.</p>
     </div></div>
     <div class="grid2">
       <div class="rv"><p class="eyebrow">Top 18 · harness / coding tool</p><div class="bars big-first" id="b-harness"></div></div>
       <div class="rv">
-        <p class="eyebrow">Každá bodka = 1 autor</p>
-        <div class="waffle" id="waffle" role="img" aria-label="Waffle graf autorov podľa Claude Code a Codex CLI"></div>
+        <p class="eyebrow">Each dot = 1 author</p>
+        <div class="waffle" id="waffle" role="img" aria-label="Waffle chart of authors by Claude Code and Codex CLI use"></div>
         <div class="legend" id="w-leg"></div>
-        <p class="note">Claude Code a Codex CLI sa často navzájom nevylučujú. <b id="w-both"></b> autorov používa oba, typicky Claude Code ako hlavný nástroj a Codex na review alebo ako záložný („fallback“).</p>
-        <p class="eyebrow" style="margin-top:34px">Mimo kódenia · appky a služby</p>
+        <p class="note">Claude Code and Codex CLI are often not mutually exclusive. <b id="w-both"></b> authors use both, typically Claude Code as the main tool and Codex for review or as a fallback.</p>
+        <p class="eyebrow" style="margin-top:34px">Beyond coding · apps and services</p>
         <div class="bars" id="b-app"></div>
       </div>
     </div>
@@ -262,8 +262,8 @@ footer{padding:36px 0 64px;font-family:var(--mono);font-size:12px;color:var(--mu
   <!-- sources side by side -->
   <section>
     <div class="sh rv"><div class="sec-no">02</div><div>
-      <h2>Komunity vedľa seba: rovnaký líder, iný chvost</h2>
-      <p class="lede">Podiel autorov v každom zdroji, ktorí tool používajú. Farba bunky zodpovedá podielu v riadku. Blogy = autori článkov o vlastnom setupe (1 hlas na autora). Píšu najmä nadšenci, takže sú prirodzene „pro-AI“.</p>
+      <h2>Communities side by side: same leader, different tail</h2>
+      <p class="lede">Share of authors in each source who use the tool. Cell colour reflects the share within the row. Blogs = authors of articles about their own setup (1 vote per author). They are mostly enthusiasts, so naturally “pro-AI”.</p>
     </div></div>
     <div class="rv" style="overflow-x:auto"><table class="heat" id="srcmap"></table></div>
     <p class="note rv" id="src-note"></p>
@@ -272,26 +272,26 @@ footer{padding:36px 0 64px;font-family:var(--mono);font-size:12px;color:var(--mu
   <!-- interfaces -->
   <section>
     <div class="sh rv"><div class="sec-no">03</div><div>
-      <h2>Rozhrania: terminál vládne, ale nie sám</h2>
-      <p class="lede">Cez aký povrch ľudia s nástrojom alebo modelom pracujú. <b>Plná výplň</b> = autor rozhranie výslovne uviedol. <b>Šrafovanie</b> = doplnené podľa predvoleného rozhrania nástroja (napríklad „Codex CLI“ → terminál), pretože väčšina ľudí ho nespomenie.</p>
+      <h2>Interfaces: the terminal rules, but not alone</h2>
+      <p class="lede">Which surface people use to work with a tool or model. <b>Solid fill</b> = the author named the interface explicitly. <b>Hatching</b> = inferred from the tool’s default interface (e.g. “Codex CLI” → terminal), since most people don’t mention it.</p>
     </div></div>
     <div class="grid2">
-      <div class="rv"><p class="eyebrow">Typ rozhrania · unikátni autori · <span class="sw" style="background:var(--ink)"></span>výslovne <span class="sw" style="background:repeating-linear-gradient(-45deg,var(--ink) 0 2px,transparent 2px 6px);outline:1px solid var(--ink)"></span>doplnené</p><div class="bars" id="b-iface"></div>
-        <p class="eyebrow" style="margin-top:34px">Hostiteľ: v čom to beží (výslovne uvedené)</p><div class="bars" id="b-host"></div></div>
-      <div class="rv"><p class="eyebrow">Claude Code: rozhranie tam, kde ho autor uviedol</p><div class="bars" id="b-ccsplit"></div>
+      <div class="rv"><p class="eyebrow">Interface type · unique authors · <span class="sw" style="background:var(--ink)"></span>explicit <span class="sw" style="background:repeating-linear-gradient(-45deg,var(--ink) 0 2px,transparent 2px 6px);outline:1px solid var(--ink)"></span>inferred</p><div class="bars" id="b-iface"></div>
+        <p class="eyebrow" style="margin-top:34px">Host: where it runs (explicitly stated)</p><div class="bars" id="b-host"></div></div>
+      <div class="rv"><p class="eyebrow">Claude Code: interface where the author named it</p><div class="bars" id="b-ccsplit"></div>
         <p class="note" id="cc-note"></p>
-        <p class="eyebrow" style="margin-top:34px">GitHub Copilot: rozhranie tam, kde ho autor uviedol</p><div class="bars" id="b-cpsplit"></div></div>
+        <p class="eyebrow" style="margin-top:34px">GitHub Copilot: interface where the author named it</p><div class="bars" id="b-cpsplit"></div></div>
     </div>
-    <p class="eyebrow rv" style="margin-top:44px">Model × cez čo ho autor používa · počty autorov, ktorí párovanie výslovne uviedli</p>
+    <p class="eyebrow rv" style="margin-top:44px">Model × what the author uses it through · number of authors who stated the pairing explicitly</p>
     <div class="rv" style="overflow-x:auto"><table class="heat" id="viamap"></table></div>
-    <p class="note rv">Claude sa používa prevažne cez <b>Claude Code</b>. Otvorené modely (Qwen, DeepSeek, GLM) idú hlavne cez otvorené harnessy <b>Pi</b> a <b>OpenCode</b>, cez <b>OpenRouter</b> alebo priamo cez <b>llama.cpp</b>. GPT sa najčastejšie páruje s <b>Codex CLI</b>.</p>
+    <p class="note rv">Claude is used mostly through <b>Claude Code</b>. Open models (Qwen, DeepSeek, GLM) run mainly through the open harnesses <b>Pi</b> and <b>OpenCode</b>, via <b>OpenRouter</b>, or directly on <b>llama.cpp</b>. GPT is most often paired with <b>Codex CLI</b>.</p>
   </section>
 
   <!-- 2 trend -->
   <section>
     <div class="sh rv"><div class="sec-no">04</div><div>
-      <h2>Trend: open-source agenti rastú, Cursor odchádza</h2>
-      <p class="lede">Podiel autorov v danom kvartáli, ktorí tool používajú. Podiel a nie absolútne čísla, pretože veľkosť vzorky kolíše (Q4 tvorí najmä jedno veľké HN vlákno z novembra). Každý panel má rovnakú os, sivé čiary sú ostatné tools pre porovnanie.</p>
+      <h2>Trend: open-source agents rise, Cursor fades</h2>
+      <p class="lede">Share of authors in each quarter who use the tool. Shares rather than absolute counts, because sample size varies (Q4 is mostly one big HN thread from November). Every panel uses the same axis; grey lines are the other tools for comparison.</p>
     </div></div>
     <div class="chart rv" id="trend"></div>
     
@@ -300,74 +300,74 @@ footer{padding:36px 0 64px;font-family:var(--mono);font-size:12px;color:var(--mu
   <!-- 3 models -->
   <section>
     <div class="sh rv"><div class="sec-no">05</div><div>
-      <h2>Modely: Claude vedie, otvorené váhy majú silné zastúpenie</h2>
-      <p class="lede">Plná výplň znamená, že autor model výslovne menuje. Šrafovanie znamená, že model je odvodený z harnessu viazaného na jedného poskytovateľa (Claude Code → Claude, Codex/ChatGPT → GPT, Gemini CLI/Antigravity → Gemini).</p>
+      <h2>Models: Claude leads, open weights are well represented</h2>
+      <p class="lede">Solid fill means the author names the model explicitly. Hatching means the model is inferred from a harness tied to a single provider (Claude Code → Claude, Codex/ChatGPT → GPT, Gemini CLI/Antigravity → Gemini).</p>
     </div></div>
     <div class="grid2">
-      <div class="rv"><p class="eyebrow">Skupiny modelov · <span class="sw" style="background:var(--ink)"></span>explicitne <span class="sw" style="background:repeating-linear-gradient(-45deg,var(--ink) 0 2px,transparent 2px 6px);outline:1px solid var(--ink)"></span>implicitne <span class="sw" style="background:var(--teal)"></span>otvorené váhy</p><div class="bars" id="b-mgrp"></div></div>
-      <div class="rv"><p class="eyebrow">Rodiny · iba explicitné zmienky · najčastejšie verzie</p><div class="bars" id="b-mfam"></div>
-        <p class="note"><b>Qwen</b> a <b>DeepSeek</b> sú z veľkej časti zásluhou vlákna „Has anyone replaced Claude/GPT with a local model…“. Aj bez neho však Qwen zostáva najčastejšie menovaným otvoreným modelom.</p></div>
+      <div class="rv"><p class="eyebrow">Model groups · <span class="sw" style="background:var(--ink)"></span>explicit <span class="sw" style="background:repeating-linear-gradient(-45deg,var(--ink) 0 2px,transparent 2px 6px);outline:1px solid var(--ink)"></span>implicit <span class="sw" style="background:var(--teal)"></span>open weights</p><div class="bars" id="b-mgrp"></div></div>
+      <div class="rv"><p class="eyebrow">Families · explicit mentions only · most common versions</p><div class="bars" id="b-mfam"></div>
+        <p class="note"><b>Qwen</b> and <b>DeepSeek</b> owe much of their count to the thread “Has anyone replaced Claude/GPT with a local model…”. Even without it, Qwen remains the most frequently named open model.</p></div>
     </div>
   </section>
 
   <!-- 4 money -->
   <section>
     <div class="sh rv"><div class="sec-no">06</div><div>
-      <h2>Peniaze: medián <span id="h-med"></span> mesačne, chvost v tisícoch</h2>
-      <p class="lede">Platené plány podľa poskytovateľa (unikátni autori) a mesačná útrata tých, ktorí ju uviedli.</p>
+      <h2>Money: median <span id="h-med"></span> a month, a tail in the thousands</h2>
+      <p class="lede">Paid plans by provider (unique authors) and monthly spend for those who stated it.</p>
     </div></div>
     <div class="tiles rv" id="tiles"></div>
     <div class="grid2">
       <div class="rv">
-        <p class="eyebrow">Každá bodka = 1 autor s uvedenou sumou · logaritmická os USD/mes</p>
+        <p class="eyebrow">Each dot = 1 author with a stated amount · log axis USD/mo</p>
         <div class="chart" id="strip"></div>
-        <p class="eyebrow" style="margin-top:34px">Rozdelenie podľa pásiem</p>
+        <p class="eyebrow" style="margin-top:34px">Breakdown by band</p>
         <div class="hist" id="hist"></div><div class="histx"><span>&lt;$20</span><span>$20–100</span><span>$100–250</span><span>&gt;$250</span></div>
       </div>
-      <div class="rv"><p class="eyebrow">Plány a platobné režimy · top 18</p><div class="bars" id="b-sub"></div></div>
+      <div class="rv"><p class="eyebrow">Plans and billing modes · top 18</p><div class="bars" id="b-sub"></div></div>
     </div>
   </section>
 
   <!-- 5 churn -->
   <section>
     <div class="sh rv"><div class="sec-no">07</div><div>
-      <h2>Odchody: odkiaľ a kam</h2>
-      <p class="lede">Autori, ktorí písali, že tool prestali používať (spolu <span class="mono" id="n-left"></span> prípadov autor × tool vo všetkých kategóriách). Vľavo je pôvodný harness alebo appka, vpravo cieľ. Zobrazené sú iba odchody so známym cieľom, ostatné sú uvedené pri zdroji ako „bez cieľa“.</p>
+      <h2>Churn: from where to where</h2>
+      <p class="lede">Authors who wrote that they stopped using a tool (<span class="mono" id="n-left"></span> author × tool cases in total, across all categories). Left is the original harness or app, right is the destination. Only departures with a known destination are drawn; the rest are listed next to the source as “no destination”.</p>
     </div></div>
     <div class="chart sankey rv" id="sankey"></div>
-    <p class="note rv">Medzi <b>Claude Code</b> a <b>Codex CLI</b> sa prechádza oboma smermi, takže ide skôr o prepínanie podľa aktuálne lepšieho modelu. <b>Cursor</b> a <b>Aider</b> strácajú takmer výlučne v prospech Claude Code. <b>OpenClaw</b> po zmene pravidiel predplatného Anthropicu stratil používateľov, okrem iného v prospech Hermes Agent.</p>
+    <p class="note rv">People move between <b>Claude Code</b> and <b>Codex CLI</b> in both directions, so it looks more like switching to whichever model is better at the moment. <b>Cursor</b> and <b>Aider</b> lose almost exclusively to Claude Code. <b>OpenClaw</b> lost users after Anthropic changed its subscription rules, partly to Hermes Agent.</p>
   </section>
 
   <!-- 6 local -->
   <section>
     <div class="sh rv"><div class="sec-no">08</div><div>
-      <h2>Lokálne modely: llama.cpp predbehol Ollamu</h2>
-      <p class="lede"><b class="mono" id="n-local"></b> autorov spomína vlastnú lokálnu inferenciu (runtime alebo hardvér).</p>
+      <h2>Local models: llama.cpp has overtaken Ollama</h2>
+      <p class="lede"><b class="mono" id="n-local"></b> authors mention running their own local inference (runtime or hardware).</p>
     </div></div>
     <div class="grid2 rev">
       <div class="rv"><p class="eyebrow">Runtime</p><div class="bars" id="b-local"></div></div>
-      <div class="rv"><p class="eyebrow">Hardvér (triedy)</p><div class="bars" id="b-hw"></div>
-        <p class="note">Najčastejšie sú <b>Macy s Apple Silicon</b> s veľkou unified memory, nasledujú herné GeForce karty (RTX 3090 až 5090). Pomerne často sa objavujú aj 128 GB boxy <b>DGX Spark / GB10</b> a <b>AMD Strix Halo</b>.</p></div>
+      <div class="rv"><p class="eyebrow">Hardware (classes)</p><div class="bars" id="b-hw"></div>
+        <p class="note">Most common are <b>Apple Silicon Macs</b> with lots of unified memory, followed by gaming GeForce cards (RTX 3090 to 5090). 128 GB <b>DGX Spark / GB10</b> and <b>AMD Strix Halo</b> boxes also show up fairly often.</p></div>
     </div>
   </section>
 
   <!-- surveys -->
   <section>
     <div class="sh rv"><div class="sec-no">09</div><div>
-      <h2>Kalibrácia: komunita vs. veľké ankety 2026</h2>
-      <p class="lede">Podiel komunity = autori používajúci tool / <span class="mono" id="n-harn"></span> autorov, ktorí uviedli aspoň jeden coding harness. Ankety sa pýtajú inak („za posledný rok“, „v práci týždenne“, „pravidelní používatelia agentov“), preto porovnávaj <b>poradie a smer</b>, nie absolútne percentá.</p>
+      <h2>Calibration: the community vs. the big 2026 surveys</h2>
+      <p class="lede">Community share = authors using the tool / <span class="mono" id="n-harn"></span> authors who named at least one coding harness. The surveys ask differently (“in the past year”, “weekly at work”, “regular agent users”), so compare <b>rank and direction</b>, not absolute percentages.</p>
     </div></div>
     <div class="rv" id="surveys"></div>
     <div class="legend rv" id="s-leg"></div>
-    <p class="note rv">HN, Lobste.rs a Tildes sú oproti priemeru výrazne <b>terminálové a open-source</b>: Pi má v komunite 3× väčší podiel ako v Stack Overflow ankete a OpenCode 2× väčší ako u JetBrains. <b>Copilot, Cursor a JetBrains AI</b> sú naopak výrazne pod priemerom. Tieto nástroje používa najmä „tichá väčšina“ vo firmách, ktorá v takýchto vláknach nepíše.</p>
-    <p class="qn rv">Zdroje: <a href="https://survey.stackoverflow.co/2026/ai/data/ai-code-agent">Stack Overflow Developer Survey 2026</a> (n≈12 260, „used in the past year“) · <a href="https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/">JetBrains Developer Ecosystem 2026</a> (n&gt;15 000, máj–júl, „at work“) · <a href="https://newsletter.pragmaticengineer.com/p/ai-tooling-2026">Pragmatic Engineer AI Tooling 2026</a> (n=507 pravidelných používateľov agentov).</p>
+    <p class="note rv">HN, Lobste.rs and Tildes skew strongly <b>terminal and open source</b> compared with the average: Pi’s share in the community is 3× its Stack Overflow figure, and OpenCode’s is 2× its JetBrains figure. <b>Copilot, Cursor and JetBrains AI</b>, on the other hand, are well below average. Those tools are used mainly by the “silent majority” at companies, who don’t post in threads like these.</p>
+    <p class="qn rv">Sources: <a href="https://survey.stackoverflow.co/2026/ai/data/ai-code-agent">Stack Overflow Developer Survey 2026</a> (n≈12,260, “used in the past year”) · <a href="https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/">JetBrains Developer Ecosystem 2026</a> (n&gt;15,000, May–Jul, “at work”) · <a href="https://newsletter.pragmaticengineer.com/p/ai-tooling-2026">Pragmatic Engineer AI Tooling 2026</a> (n=507 regular agent users).</p>
   </section>
 
   <!-- 7 articles -->
   <section>
     <div class="sh rv"><div class="sec-no">10</div><div>
-      <h2>Ako to robia autori blogov</h2>
-      <p class="lede"><span id="n-art"></span> článkov o osobnom setupe z roku 2026 od <span id="n-auth-b"></span> autorov (HN titulka + knižnica a ITech feedy v Readwise Reader vrátane Swamp Club). Do štatistiky sa započítal iba autor článku, komentáre pod článkom nie. Nižšie je jeden článok na autora, najviac 24.</p>
+      <h2>How the bloggers do it</h2>
+      <p class="lede"><span id="n-art"></span> articles about personal setups from 2026 by <span id="n-auth-b"></span> authors (HN front page + library and ITech feeds in Readwise Reader, including Swamp Club). Only the article’s author was counted, not the comments under it. Below is one article per author, at most 24.</p>
     </div></div>
     <div class="cards rv" id="cards"></div>
   </section>
@@ -375,46 +375,46 @@ footer{padding:36px 0 64px;font-family:var(--mono);font-size:12px;color:var(--mu
   <!-- 8 sources -->
   <section>
     <div class="sh rv"><div class="sec-no">11</div><div>
-      <h2>Zdroje a najbohatšie vlákna</h2>
-      <p class="lede">Koľko sme prečítali, koľko autorov opísalo vlastný setup a ktoré vlákna boli najbohatšie (podľa počtu autorov so setupom).</p>
+      <h2>Sources and the richest threads</h2>
+      <p class="lede">How much we read, how many authors described their own setup, and which threads were richest (by number of authors with a setup).</p>
     </div></div>
     <div class="srcgrid rv" id="srcsum"></div>
   </section>
 
   <section style="border-bottom:3px double var(--ink)">
-    <div class="sh rv"><div class="sec-no">§</div><div><h2>Metodika a limity</h2></div></div>
+    <div class="sh rv"><div class="sec-no">§</div><div><h2>Methodology and limitations</h2></div></div>
     <div class="method rv">
-      <div><h4>Postup</h4><ol>
-        <li>HN (Algolia API): 21 ručne schválených vlákien Ask HN o setupe a workflow, z toho 19 s komentármi z roku 2026. Lobste.rs (JSON API) a Tildes: 213 diskusií o AI v praxi z roku 2026.</li>
-        <li>Stiahnuté celé stromy komentárov, iba komentáre z roku 2026 (<span id="m-com"></span>).</li>
-        <li>Každý komentár prečítal LLM, bez predfiltra, a určil tool, stav <i>uses/left</i>, rozhranie, hostiteľa a párovanie model → harness.</li>
-        <li>Blogy: HN titulka + Readwise Reader (knižnica later/starred/archive a 100 ITech feedov vrátane Swamp Club). Triedenie podľa názvu a súhrnu, potom LLM čítal plný text. Ráta sa iba autor.</li>
-        <li>Normalizácia aliasov, deduplikácia autor × tool, posledný stav vyhráva.</li>
+      <div><h4>Process</h4><ol>
+        <li>HN (Algolia API): 21 hand-approved Ask HN threads about setups and workflows, 19 of them with comments from 2026. Lobste.rs (JSON API) and Tildes: 213 discussions about AI in practice from 2026.</li>
+        <li>Downloaded full comment trees, keeping only comments from 2026 (<span id="m-com"></span>).</li>
+        <li>An LLM read every comment, with no pre-filter, and extracted the tool, <i>uses/left</i> status, interface, host and model → harness pairing.</li>
+        <li>Blogs: HN front page + Readwise Reader (later/starred/archive library and 100 ITech feeds, including Swamp Club). Triaged by title and summary, then an LLM read the full text. Only the author counts.</li>
+        <li>Alias normalisation, author × tool deduplication, latest status wins.</li>
       </ol></div>
-      <div><h4>Pravidlá počítania</h4><ul>
-        <li>Jednotka = unikátny autor × tool v rámci zdroja. Rovnaká prezývka na dvoch weboch sa ráta ako dvaja autori.</li>
-        <li>Ráta sa iba vlastné aktuálne používanie, nie odporúčania ani „počul som“.</li>
-        <li>Rozhranie: výslovne uvedené vs. doplnené podľa predvoleného rozhrania nástroja, obe čísla sú zobrazené.</li>
-        <li>Ankety sú len kalibrácia a do rebríčkov sa nezlučujú.</li>
-        <li>Tools s menej ako 3 autormi nie sú v grafoch (long tail).</li>
+      <div><h4>Counting rules</h4><ul>
+        <li>Unit = unique author × tool within a source. The same handle on two sites counts as two authors.</li>
+        <li>Only the author’s own current use counts, not recommendations or “I’ve heard”.</li>
+        <li>Interface: explicitly stated vs. inferred from the tool’s default interface; both numbers are shown.</li>
+        <li>Surveys are for calibration only and are not merged into the rankings.</li>
+        <li>Tools with fewer than 3 authors are left out of the charts (long tail).</li>
       </ul></div>
-      <div><h4>Skreslenia a limity</h4><ul>
-        <li>Diskusné komunity nie sú reprezentatívna vzorka vývojárov, sú viac terminálové a open-source.</li>
-        <li>HN vlákno o lokálnych modeloch (jún) nadhodnocuje Qwen, DeepSeek, Pi a OpenCode.</li>
-        <li>Swamp je produkt komunity Swamp Club, preto je v porovnaní zdrojov vynechaný.</li>
-        <li><b>Reddit vynechaný:</b> Reddit Responsible Builder Policy vyžaduje schválenie API a výskum mimo programu Reddit for Researchers zakazuje.</li>
-        <li>Klasifikácia LLM: 99,6 % citácií overených doslovne proti zdrojovému komentáru.</li>
+      <div><h4>Biases and limitations</h4><ul>
+        <li>Discussion communities are not a representative sample of developers; they lean more terminal and open source.</li>
+        <li>The HN thread on local models (June) inflates Qwen, DeepSeek, Pi and OpenCode.</li>
+        <li>Swamp is a product of the Swamp Club community, so it is excluded from the source comparison.</li>
+        <li><b>Reddit excluded:</b> the Reddit Responsible Builder Policy requires API approval and prohibits research outside the Reddit for Researchers program.</li>
+        <li>LLM classification: 99.6% of quotes verified verbatim against the source comment.</li>
       </ul></div>
     </div>
   </section>
-  <footer><span>Zdroje dát: Hacker News · Lobste.rs · Tildes · osobné blogy · ankety SO / JetBrains / Pragmatic Engineer</span><span id="f-rows"></span><span>Vygenerované 5. 11. 2026</span></footer>
+  <footer><span>Data sources: Hacker News · Lobste.rs · Tildes · personal blogs · SO / JetBrains / Pragmatic Engineer surveys</span><span id="f-rows"></span><span>Generated Nov 5, 2026</span></footer>
 </div>
 
 <script>
 const D = __DATA__;
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const N = D.n_authors, nf = n => n.toLocaleString('sk-SK');
-const pc = (n, d = N) => Math.round(100 * n / d) + ' %';
+const N = D.n_authors, nf = n => n.toLocaleString('en-US');
+const pc = (n, d = N) => Math.round(100 * n / d) + '%';
 const $ = id => document.getElementById(id);
 const COLORS = {"Claude Code":"var(--hn)","Codex CLI":"var(--ink)","OpenCode":"var(--teal)","Pi":"var(--ochre)","GitHub Copilot":"var(--sky)","Cursor":"var(--rust)","ChatGPT (app/web)":"#5a5a52","OpenRouter":"var(--plum)","Claude (app/web)":"#e8a06a","Antigravity":"#4f8a3c","Hermes Agent":"#7a7a5c"};
 const HEX = {"var(--hn)":"#ff6600","var(--ink)":"#1b1a16","var(--teal)":"#0e5f5c","var(--ochre)":"#b8860b","var(--sky)":"#3d6f99","var(--rust)":"#8a3b12","var(--plum)":"#6b3e5e"};
@@ -422,7 +422,7 @@ const hex = c => HEX[c] || c;
 
 function bars(id, rows, o = {}) {
   const m = o.max || Math.max(...rows.map(r => r.n));
-  $(id).innerHTML = rows.map((r, i) => `<div class="bar ${i===0&&o.lead?'lead':''}" style="--w:${(100*r.n/m).toFixed(2)}%;--d:${i*45}ms;--c:${r.c || o.c || 'var(--ink)'}" title="${esc(r.name)}: ${r.n} autorov">
+  $(id).innerHTML = rows.map((r, i) => `<div class="bar ${i===0&&o.lead?'lead':''}" style="--w:${(100*r.n/m).toFixed(2)}%;--d:${i*45}ms;--c:${r.c || o.c || 'var(--ink)'}" title="${esc(r.name)}: ${r.n} authors">
     <span class="bl">${esc(r.name)}${r.tag ? `<em>${esc(r.tag)}</em>` : ''}</span><span class="bt"><i></i></span>
     <span class="bn">${r.n}<small>${o.sub ? o.sub(r) : pc(r.n)}</small></span></div>`).join('');
 }
@@ -430,16 +430,16 @@ function bars(id, rows, o = {}) {
 // hero + stats
 const qSum = D.n_read;
 $('h-com').textContent = nf(qSum);
-$('m-com').textContent = nf(qSum) + ' komentárov';
+$('m-com').textContent = nf(qSum) + ' comments';
 const cc = D.harness[0];
 $('h-big').innerHTML = Math.round(100 * cc.n / N) + '<sup>%</sup>';
-$('h-bigsub').textContent = `${cc.n} z ${N} autorov · ${(cc.n / D.harness[1].n).toFixed(1).replace('.', ',')}× viac ako #2 ${D.harness[1].name}`;
+$('h-bigsub').textContent = `${cc.n} of ${N} authors · ${(cc.n / D.harness[1].n).toFixed(1)}× more than #2 ${D.harness[1].name}`;
 $('n-auth').textContent = N;
 $('n-left').textContent = D.n_left;
 $('n-local').textContent = D.local_any;
-$('f-rows').textContent = `${nf(D.n_rows)} riadkov autor × tool × komentár`;
+$('f-rows').textContent = `${nf(D.n_rows)} author × tool × comment rows`;
 const med = D.spend.slice().sort((a,b)=>a-b)[Math.floor(D.spend.length/2)];
-$('stats').innerHTML = [[N,'autorov so setupom'],[nf(qSum),'prečítaných komentárov'],[D.sources.length,'komunity a blogy'],['$'+Math.round((D.spend[Math.floor((D.spend.length-1)/2)]+D.spend[Math.ceil((D.spend.length-1)/2)])/2),'medián útraty / mes'],[D.local_any,'s lokálnymi modelmi']]
+$('stats').innerHTML = [[N,'authors with a setup'],[nf(qSum),'comments read'],[D.sources.length,'communities and blogs'],['$'+Math.round((D.spend[Math.floor((D.spend.length-1)/2)]+D.spend[Math.ceil((D.spend.length-1)/2)])/2),'median spend / mo'],[D.local_any,'with local models']]
   .map(([b, s]) => `<div><b>${b}</b><span>${s}</span></div>`).join('');
 
 const MED = (() => { const v = D.spend.slice().sort((a, b) => a - b), n = v.length; return (v[Math.floor((n-1)/2)] + v[Math.ceil((n-1)/2)]) / 2; })();
@@ -452,7 +452,7 @@ bars('b-harness', D.harness.map(r => ({...r, c: COLORS[r.name] || 'var(--ink2)'}
 bars('b-app', D.app, {c: 'var(--ink2)'});
 const V = D.venn, cls = [].concat(Array(V.both).fill('both'), Array(V.cc).fill('cc'), Array(V.cx).fill('cx'), Array(V.none).fill(''));
 $('waffle').innerHTML = cls.map((c, i) => `<i class="${c}" style="transition-delay:${Math.min(i*1.6, 1400)}ms"></i>`).join('');
-$('w-leg').innerHTML = [['background:var(--hn);box-shadow:inset 0 0 0 2px var(--ink)', `Claude Code + Codex · ${V.both}`],['background:var(--hn)', `iba Claude Code · ${V.cc}`],['background:var(--ink)', `iba Codex CLI · ${V.cx}`],['', `ani jeden · ${V.none}`]]
+$('w-leg').innerHTML = [['background:var(--hn);box-shadow:inset 0 0 0 2px var(--ink)', `Claude Code + Codex · ${V.both}`],['background:var(--hn)', `Claude Code only · ${V.cc}`],['background:var(--ink)', `Codex CLI only · ${V.cx}`],['', `neither · ${V.none}`]]
   .map(([s, t]) => `<span><i style="${s}"></i>${t}</span>`).join('');
 $('w-both').textContent = V.both;
 
@@ -462,28 +462,28 @@ $('w-both').textContent = V.both;
   const B = D.by_source, rows = B.rows;
   let h = '<thead><tr><th></th>' + B.tools.map(t => `<th><span>${esc(t)}</span></th>`).join('') + '</tr></thead><tbody>';
   rows.forEach(r => { const mx = Math.max(...r.share, 1);
-    h += `<tr><th>${esc(r.label)}<small>${r.n} autorov${r.n < 30 ? ' · malá vzorka' : ''}</small></th>` + r.share.map((v, i) => { const a = v / mx;
-      return `<td class="${v === 0 ? 'z' : a > .55 ? 'hi' : ''}" style="--a:${(a * .95).toFixed(3)}" title="${esc(r.label)} · ${esc(B.tools[i])}: ${r.cnt[i]} z ${r.n} (${v} %)">${v === 0 ? '·' : Math.round(v)}</td>`; }).join('') + '</tr>'; });
+    h += `<tr><th>${esc(r.label)}<small>${r.n} authors${r.n < 30 ? ' · small sample' : ''}</small></th>` + r.share.map((v, i) => { const a = v / mx;
+      return `<td class="${v === 0 ? 'z' : a > .55 ? 'hi' : ''}" style="--a:${(a * .95).toFixed(3)}" title="${esc(r.label)} · ${esc(B.tools[i])}: ${r.cnt[i]} of ${r.n} (${v}%)">${v === 0 ? '·' : Math.round(v)}</td>`; }).join('') + '</tr>'; });
   $('srcmap').innerHTML = h + '</tbody>';
   const g = (src, tool) => { const r = rows.find(x => x.src === src); return r ? r.share[B.tools.indexOf(tool)] : 0; };
-  $('src-note').innerHTML = `Claude Code vedie všade (HN ${Math.round(g('hn','Claude Code'))} %, Lobste.rs ${Math.round(g('lobsters','Claude Code'))} %, Tildes ${Math.round(g('tildes','Claude Code'))} %). Rozdiely sú v chvoste: <b>HN</b> je baštou Codexu a open-source agentov (OpenCode ${Math.round(g('hn','OpenCode'))} %, Pi ${Math.round(g('hn','Pi'))} %). <b>Lobste.rs</b> častejšie používa chat (Claude app ${Math.round(g('lobsters','Claude (app/web)'))} %) a je skeptickejší. <b>Tildes</b> má najviac používateľov GitHub Copilot (${Math.round(g('tildes','GitHub Copilot'))} %).`;
+  $('src-note').innerHTML = `Claude Code leads everywhere (HN ${Math.round(g('hn','Claude Code'))}%, Lobste.rs ${Math.round(g('lobsters','Claude Code'))}%, Tildes ${Math.round(g('tildes','Claude Code'))}%). The differences are in the tail: <b>HN</b> is the stronghold of Codex and open-source agents (OpenCode ${Math.round(g('hn','OpenCode'))}%, Pi ${Math.round(g('hn','Pi'))}%). <b>Lobste.rs</b> uses chat more often (Claude app ${Math.round(g('lobsters','Claude (app/web)'))}%) and is more sceptical. <b>Tildes</b> has the most GitHub Copilot users (${Math.round(g('tildes','GitHub Copilot'))}%).`;
 })();
 
 // 3 interfaces
 (function ifaces() {
   const rows = D.iface.filter(r => r.n > 0), m = Math.max(...rows.map(r => r.n));
-  $('b-iface').innerHTML = rows.map((r, i) => `<div class="bar mbar" style="--w:${(100*r.exp/m).toFixed(2)}%;--w2:${(100*(r.n-r.exp)/m).toFixed(2)}%;--d:${i*45}ms;--c:${r.id==='terminal'?'var(--hn)':'var(--ink)'}" title="${esc(r.name)}: ${r.exp} výslovne + ${r.n-r.exp} doplnené">
-    <span class="bl">${esc(r.name)}</span><span class="bt"><i style="background:var(--c)"></i><b></b></span><span class="bn">${r.n}<small>${r.exp} výslovne</small></span></div>`).join('');
-  bars('b-host', D.hosts.map(h => ({...h, name: h.name === 'browser' ? 'prehliadač' : h.name})), {c: 'var(--ink2)', sub: r => ''});
+  $('b-iface').innerHTML = rows.map((r, i) => `<div class="bar mbar" style="--w:${(100*r.exp/m).toFixed(2)}%;--w2:${(100*(r.n-r.exp)/m).toFixed(2)}%;--d:${i*45}ms;--c:${r.id==='terminal'?'var(--hn)':'var(--ink)'}" title="${esc(r.name)}: ${r.exp} explicit + ${r.n-r.exp} inferred">
+    <span class="bl">${esc(r.name)}</span><span class="bt"><i style="background:var(--c)"></i><b></b></span><span class="bn">${r.n}<small>${r.exp} explicit</small></span></div>`).join('');
+  bars('b-host', D.hosts, {c: 'var(--ink2)', sub: r => ''});
   const cc = D.tool_split['Claude Code'], ccn = cc.explicit.reduce((a, r) => a + r.n, 0);
-  bars('b-ccsplit', cc.explicit, {c: 'var(--hn)', sub: r => Math.round(100 * r.n / ccn) + ' %'});
-  $('cc-note').innerHTML = `Z <b>${cc.total}</b> používateľov Claude Code uviedlo rozhranie ${ccn} prípadov. Terminál jasne dominuje, no <b>desktop app</b> a <b>mobilná appka</b> (riadenie agenta z telefónu) už nie sú okrajové.`;
+  bars('b-ccsplit', cc.explicit, {c: 'var(--hn)', sub: r => Math.round(100 * r.n / ccn) + '%'});
+  $('cc-note').innerHTML = `Of <b>${cc.total}</b> Claude Code users, ${ccn} cases named an interface. The terminal clearly dominates, but the <b>desktop app</b> and the <b>mobile app</b> (steering the agent from a phone) are no longer marginal.`;
   const cp = D.tool_split['GitHub Copilot'], cpn = cp.explicit.reduce((a, r) => a + r.n, 0);
-  bars('b-cpsplit', cp.explicit, {c: 'var(--sky)', sub: r => Math.round(100 * r.n / cpn) + ' %'});
+  bars('b-cpsplit', cp.explicit, {c: 'var(--sky)', sub: r => Math.round(100 * r.n / cpn) + '%'});
   const Vm = D.via; const mx = Math.max(...Vm.m.flat());
-  let h = '<thead><tr><th></th>' + Vm.vias.map(v => `<th><span>${esc(v === 'own scripts/API' ? 'vlastné skripty/API' : v)}</span></th>`).join('') + '<th><span>spolu</span></th></tr></thead><tbody>';
+  let h = '<thead><tr><th></th>' + Vm.vias.map(v => `<th><span>${esc(v)}</span></th>`).join('') + '<th><span>total</span></th></tr></thead><tbody>';
   Vm.models.forEach((g, i) => { h += `<tr><th>${esc(g)}</th>` + Vm.m[i].map((v, j) => { const a = v / mx;
-    return `<td class="${v === 0 ? 'z' : a > .5 ? 'hi' : ''}" style="--a:${(Math.sqrt(a) * .95).toFixed(3)}" title="${esc(g)} cez ${esc(Vm.vias[j])}: ${v} autorov">${v || '·'}</td>`; }).join('') + `<td class="z" style="--a:0;font-weight:600;color:var(--ink)">${Vm.tot[i]}</td></tr>`; });
+    return `<td class="${v === 0 ? 'z' : a > .5 ? 'hi' : ''}" style="--a:${(Math.sqrt(a) * .95).toFixed(3)}" title="${esc(g)} via ${esc(Vm.vias[j])}: ${v} authors">${v || '·'}</td>`; }).join('') + `<td class="z" style="--a:0;font-weight:600;color:var(--ink)">${Vm.tot[i]}</td></tr>`; });
   $('viamap').innerHTML = h + '</tbody>';
 })();
 
@@ -498,17 +498,17 @@ $('w-both').textContent = V.both;
   const ql = qs.map(q => q + "’26");
   $('trend').innerHTML = `<div class="sm">${series.map((s, k) => {
     const c = hex(COLORS[s.name] || '#6b6a60'), last = s.p[n-1], dl = last - s.p[0];
-    const pi = s.p.indexOf(Math.max(...s.p)), pk = (pi > 0 && pi < n-1 && s.p[pi] - last >= 5) ? ` · vrchol ${s.p[pi].toFixed(0)} % v ${ql[pi]}` : '';
+    const pi = s.p.indexOf(Math.max(...s.p)), pk = (pi > 0 && pi < n-1 && s.p[pi] - last >= 5) ? ` · peak ${s.p[pi].toFixed(0)}% in ${ql[pi]}` : '';
     let g = [0, 20, 40, 60].filter(v => v <= ymax).map(v => `<line class="ax" x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}"/>`).join('');
     g += series.map((o, j) => j === k ? '' : `<path d="${path(o.p)}" fill="none" stroke="#cfcbb8" stroke-width="1.2"/>`).join('');
     g += `<path d="${path(s.p)} L${x(n-1)},${y(0)} L${x(0)},${y(0)} Z" fill="${c}" fill-opacity=".09"/>`;
     g += `<path class="ln" d="${path(s.p)}" stroke="${c}" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.4s ease ${k*80}ms"/>`;
-    g += s.p.map((v, i) => `<circle cx="${x(i)}" cy="${y(v)}" r="${i===n-1?4:2.6}" fill="${c}"><title>${esc(s.name)} · ${qs[i]}: ${s.n[i]} z ${qa[i]} autorov (${v.toFixed(0)} %)</title></circle>`).join('');
+    g += s.p.map((v, i) => `<circle cx="${x(i)}" cy="${y(v)}" r="${i===n-1?4:2.6}" fill="${c}"><title>${esc(s.name)} · ${qs[i]}: ${s.n[i]} of ${qa[i]} authors (${v.toFixed(0)}%)</title></circle>`).join('');
     g += ql.map((q, i) => (i === 0 || i === n-1) ? `<text x="${x(i)}" y="${H-3}" text-anchor="${i?'end':'start'}">${q}</text>` : '').join('');
-    return `<figure><figcaption><span>${esc(s.name)}</span><b style="color:${c}">${last.toFixed(0)}<small> %</small></b></figcaption>
-      <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(s.name)}: podiel ${s.p.map(v=>v.toFixed(0)).join(', ')} %">${g}</svg>
-      <div class="dl ${Math.abs(dl)<1?'':dl>0?'up':'dn'}">${Math.abs(dl)<1?'=':dl>0?'▲':'▼'} ${Math.abs(dl).toFixed(0)} pb <span>od ${ql[0]}${pk}</span></div></figure>`; }).join('')}</div>
-    <p class="qn">${qs.map((q, i) => `${ql[i]}: n=${qa[i]}${i===n-1?' (do 5. 11.)':''}`).join(' · ')} · spoločná os 0–${ymax} % · sivé = ostatné tools</p>`;
+    return `<figure><figcaption><span>${esc(s.name)}</span><b style="color:${c}">${last.toFixed(0)}<small>%</small></b></figcaption>
+      <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(s.name)}: share ${s.p.map(v=>v.toFixed(0)).join(', ')}%">${g}</svg>
+      <div class="dl ${Math.abs(dl)<1?'':dl>0?'up':'dn'}">${Math.abs(dl)<1?'=':dl>0?'▲':'▼'} ${Math.abs(dl).toFixed(0)} pp <span>since ${ql[0]}${pk}</span></div></figure>`; }).join('')}</div>
+    <p class="qn">${qs.map((q, i) => `${ql[i]}: n=${qa[i]}${i===n-1?' (to Nov 5)':''}`).join(' · ')} · shared axis 0–${ymax}% · grey = other tools</p>`;
 })();
 
 // 3 models
@@ -516,26 +516,26 @@ $('w-both').textContent = V.both;
   const OPEN = new Set(['Whisper', 'NVIDIA Parakeet']);
   const rows = D.model_grp.map(r => ({...r, open: r.open || OPEN.has(r.name), n: r.exp + r.imp}));
   const m = Math.max(...rows.map(r => r.n));
-  $('b-mgrp').innerHTML = rows.map((r, i) => `<div class="bar mbar" style="--w:${(100*r.exp/m).toFixed(2)}%;--w2:${(100*r.imp/m).toFixed(2)}%;--d:${i*45}ms;--c:${r.open?'var(--teal)':(r.name==='Claude'?'var(--hn)':'var(--ink)')}" title="${esc(r.name)}: ${r.exp} explicitne + ${r.imp} implicitne">
+  $('b-mgrp').innerHTML = rows.map((r, i) => `<div class="bar mbar" style="--w:${(100*r.exp/m).toFixed(2)}%;--w2:${(100*r.imp/m).toFixed(2)}%;--d:${i*45}ms;--c:${r.open?'var(--teal)':(r.name==='Claude'?'var(--hn)':'var(--ink)')}" title="${esc(r.name)}: ${r.exp} explicit + ${r.imp} implicit">
     <span class="bl">${esc(r.name.replace(' (open)',''))}${r.open?'<em>open</em>':''}</span><span class="bt"><i style="background:var(--c)"></i><b></b></span>
-    <span class="bn">${r.n}<small>${r.imp?r.exp+' + '+r.imp:'explicitne'}</small></span></div>`).join('');
+    <span class="bn">${r.n}<small>${r.imp?r.exp+' + '+r.imp:'explicit'}</small></span></div>`).join('');
   const OPENF = /qwen|deepseek|glm|gemma|kimi|mistral|nemotron|gpt-oss|minimax|mimo|llama|whisper|parakeet/i;
   bars('b-mfam', D.model_fam.map(r => ({...r, c: OPENF.test(r.name) ? 'var(--teal)' : (r.name.startsWith('Claude') ? 'var(--hn)' : 'var(--ink)')})), {sub: r => esc(r.v.slice(0, 2).join(' · ') || '—')});
 })();
 
 // 4 money
 (function money() {
-  $('tiles').innerHTML = D.providers.map(p => `<div class="tile"><span class="t">${esc(p.name)}</span><b>${p.n}</b><div class="d">${Object.entries(p.detail).map(([k, v]) => `${esc(k.replace('Claude ', ''))} <b style="display:inline;font-size:inherit;font-family:var(--mono)">${v}</b>`).join(' · ') || (p.name.startsWith('API') ? 'platba za tokeny, mix poskytovateľov' : 'Team / Enterprise / Business / firemný Copilot')}</div></div>`).join('');
+  $('tiles').innerHTML = D.providers.map(p => `<div class="tile"><span class="t">${esc(p.name)}</span><b>${p.n}</b><div class="d">${Object.entries(p.detail).map(([k, v]) => `${esc(k.replace('Claude ', ''))} <b style="display:inline;font-size:inherit;font-family:var(--mono)">${v}</b>`).join(' · ') || (p.name.startsWith('API') ? 'pay per token, mix of providers' : 'Team / Enterprise / Business / company Copilot')}</div></div>`).join('');
   const v = D.spend.slice().sort((a, b) => a - b), n = v.length;
   const median = (v[Math.floor((n-1)/2)] + v[Math.ceil((n-1)/2)]) / 2, mean = v.reduce((a, b) => a + b, 0) / n;
   const W = 640, H = 190, l = 16, r = 16, lo = 1, hi = Math.max(10000, v[n-1]);
   const x = d => l + (W - l - r) * (Math.log10(Math.max(d, lo)) - Math.log10(lo)) / (Math.log10(hi) - Math.log10(lo));
   let g = '';
   [1, 10, 20, 100, 200, 1000, 10000].forEach(t => g += `<line class="ax" x1="${x(t)}" x2="${x(t)}" y1="20" y2="${H-30}"/><text x="${x(t)}" y="${H-12}" text-anchor="middle">${t===1?'≤$1':'$'+(t>=1000?t/1000+'k':t)}</text>`);
-  v.forEach((d, i) => { const j = ((i * 0.6180339887) % 1); g += `<circle cx="${x(d).toFixed(1)}" cy="${(36 + j * (H - 80)).toFixed(1)}" r="5" fill="${d >= 100 ? '#ff6600' : '#1b1a16'}" fill-opacity=".72"><title>$${d}/mes</title></circle>`; });
-  g += `<line x1="${x(median)}" x2="${x(median)}" y1="8" y2="${H-30}" stroke="#1b1a16" stroke-width="2"/><text x="${x(median)+6}" y="16" style="font-weight:600;fill:#1b1a16">medián $${Math.round(median)}</text>`;
-  g += `<line x1="${x(mean)}" x2="${x(mean)}" y1="8" y2="${H-30}" stroke="#ff6600" stroke-width="2" stroke-dasharray="4 3"/><text x="${x(mean)+6}" y="16" style="font-weight:600;fill:#c94f00">priemer $${Math.round(mean)}</text>`;
-  $('strip').innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Rozloženie mesačnej útraty">${g}</svg>`;
+  v.forEach((d, i) => { const j = ((i * 0.6180339887) % 1); g += `<circle cx="${x(d).toFixed(1)}" cy="${(36 + j * (H - 80)).toFixed(1)}" r="5" fill="${d >= 100 ? '#ff6600' : '#1b1a16'}" fill-opacity=".72"><title>$${d}/mo</title></circle>`; });
+  g += `<line x1="${x(median)}" x2="${x(median)}" y1="8" y2="${H-30}" stroke="#1b1a16" stroke-width="2"/><text x="${x(median)+6}" y="16" style="font-weight:600;fill:#1b1a16">median $${Math.round(median)}</text>`;
+  g += `<line x1="${x(mean)}" x2="${x(mean)}" y1="8" y2="${H-30}" stroke="#ff6600" stroke-width="2" stroke-dasharray="4 3"/><text x="${x(mean)+6}" y="16" style="font-weight:600;fill:#c94f00">mean $${Math.round(mean)}</text>`;
+  $('strip').innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Distribution of monthly spend">${g}</svg>`;
   const b = D.spend_buckets, bm = Math.max(...b);
   $('hist').innerHTML = b.map((k, i) => `<div style="--h:${(100*k/bm).toFixed(1)}%;--d:${i*120}ms"><span>${k}</span></div>`).join('');
   bars('b-sub', D.sub.map(r => ({...r, c: r.name.startsWith('Claude') ? 'var(--hn)' : r.name.startsWith('ChatGPT') ? 'var(--ink)' : /API|OpenRouter|Zen/.test(r.name) ? 'var(--plum)' : /mployer|Enterprise|Business|Team/.test(r.name) ? 'var(--sky)' : 'var(--ink2)'})));
@@ -549,13 +549,13 @@ $('w-both').textContent = V.both;
   const unk = {};
   fl.filter(f => srcs.includes(f.from)).forEach(f => {
     if (f.to === '?') { unk[f.from] = (unk[f.from] || 0) + f.n; return; }
-    const to = /custom|own|self-built|vlastn|fork/i.test(f.to) ? 'vlastný agent' : f.to;
+    const to = /custom|own|self-built|vlastn|fork/i.test(f.to) ? 'custom agent' : f.to;
     flows.push({from: f.from, to, n: f.n}); dTot[to] = (dTot[to] || 0) + f.n; });
   const keepD = Object.entries(dTot).filter(([k, v]) => v >= 2).map(e => e[0]);
-  const agg = {}; flows.forEach(f => { const to = keepD.includes(f.to) ? f.to : 'iné'; const k = f.from + '→' + to; agg[k] = agg[k] || {from: f.from, to, n: 0}; agg[k].n += f.n; });
+  const agg = {}; flows.forEach(f => { const to = keepD.includes(f.to) ? f.to : 'other'; const k = f.from + '→' + to; agg[k] = agg[k] || {from: f.from, to, n: 0}; agg[k].n += f.n; });
   const F = Object.values(agg);
   const dsum = {}; F.forEach(f => dsum[f.to] = (dsum[f.to] || 0) + f.n);
-  const dsts = Object.keys(dsum).sort((a, b) => (a === 'iné') - (b === 'iné') || dsum[b] - dsum[a]);
+  const dsts = Object.keys(dsum).sort((a, b) => (a === 'other') - (b === 'other') || dsum[b] - dsum[a]);
   const U = 9, gap = 14, W = 1100, x0 = 210, x1 = W - 230, nw = 12;
   const lay = (keys, tot) => { let yy = 10; const o = {}; keys.forEach(k => { o[k] = {y: yy, h: tot[k] * U, off: 0}; yy += tot[k] * U + gap; }); return [o, yy]; };
   const sTot = {}; F.forEach(f => sTot[f.from] = (sTot[f.from] || 0) + f.n);
@@ -567,9 +567,9 @@ $('w-both').textContent = V.both;
     const c = hex(COLORS[f.from] || '#6b6a60'), mx = (x0 + nw + x1) / 2;
     g += `<path d="M${x0+nw},${ys} C${mx},${ys} ${mx},${yt} ${x1},${yt}" stroke="${c}" stroke-width="${w}"><title>${esc(f.from)} → ${esc(f.to)}: ${f.n}</title></path>`;
   });
-  srcs.forEach(k => { const s = S[k]; const c = hex(COLORS[k] || '#6b6a60'); g += `<rect x="${x0}" y="${s.y}" width="${nw}" height="${s.h}" fill="${c}"/><text x="${x0-10}" y="${s.y+s.h/2+5}" text-anchor="end">${esc(k)} <tspan class="n">${sTot[k]}${unk[k] ? ' +' + unk[k] + ' bez cieľa' : ''}</tspan></text>`; });
-  dsts.forEach(k => { const t = T[k]; const c = hex(COLORS[k] || (k === 'iné' || k === 'vlastný agent' ? '#bdb9a6' : '#6b6a60')); g += `<rect x="${x1}" y="${t.y}" width="${nw}" height="${t.h}" fill="${c}"/><text x="${x1+nw+10}" y="${t.y+t.h/2+5}" style="${k==='iné'||k==='vlastný agent'?'font-style:italic;fill:var(--mute)':''}">${esc(k)} <tspan class="n">${dsum[k]}</tspan></text>`; });
-  $('sankey').innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Tok odchodov medzi nástrojmi">${g}</svg>`;
+  srcs.forEach(k => { const s = S[k]; const c = hex(COLORS[k] || '#6b6a60'); g += `<rect x="${x0}" y="${s.y}" width="${nw}" height="${s.h}" fill="${c}"/><text x="${x0-10}" y="${s.y+s.h/2+5}" text-anchor="end">${esc(k)} <tspan class="n">${sTot[k]}${unk[k] ? ' +' + unk[k] + ' no destination' : ''}</tspan></text>`; });
+  dsts.forEach(k => { const t = T[k]; const c = hex(COLORS[k] || (k === 'other' || k === 'custom agent' ? '#bdb9a6' : '#6b6a60')); g += `<rect x="${x1}" y="${t.y}" width="${nw}" height="${t.h}" fill="${c}"/><text x="${x1+nw+10}" y="${t.y+t.h/2+5}" style="${k==='other'||k==='custom agent'?'font-style:italic;fill:var(--mute)':''}">${esc(k)} <tspan class="n">${dsum[k]}</tspan></text>`; });
+  $('sankey').innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Flow of departures between tools">${g}</svg>`;
 })();
 
 // 6 local
@@ -578,28 +578,28 @@ bars('b-hw', D.hw, {c: 'var(--ink)'});
 
 // 7 articles
 $('cards').innerHTML = D.articles.map(a => `<article class="card"><span class="meta">${esc(a.date)} · ${esc(a.author)}</span>
-  <h3><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a></h3>${a.spend ? `<span class="spend">~$${nf(Math.round(a.spend))}<small style="font-size:13px;font-family:var(--mono);color:var(--mute);font-weight:400"> / mes</small></span>` : ''}
+  <h3><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a></h3>${a.spend ? `<span class="spend">~$${nf(Math.round(a.spend))}<small style="font-size:13px;font-family:var(--mono);color:var(--mute);font-weight:400"> / mo</small></span>` : ''}
   <p>${esc(a.sum)}</p><div class="cc">${a.chips.map(([t, c]) => `<span class="${c}">${esc(t)}</span>`).join('')}</div></article>`).join('');
 
 // 9 surveys
 (function surveys() {
   const S = D.surveys, MAX = 75, x = v => (100 * v / MAX).toFixed(2) + '%';
-  let h = `<div class="sv ax"><span></span><div class="tr">${[0, 15, 30, 45, 60, 75].map(t => `<span style="left:${x(t)}">${t} %</span>`).join('')}</div></div>`;
+  let h = `<div class="sv ax"><span></span><div class="tr">${[0, 15, 30, 45, 60, 75].map(t => `<span style="left:${x(t)}">${t}%</span>`).join('')}</div></div>`;
   h += S.map(r => `<div class="sv"><span class="nm">${esc(r.name)}</span><div class="tr">
-    ${r.so != null ? `<i class="so" style="left:${x(r.so)}" title="Stack Overflow: ${r.so} %"></i>` : ''}
-    ${r.jb != null ? `<i class="jb" style="left:${x(r.jb)}" title="JetBrains: ${r.jb} %"></i>` : ''}
-    ${r.pe != null ? `<i class="pe" style="left:${x(r.pe)}" title="Pragmatic Engineer: ${r.pe} %"></i>` : ''}
-    <i class="c" style="left:${x(r.community)}" title="Komunita: ${r.community} %"></i><b style="left:${x(r.community)}">${Math.round(r.community)}</b></div></div>`).join('');
+    ${r.so != null ? `<i class="so" style="left:${x(r.so)}" title="Stack Overflow: ${r.so}%"></i>` : ''}
+    ${r.jb != null ? `<i class="jb" style="left:${x(r.jb)}" title="JetBrains: ${r.jb}%"></i>` : ''}
+    ${r.pe != null ? `<i class="pe" style="left:${x(r.pe)}" title="Pragmatic Engineer: ${r.pe}%"></i>` : ''}
+    <i class="c" style="left:${x(r.community)}" title="Community: ${r.community}%"></i><b style="left:${x(r.community)}">${Math.round(r.community)}</b></div></div>`).join('');
   $('surveys').innerHTML = h;
-  $('s-leg').innerHTML = [['background:var(--hn)', 'Komunita (HN · Lobste.rs · Tildes · blogy)'], ['background:var(--ink);border-radius:0', 'Stack Overflow 2026'], ['background:var(--teal);border-radius:0;transform:rotate(45deg)', 'JetBrains 2026 (máj–júl)'], ['width:0;height:0;border-radius:0;background:none;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:12px solid var(--ochre)', 'Pragmatic Engineer 2026']]
+  $('s-leg').innerHTML = [['background:var(--hn)', 'Community (HN · Lobste.rs · Tildes · blogs)'], ['background:var(--ink);border-radius:0', 'Stack Overflow 2026'], ['background:var(--teal);border-radius:0;transform:rotate(45deg)', 'JetBrains 2026 (May–Jul)'], ['width:0;height:0;border-radius:0;background:none;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:12px solid var(--ochre)', 'Pragmatic Engineer 2026']]
     .map(([st, t]) => `<span><i style="${st}"></i>${t}</span>`).join('');
 })();
 
 // 11 sources summary
 $('srcsum').innerHTML = D.src_summary.filter(s => s.id !== 'blogs').map(s => `<div><h3>${esc(s.label)}</h3>
-  <div class="k">${s.threads} vlákien · ${nf(s.read)} komentárov · <b style="color:var(--ink)">${s.authors}</b> autorov so setupom</div>
+  <div class="k">${s.threads} threads · ${nf(s.read)} comments · <b style="color:var(--ink)">${s.authors}</b> authors with a setup</div>
   <div class="k">Top: ${s.top.map(([t, n]) => esc(t) + ' ' + n).join(' · ')}</div>
-  <ol>${s.tt.map(t => `<li><a href="${esc(t.u)}" target="_blank" rel="noopener">${esc(t.t.replace(/^Ask HN: /, ''))}</a><small>${t.a} autorov</small></li>`).join('')}</ol></div>`).join('');
+  <ol>${s.tt.map(t => `<li><a href="${esc(t.u)}" target="_blank" rel="noopener">${esc(t.t.replace(/^Ask HN: /, ''))}</a><small>${t.a} authors</small></li>`).join('')}</ol></div>`).join('');
 
 // reveal
 const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); if (e.target.id === 'trend') e.target.querySelectorAll('.ln').forEach(p => p.style.strokeDashoffset = 0); io.unobserve(e.target); } }), {threshold: .15});

@@ -4,9 +4,7 @@
 A reproducible census of personal AI setups — coding agents/harnesses, models, interfaces, subscriptions and spend —
 from **1 119 people** who described their own setup in 2026 on Hacker News, Lobste.rs, Tildes and personal blogs.
 
-🌐 **Infographic:** <https://ai-tools-review-4zy.pages.dev/> · 📄 [Full report](docs/report.md) (Slovak) · 🧾 [Decisions & source list](docs/spec.md)
-
-> Slovensky: Prieskum osobných AI setupov IT komunity za rok 2026. Infografika aj report sú v slovenčine.
+🌐 **Infographic:** <https://aisetups.ringil.cc/> · 📄 [Full report](docs/report.md) · 🧾 [Decisions & source list](docs/spec.md)
 
 ## Headline numbers (1 Jan – 5 Nov 2026)
 
@@ -41,11 +39,11 @@ pipeline/            Python scripts (stdlib only, Python 3.11+)
   fetch_full.py        full text of selected articles            -> data/readwise/full/  (git-ignored)
   prepare_batches.py   2026 comments -> classification batches  -> data/classified/input/
   normalize.py         tool-name aliases, model families, hardware classes
-  aggregate_v2.py      classified JSONL -> data/mentions.csv + data/viz2.json
-  make_tpl_v2.py       derives the infographic template
-  build_infographic_v2.py  -> site/index.html
-  build_report_v2.py       -> docs/report.md
-  v1/                  first iteration (12-month HN-only); kept for reference, not path-refactored
+  aggregate.py         classified JSONL -> data/mentions.csv + data/viz2.json
+  infographic_tpl.html infographic template (static HTML + inline JS, data injected at build)
+  build_infographic.py -> site/index.html
+  build_report.py      -> docs/report.md
+  v1/                  first iteration (12-month, HN only, Slovak); kept for reference, not path-refactored
 prompts/             LLM instructions used for classification, screening and extraction
 data/
   mentions.csv         ★ main dataset: one row per author × tool × comment, with link + quote
@@ -61,10 +59,9 @@ Re-running the aggregation from the committed classified data is deterministic:
 
 ```bash
 cd pipeline
-python3 aggregate_v2.py            # -> data/mentions.csv, data/viz2.json
-python3 make_tpl_v2.py             # -> pipeline/infographic_v2_tpl.html
-python3 build_infographic_v2.py    # -> site/index.html
-python3 build_report_v2.py         # -> docs/report.md
+python3 aggregate.py           # -> data/mentions.csv, data/viz2.json
+python3 build_infographic.py   # -> site/index.html
+python3 build_report.py        # -> docs/report.md
 ```
 
 Full re-collection (network): `fetch_hn.py`, `fetch_lt.py`, then `prepare_batches.py`; classification is done by an

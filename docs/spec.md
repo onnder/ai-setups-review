@@ -1,29 +1,29 @@
 # HN AI setup survey — spec
 
-Status: ready-for-human (report hotový 2026-11-05 → report.md)
+Status: ready-for-human (report done 2026-11-05 → report.md)
 
-Cieľ: štatistika používanosti AI tools / harnessov / modelov / predplatných podľa toho, čo autori a komentátori na Hacker News píšu o svojom osobnom setupe. Top → bottom podľa počtu unikátnych autorov.
+Goal: usage statistics of AI tools / harnesses / models / subscriptions based on what authors and commenters on Hacker News write about their personal setup. Top → bottom by number of unique authors.
 
-## Rozhodnutia (grilling 2026-11-05)
+## Decisions (grilling 2026-11-05)
 
-| # | Rozhodnutie |
+| # | Decision |
 |---|---|
-| Okno | 2025-11-05 → 2026-11-05; ročný rebríček + kvartálny trend top 10 |
-| Rozsah | všetko AI; coding (harnessy, agenti, modely) ako hlavná sekcia, zvyšok (chat appky, lokálne LLM, voice…) vedľajšia |
-| Korpus | Ask HN vlákna o setupe/workflow/útrate — všetky komentáre vrátane vnorených. Články o osobnom setupe → iba setup autora (1 hlas). Launch vlákna a produktové Tell HN → iba v zhrnutí zdrojov, nerátajú sa |
-| Jednotka | unikátny autor × tool (ročne raz za korpus, v trende raz za kvartál) |
-| Čo sa ráta | iba aktuálne vlastné používanie. Churn („prestal som / prešiel som z X na Y“) → samostatná tabuľka odkiaľ → kam. Zmienky bez osobnej skúsenosti sa nerátajú |
-| Rebríčky | (1) harnessy/appky, (2) modely po rodinách so stĺpcami explicit / implicit (Claude Code → Claude, Codex CLI → GPT, Gemini CLI → Gemini), verzie v detaile, (3) predplatné/tiery + distribúcia mesačnej útraty (medián; <$20, $20–100, $100–250, >$250) |
-| Long tail | < 3 autori → samostatná sekcia, nie hlavný rebríček |
-| Metóda | Algolia HN API (`hn.algolia.com/api/v1/items/<id>`) → regex predfilter (názvy tools + generické triggery „I use“, „I pay“, „my setup“, „$/mo“) → LLM klasifikácia `uses` / `left` / `mention_only` → normalizácia aliasov |
-| Výstup | `spec.md` (tento súbor), `report.md` (rebríčky, trend, churn, útrata, zdroje), `infographic.html` (vizuálny report, offline), `mentions.csv` (author, date, quarter, item_id, link, tool, category, status, model_explicit, model_implied, spend_usd_mo, quote) |
-| Jazyk | report po slovensky, názvy tools a citácie v angličtine |
+| Window | 2025-11-05 → 2026-11-05; yearly ranking + quarterly trend of the top 10 |
+| Scope | all of AI; coding (harnesses, agents, models) as the main section, the rest (chat apps, local LLMs, voice…) secondary |
+| Corpus | Ask HN threads about setup/workflow/spend — all comments including nested ones. Articles about a personal setup → only the author's setup (1 vote). Launch threads and product Tell HN → only in the source summary, not counted |
+| Unit | unique author × tool (yearly once per corpus, in the trend once per quarter) |
+| What counts | only current personal use. Churn (“I stopped / I switched from X to Y”) → separate from → to table. Mentions without personal experience are not counted |
+| Rankings | (1) harnesses/apps, (2) models by family with explicit / implicit columns (Claude Code → Claude, Codex CLI → GPT, Gemini CLI → Gemini), versions in detail, (3) subscriptions/tiers + monthly spend distribution (median; <$20, $20–100, $100–250, >$250) |
+| Long tail | < 3 authors → separate section, not the main ranking |
+| Method | Algolia HN API (`hn.algolia.com/api/v1/items/<id>`) → regex prefilter (tool names + generic triggers “I use”, “I pay”, “my setup”, “$/mo”) → LLM classification `uses` / `left` / `mention_only` → alias normalization |
+| Output | `spec.md` (this file), `report.md` (rankings, trend, churn, spend, sources), `infographic.html` (visual report, offline), `mentions.csv` (author, date, quarter, item_id, link, tool, category, status, model_explicit, model_implied, spend_usd_mo, quote) |
+| Language | report in Slovak, tool names and quotes in English |
 
-## Zdroje na schválenie
+## Sources for approval
 
-### A. Ask HN — rátajú sa všetky komentáre (jadro, ~3 000 komentárov)
+### A. Ask HN — all comments count (core, ~3,000 comments)
 
-| ID | Kom. | Dátum | Vlákno |
+| ID | Com. | Date | Thread |
 |---|---|---|---|
 | [50366117](https://news.ycombinator.com/item?id=50366117) | 396 | 2026-11-04 | What's your current AI agentic setup? |
 | [47388646](https://news.ycombinator.com/item?id=47388646) | 616 | 2026-03-15 | How is AI-assisted coding going for you professionally? |
@@ -47,22 +47,22 @@ Cieľ: štatistika používanosti AI tools / harnessov / modelov / predplatných
 | [49848426](https://news.ycombinator.com/item?id=49848426) | 15 | 2026-09-25 | Which model do you use for work? |
 | [46731068](https://news.ycombinator.com/item?id=46731068) | 71 | 2026-01-23 | What's the current best local/open speech-to-speech setup? (non-coding) |
 
-### B. Hraničné — default **nerátať** (skreslené na konkrétny produkt alebo off-topic); povedz, ak niečo presunúť do A
+### B. Borderline — default **don't count** (skewed toward a specific product or off-topic); say if anything should move to A
 
-| ID | Kom. | Dátum | Vlákno | Dôvod |
+| ID | Com. | Date | Thread | Reason |
 |---|---|---|---|---|
-| [46838946](https://news.ycombinator.com/item?id=46838946) | 189 | 2026-01-31 | Any real OpenClaw users? | produktové |
-| [48989357](https://news.ycombinator.com/item?id=48989357) | 33 | 2026-07-21 | Claude Code or Codex? | binárne, nadreprezentuje 2 tools |
-| [48612758](https://news.ycombinator.com/item?id=48612758) | 23 | 2026-06-20 | Do you use Claude Code, Codex, or something else? | dtto |
-| [47750069](https://news.ycombinator.com/item?id=47750069) | 17 | 2026-04-13 | Is Codex really on par with Claude Code? | dtto |
-| [46400129](https://news.ycombinator.com/item?id=46400129) | 32 | 2025-12-27 | How are you sandboxing coding agents? | sandboxing, nie setup |
-| [47581097](https://news.ycombinator.com/item?id=47581097) | 45 | 2026-03-30 | Addicted to the dev workflow of coding with agents? | pocitové |
-| [46896309](https://news.ycombinator.com/item?id=46896309) | 15 | 2026-02-05 | Has your whole engineering team gone big into AI coding? | tímové, nie osobné |
-| [46030021](https://news.ycombinator.com/item?id=46030021) | 19 | 2025-11-24 | What tools do you pay for that feel overpriced? | všeobecný SaaS |
+| [46838946](https://news.ycombinator.com/item?id=46838946) | 189 | 2026-01-31 | Any real OpenClaw users? | product-specific |
+| [48989357](https://news.ycombinator.com/item?id=48989357) | 33 | 2026-07-21 | Claude Code or Codex? | binary, overrepresents 2 tools |
+| [48612758](https://news.ycombinator.com/item?id=48612758) | 23 | 2026-06-20 | Do you use Claude Code, Codex, or something else? | ditto |
+| [47750069](https://news.ycombinator.com/item?id=47750069) | 17 | 2026-04-13 | Is Codex really on par with Claude Code? | ditto |
+| [46400129](https://news.ycombinator.com/item?id=46400129) | 32 | 2025-12-27 | How are you sandboxing coding agents? | sandboxing, not setup |
+| [47581097](https://news.ycombinator.com/item?id=47581097) | 45 | 2026-03-30 | Addicted to the dev workflow of coding with agents? | feelings-based |
+| [46896309](https://news.ycombinator.com/item?id=46896309) | 15 | 2026-02-05 | Has your whole engineering team gone big into AI coding? | team, not personal |
+| [46030021](https://news.ycombinator.com/item?id=46030021) | 19 | 2025-11-24 | What tools do you pay for that feel overpriced? | general SaaS |
 
-### C. Články o osobnom setupe — ráta sa iba autor (1 hlas), komentáre nie
+### C. Articles about a personal setup — only the author counts (1 vote), comments don't
 
-| ID | Kom. | Dátum | Článok |
+| ID | Com. | Date | Article |
 |---|---|---|---|
 | [47106686](https://news.ycombinator.com/item?id=47106686) | 591 | 2026-02-22 | [How I use Claude Code: Separation of planning and execution](https://boristane.com/blog/how-i-use-claude-code/) |
 | [47394022](https://news.ycombinator.com/item?id=47394022) | 528 | 2026-03-16 | [How I write software with LLMs](https://www.stavros.io/posts/how-i-write-software-with-llms/) |
@@ -76,39 +76,39 @@ Cieľ: štatistika používanosti AI tools / harnessov / modelov / predplatných
 | [49272484](https://news.ycombinator.com/item?id=49272484) | 63 | 2026-08-12 | [My Agent Setup](https://chad.cm/posts/2026-8-11-my-agent-setup) |
 | [49234675](https://news.ycombinator.com/item?id=49234675) | 546 | 2026-08-09 | [How I use LLMs to learn complex topics](https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/) (non-coding) |
 
-### D. Iba v zhrnutí zdrojov (kontext, nerátajú sa)
+### D. Only in the source summary (context, not counted)
 
-Launch / produktové vlákna s vysokým ohlasom, napr. [OpenCode – Open source AI coding agent](https://news.ycombinator.com/item?id=47460525) (618), [Tell HN: I'm 60 years old. Claude Code has re-ignited a passion](https://news.ycombinator.com/item?id=47282777) (988), [Tell HN: Anthropic no longer allowing Claude Code subscriptions to use OpenClaw](https://news.ycombinator.com/item?id=47633396) (827). Finálny výber do 10 položiek pri písaní reportu.
+Launch / product threads with high engagement, e.g. [OpenCode – Open source AI coding agent](https://news.ycombinator.com/item?id=47460525) (618), [Tell HN: I'm 60 years old. Claude Code has re-ignited a passion](https://news.ycombinator.com/item?id=47282777) (988), [Tell HN: Anthropic no longer allowing Claude Code subscriptions to use OpenClaw](https://news.ycombinator.com/item?id=47633396) (827). Final selection of up to 10 items when writing the report.
 
-## Fáza 2: rozšírenie o ďalšie zdroje (grilling 2026-11-05 popoludní)
+## Phase 2: extension to more sources (grilling 2026-11-05 afternoon)
 
-Status: ready-for-human (v2 + Readwise publikované 2026-11-05 na https://ai-tools-review-4zy.pages.dev/; vlastná doména čaká na nastavenie v dashboarde)
+Status: done (v2 + Readwise published 2026-11-05 at https://aisetups.ringil.cc/ via Cloudflare Pages connected to GitHub)
 
-| # | Rozhodnutie |
+| # | Decision |
 |---|---|
-| Q18 Okno | všetky zdroje vrátane HN zjednotené na **kalendárny rok 2026** (2026-01-01 → 2026-11-05); HN sa prefiltruje z existujúcich dát |
-| Zdroje | **HN** (komentáre Ask HN), **Lobste.rs**, **Tildes**, ~~Reddit~~ (pozri Q30), **Blogy (autori)** = HN články + Readwise Reader (later/starred/archive + feedy priečinka ITech vrátane Swamp Club), **Ankety** iba ako kalibrácia |
-| Q19 Readwise | ráta sa iba setup autora článku (1 hlas); rozhoduje dátum publikácie v roku 2026, ak chýba, tak dátum uloženia |
-| Q20 Readwise výber | predfilter kľúčovými slovami → LLM posúdi „opisuje autor vlastný setup?“ → zoznam na schválenie |
-| Q21 Prekryv | blogy z HN aj z Readwise sa zlúčia do zdroja „Blogy (autori)“ a deduplikujú podľa URL |
-| Q22 Reddit | iba r/ExperiencedDevs + r/programming; subreddity zamerané na konkrétny tool vynechané |
-| Q23 Lobste.rs/Tildes | vlákna k téme za rok 2026 → schválenie zoznamu → všetky komentáre (na Lobste.rs aj diskusie pod článkami) |
-| Q24 Ankety | samostatná sekcia „komunita vs. ankety“, do rebríčkov sa nezlučujú |
-| Výstup | rebríček za každý zdroj + porovnanie zdrojov vedľa seba + kombinovaný rebríček; report.md aj infographic.html sa rozšíria |
-| Q25 Swamp Club | písané príspevky ako blogy (1 autor = 1 hlas); Swamp vyradený z porovnania naprieč zdrojmi; YouTube iba s prepisom v Readeri |
-| Q26/Q27 Rozhrania | celý korpus 2026 prečítaný znova so schémou v2 (`interface`, `interface_explicit`, `host`, `via`), bez predfiltra; Lobste.rs + Tildes všetkých 213 vlákien |
-| Q28 Publikovanie | na web iba infografika (agregované čísla, bez prezývok); `mentions.csv` s prezývkami zostáva iba vo vaulte |
-| Q29 Kedy | publikovať hneď po v2; Readwise doplniť v ďalšej verzii |
-| Q30 Reddit | **vynechaný**: Reddit Responsible Builder Policy vyžaduje schválenie a výskum mimo programu Reddit for Researchers zakazuje |
-| Prístupy | Readwise token v `~/.config/readwise/token`, Reddit script app v `~/.config/reddit/client` (riadok 1 = client id, riadok 2 = secret); nikdy sa nevypisujú ani neukladajú do vaultu |
+| Q18 Window | all sources including HN unified to **calendar year 2026** (2026-01-01 → 2026-11-05); HN is re-filtered from existing data |
+| Sources | **HN** (Ask HN comments), **Lobste.rs**, **Tildes**, ~~Reddit~~ (see Q30), **Blogs (authors)** = HN articles + Readwise Reader (later/starred/archive + feeds of the ITech folder including Swamp Club), **Surveys** only as calibration |
+| Q19 Readwise | only the article author's setup counts (1 vote); the publication date in 2026 decides, or the save date if it is missing |
+| Q20 Readwise selection | keyword prefilter → LLM judges “does the author describe their own setup?” → list for approval |
+| Q21 Overlap | blogs from both HN and Readwise are merged into the “Blogs (authors)” source and deduplicated by URL |
+| Q22 Reddit | only r/ExperiencedDevs + r/programming; subreddits focused on a specific tool excluded |
+| Q23 Lobste.rs/Tildes | on-topic threads for 2026 → list approval → all comments (on Lobste.rs also discussions under articles) |
+| Q24 Surveys | separate “community vs. surveys” section, not merged into the rankings |
+| Output | a ranking per source + side-by-side source comparison + combined ranking; both report.md and infographic.html get extended |
+| Q25 Swamp Club | written posts treated as blogs (1 author = 1 vote); Swamp excluded from the cross-source comparison; YouTube only with a transcript in Reader |
+| Q26/Q27 Interfaces | the entire 2026 corpus re-read with the v2 schema (`interface`, `interface_explicit`, `host`, `via`), without a prefilter; Lobste.rs + Tildes all 213 threads |
+| Q28 Publishing | only the infographic goes on the web (aggregated numbers, no usernames); `mentions.csv` with usernames stays only in the vault |
+| Q29 When | publish right after v2; add Readwise in the next version |
+| Q30 Reddit | **dropped**: the Reddit Responsible Builder Policy requires approval and prohibits research outside the Reddit for Researchers program |
+| Access | Readwise token in `~/.config/readwise/token`, Reddit script app in `~/.config/reddit/client` (line 1 = client id, line 2 = secret); never printed or saved to the vault |
 
-## Príloha: Lobste.rs a Tildes, kandidátske vlákna 2026 (213)
+## Appendix: Lobste.rs and Tildes, candidate threads 2026 (213)
 
-Návrh: zahrnúť **všetky** (high + medium podľa názvu). Komentáre s ľubovoľnou zmienkou o tooli (956 zo 7 724) pôjdu na LLM klasifikáciu. Vlákna s relevanciou „low“ (473) sú vynechané.
+Proposal: include **all** (high + medium by title). Comments with any tool mention (956 of 7,724) go to LLM classification. Threads with “low” relevance (473) are excluded.
 
-<details><summary>Zoznam vlákien (zdroj · relevancia · dátum · komentáre · so zmienkou o tooli)</summary>
+<details><summary>Thread list (source · relevance · date · comments · with tool mention)</summary>
 
-| Zdroj | Rel. | Dátum | Kom. | S toolom | Vlákno |
+| Source | Rel. | Date | Com. | With tool | Thread |
 |---|---|---|---|---|---|
 | lobsters | high | 2026-06-16 | 56 | 19 | [Running local models is good now](https://lobste.rs/s/hwqdvt) |
 | lobsters | high | 2026-04-21 | 49 | 16 | [Is Claude Code going to cost $100/month? Probably not—it’s all very confusing](https://lobste.rs/s/0qdgc0) |
