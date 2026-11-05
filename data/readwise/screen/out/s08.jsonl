@@ -1,0 +1,23 @@
+{"id": "01ks6j0sq6c1wm2wj3ctv4sr61", "verdict": "maybe", "why": "Robin Sloan personal note on LLM-driven traffic, unclear"}
+{"id": "01ks61j1qqds9p520xb7pgz2hy", "verdict": "maybe", "why": "Simon's own agent project, likely describes his tooling"}
+{"id": "01ks3kjdjrdafx5xtmrmatpav7", "verdict": "maybe", "why": "LLM pricing essay; may mention author's own spend"}
+{"id": "01krp9p54413v2jcnfq92j0mma", "verdict": "maybe", "why": "Tool built with Claude by author"}
+{"id": "01krky0b63qrcvw2srf4c63j1y", "verdict": "maybe", "why": "Author mentions own agent pushing posts via email"}
+{"id": "01krkp12m8xyxzvbx58brtphvh", "verdict": "maybe", "why": "Author had Codex GPT-5.5 xhigh build plugin"}
+{"id": "01krk54rw3e24wf9zp8q4nkqym", "verdict": "yes", "why": "First-person field report building project with AI agents"}
+{"id": "01krh14yhc4y2w7srh8z8rsvmm", "verdict": "maybe", "why": "Outline pushed by author's agent; hints at own workflow"}
+{"id": "01kreb92sztf3za7j8bm3frnwg", "verdict": "maybe", "why": "Hubber builds roguelike with Copilot CLI"}
+{"id": "01krc6vq7n0vt97x1avnbff4a3", "verdict": "maybe", "why": "Simon TIL using his LLM CLI in scripts"}
+{"id": "01krc4kfs8q8mkeths9p1caarj", "verdict": "yes", "why": "Author tested local models for own daily work"}
+{"id": "01kr3n6f47q6h0frypw9vqgfjg", "verdict": "maybe", "why": "Author uses coding agents daily, benchmarks them"}
+{"id": "01kr2aqasq879ff4gg66kdpaf5", "verdict": "maybe", "why": "Team instrumenting own agentic workflows and costs"}
+{"id": "01kqx9ghfyhef188zpa7aa365p", "verdict": "maybe", "why": "Simon plugin fix, possibly built with agent"}
+{"id": "01kqv31sed9jpk6t528eg1pkj9", "verdict": "maybe", "why": "Dark factory pattern, may describe author's agent setup"}
+{"id": "01kqt37s9mc5g9bxavy8shjh1w", "verdict": "maybe", "why": "Simon research project likely done with coding agent"}
+{"id": "01kqt1ja6qkvmqn1zwy1xtsc3d", "verdict": "maybe", "why": "Author's Claude Code skill for finding logs"}
+{"id": "01kqsymbfgayhqe5pwsnypya2j", "verdict": "maybe", "why": "Author had Claude Code for web build tool"}
+{"id": "01kqn40ghk69178ajc6hb1wt13", "verdict": "maybe", "why": "Robin Sloan using Claude Managed Agents himself"}
+{"id": "01kqmvrygw8c5kdf9n9fgx4g4k", "verdict": "maybe", "why": "Simon feature built from AI-assisted prototype"}
+{"id": "01kqjja12vx9x2waacaxjxqp93", "verdict": "yes", "why": "Simon built tool on phone with coding agent"}
+{"id": "01kqhvkysy8j0mmq5z4tnxpjyh", "verdict": "yes", "why": "Author's team uses fleet of coding agents firsthand"}
+{"id": "01kq594y601fdkavkznex2wh7k", "verdict": "maybe", "why": "Hands-on review of AWS DevOps Agent, may be personal"}

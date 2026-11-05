@@ -1,0 +1,687 @@
+source	id	url_of_discussion	date	comment_count	title	relevance	one_line_reason
+lobsters	hwqdvt	https://lobste.rs/s/hwqdvt	2026-06-16	56	Running local models is good now	high	local model setups; people list hardware/models/runners
+lobsters	9kb1xw	https://lobste.rs/s/9kb1xw	2026-02-09	55	Fine, I'll Try AI	high	skeptic tries AI; replies recommend specific tools/models
+lobsters	kkqqdn	https://lobste.rs/s/kkqqdn	2026-08-10	51	No, local models will not win	high	local models debate; users state what they run
+lobsters	0qdgc0	https://lobste.rs/s/0qdgc0	2026-04-21	49	Is Claude Code going to cost $100/month? Probably not—it’s all very confusing	high	Claude Code pricing/subscription; users state plans and spend
+lobsters	yrmpxy	https://lobste.rs/s/yrmpxy	2026-07-04	47	Better Models: Worse Tools	high	models vs tooling/harness quality; tool comparisons
+lobsters	lkv0sh	https://lobste.rs/s/lkv0sh	2026-05-25	45	Using AI to write better code more slowly	high	author's AI coding workflow; commenters share their own
+lobsters	n1h2tl	https://lobste.rs/s/n1h2tl	2026-03-22	42	Is Local the Future of AI?	high	local vs hosted AI; people describe local model setups
+lobsters	7d8dxv	https://lobste.rs/s/7d8dxv	2026-04-02	41	I used AI. It worked. I hated it	high	used AI, it worked; detailed tool experience
+lobsters	mhgog9	https://lobste.rs/s/mhgog9	2026-01-12	30	Anthropic blocks third-party tools using Claude Code OAuth tokens	high	Claude Code OAuth/3rd-party harness ban; users name harnesses/subscriptions
+lobsters	u4bws9	https://lobste.rs/s/u4bws9	2026-03-28	25	BubbleWrap your dev env and agents	high	sandboxing agents; users share agent setups
+lobsters	aso7dh	https://lobste.rs/s/aso7dh	2026-08-02	24	I'm (mostly) picking models on speed now, not intelligence	high	choosing models by speed; people state model picks
+lobsters	miwcai	https://lobste.rs/s/miwcai	2026-10-16	23	Do you let LLMs write both your tests and your code?	high	ask: do you let LLMs write tests+code; direct workflow answers
+lobsters	ykwb2z	https://lobste.rs/s/ykwb2z	2026-02-27	21	An AI agent coding skeptic tries AI agent coding, in excessive detail	high	skeptic tries agent coding in detail; tool/model comparisons
+lobsters	txknsm	https://lobste.rs/s/txknsm	2026-01-18	19	My thoughts on Gas Town after 10,000 hours of Claude Code	high	Gas Town / heavy Claude Code usage; orchestration setups
+lobsters	ub8q3s	https://lobste.rs/s/ub8q3s	2026-09-12	18	Useful Things Agents Can Do That Are Not Writing Code	high	non-coding agent uses; people list their agent workflows
+lobsters	humg0y	https://lobste.rs/s/humg0y	2026-06-04	18	What happened to tab autocomplete?	high	tab autocomplete vs agents; people name editors/completion tools
+lobsters	87rudf	https://lobste.rs/s/87rudf	2026-02-05	18	My AI Adoption Journey	high	personal AI adoption journey; readers share theirs
+lobsters	k0cm8c	https://lobste.rs/s/k0cm8c	2026-03-14	16	Getting started with Claude for software development	high	getting started with Claude for dev; setup advice
+lobsters	77kygu	https://lobste.rs/s/77kygu	2026-06-20	15	Effective use-cases for LLMs	high	effective LLM use-cases; people state what they use
+lobsters	stwus1	https://lobste.rs/s/stwus1	2026-02-16	13	I Sold Out for $20 a Month and All I Got Was This Perfectly Generated Terraform	high	$20/month subscription experience; plans and tools named
+lobsters	oxeeyz	https://lobste.rs/s/oxeeyz	2026-01-20	10	My week with opencode	high	week with opencode; harness comparisons
+lobsters	cmsfbu	https://lobste.rs/s/cmsfbu	2026-01-11	280	Don't fall into the anti-AI hype	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	fooyux	https://lobste.rs/s/fooyux	2026-08-15	141	Why I remain a skeptic	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	7guove	https://lobste.rs/s/7guove	2026-09-11	134	Feeling sad about AI	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	cw6f2s	https://lobste.rs/s/cw6f2s	2026-01-24	133	AI tribalism	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	0gvyif	https://lobste.rs/s/0gvyif	2026-10-07	114	Software developers are not okay	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	fxccx9	https://lobste.rs/s/fxccx9	2026-09-05	111	Is it too much to ask devs to use AI to review their hand-crafted code?	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	iq5xtw	https://lobste.rs/s/iq5xtw	2026-10-12	110	Linus Torvalds Working On A Hefty Linux Kernel Improvement With Claude Code	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	0pxvyd	https://lobste.rs/s/0pxvyd	2026-01-18	98	Agent Psychosis: Are We Going Insane?	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	7tpc5q	https://lobste.rs/s/7tpc5q	2026-09-04	97	Surviving Code Reviews in the era of AI	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	tiktds	https://lobste.rs/s/tiktds	2026-03-10	94	AI should help us produce better code	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	rfiuko	https://lobste.rs/s/rfiuko	2026-08-12	80	I'm done using AI	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	hbjy0b	https://lobste.rs/s/hbjy0b	2026-09-30	78	The AI Pascal’s Wager	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	hjhufj	https://lobste.rs/s/hjhufj	2026-10-13	74	Where is all the new, good software?	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	x0qrlm	https://lobste.rs/s/x0qrlm	2026-01-23	73	AGENTS.md as a dark signal	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	1ifr5f	https://lobste.rs/s/1ifr5f	2026-09-14	72	The contagion of fear	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	zljfgp	https://lobste.rs/s/zljfgp	2026-07-27	72	On AI	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	xgtyyu	https://lobste.rs/s/xgtyyu	2026-04-25	71	Do I belong in tech anymore?	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	m0twb1	https://lobste.rs/s/m0twb1	2026-01-22	68	Your App Subscription Is Now My Weekend Project	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	d0vsgl	https://lobste.rs/s/d0vsgl	2026-06-21	67	Is AI ruining our skills? Early results are in and they’re not good	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	elziso	https://lobste.rs/s/elziso	2026-10-03	65	The Era of Software Quality, or the Era of Ostriches?	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	m1mkjm	https://lobste.rs/s/m1mkjm	2026-02-14	64	A programmer's loss of identity	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	qmjejh	https://lobste.rs/s/qmjejh	2026-02-15	63	AI is slowly munching away my passion	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	uvwcdo	https://lobste.rs/s/uvwcdo	2026-06-08	62	Cleaning up after AI rockstar developers	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	vdueen	https://lobste.rs/s/vdueen	2026-02-22	61	You are not left behind	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	tdvu7a	https://lobste.rs/s/tdvu7a	2026-06-10	59	Blogging with an LLM assistant	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	x1s5oq	https://lobste.rs/s/x1s5oq	2026-10-25	59	“AI Skills” are worthless in 2026	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	ri4flr	https://lobste.rs/s/ri4flr	2026-06-04	56	AI enthusiasts are in a race against time, AI skeptics are in a race against entropy	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	jsw3wk	https://lobste.rs/s/jsw3wk	2026-01-14	56	Why We Don't Use AI	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	jiv1c5	https://lobste.rs/s/jiv1c5	2026-09-24	54	Pencils Down, Eyes Open: A Rails Developer After Rails World	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	2svv99	https://lobste.rs/s/2svv99	2026-02-04	51	Competence as Tragedy	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	ypes5v	https://lobste.rs/s/ypes5v	2026-03-14	50	Thoughts on generative A.I	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	hfbqr3	https://lobste.rs/s/hfbqr3	2026-08-03	49	Don't be a meat proxy	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	ily7as	https://lobste.rs/s/ily7as	2026-10-09	48	Programming Isn’t Special	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	6nahuh	https://lobste.rs/s/6nahuh	2026-02-05	47	Building a C compiler with a team of parallel Claudes	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	pkj7mf	https://lobste.rs/s/pkj7mf	2026-09-17	45	I Don't Like LLMs	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	zotppg	https://lobste.rs/s/zotppg	2026-05-19	45	Type out the code	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	6c8cwq	https://lobste.rs/s/6c8cwq	2026-03-31	45	Reading leaked Claude Code source code	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	4qfkrz	https://lobste.rs/s/4qfkrz	2026-08-06	44	Taste Is All That's Left	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	6pvtem	https://lobste.rs/s/6pvtem	2026-03-09	43	AI will fuck you up if you’re not on board	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	qnffyn	https://lobste.rs/s/qnffyn	2026-09-01	42	The Endless Temptation of Claude	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	j2l2ya	https://lobste.rs/s/j2l2ya	2026-04-09	42	Let’s talk about LLMs	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	j65lz5	https://lobste.rs/s/j65lz5	2026-08-02	41	23 languages, one I can check	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	5t3wzn	https://lobste.rs/s/5t3wzn	2026-07-13	41	Control the ideas, not the code	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	uvdj0c	https://lobste.rs/s/uvdj0c	2026-02-15	39	A Single Reason To Not Vibe Code	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	dmlzwx	https://lobste.rs/s/dmlzwx	2026-09-13	37	Don't call yourself an artisanal programmer	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	uxqdfr	https://lobste.rs/s/uxqdfr	2026-08-31	37	On not becoming a cyborg	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	vxsjiv	https://lobste.rs/s/vxsjiv	2026-03-21	37	Why craft-lovers are losing their craft	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	el8ocy	https://lobste.rs/s/el8ocy	2026-07-14	36	Hating AI in 2026	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	9fjar3	https://lobste.rs/s/9fjar3	2026-10-07	34	Reasons to dislike AI coding	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	vwmojf	https://lobste.rs/s/vwmojf	2026-05-01	34	Why I Don’t Vibe Code	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	go7hr7	https://lobste.rs/s/go7hr7	2026-01-16	34	Histomat of F/OSS: We should reclaim LLMs, not reject them	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	hfuiti	https://lobste.rs/s/hfuiti	2026-02-04	33	I miss thinking hard	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	os20fa	https://lobste.rs/s/os20fa	2026-08-17	32	Vetted AI code is hard to justify	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	iixlsm	https://lobste.rs/s/iixlsm	2026-08-08	32	"Code was never the hard part" is an insult to all programmers	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	csgzki	https://lobste.rs/s/csgzki	2026-06-25	32	The Exhaustion of Talking to a Tool	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	ghtnpx	https://lobste.rs/s/ghtnpx	2026-03-20	32	I'm OK being left behind, thanks	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	0r8fgx	https://lobste.rs/s/0r8fgx	2026-01-02	32	Bespoke software is the future	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	0o60nu	https://lobste.rs/s/0o60nu	2026-03-30	31	copilot edited an ad into my pr	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	8pfxqy	https://lobste.rs/s/8pfxqy	2026-03-15	30	I let Claude Code configure my Arch install	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	j5rw8d	https://lobste.rs/s/j5rw8d	2026-03-27	29	Which Programming Language Is Best for Claude Code?	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	aixljs	https://lobste.rs/s/aixljs	2026-08-27	29	The turbulent AI era is here	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	wevegu	https://lobste.rs/s/wevegu	2026-10-02	28	The Four Horsemen of Agentic Coding	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	ishgbs	https://lobste.rs/s/ishgbs	2026-06-12	28	AI Agent Bankrupted Their Operator While Trying to Scan DN42	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	8ohth3	https://lobste.rs/s/8ohth3	2026-06-02	28	Quality in the Age of Slop	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	0rtina	https://lobste.rs/s/0rtina	2026-08-12	27	Why Go is an Ideal Language for AI-Assisted Software Engineering	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	nlyezv	https://lobste.rs/s/nlyezv	2026-03-17	27	A sufficiently detailed spec is code	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	7iford	https://lobste.rs/s/7iford	2026-02-10	27	I Started Programming When I Was 7. I'm 50 Now, and the Thing I Loved Has Changed	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	wtobpt	https://lobste.rs/s/wtobpt	2026-10-18	26	My obituary for programming	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	tsgoap	https://lobste.rs/s/tsgoap	2026-05-31	26	vibecoding as adhd multiplier	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	kn0jwm	https://lobste.rs/s/kn0jwm	2026-05-05	26	claude code is not making your product better	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	qorrgl	https://lobste.rs/s/qorrgl	2026-03-06	26	I'm not consulting an LLM	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	zdwvdw	https://lobste.rs/s/zdwvdw	2026-01-09	26	Prompting 101: Show, don’t tell	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	eyaz5f	https://lobste.rs/s/eyaz5f	2026-08-22	25	Linus Torvalds uses AI to debug an Intel GPU driver bug	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	lrjceq	https://lobste.rs/s/lrjceq	2026-06-11	25	our workplace LLM mass delusion	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	vjcymq	https://lobste.rs/s/vjcymq	2026-04-07	25	Multi-agentic Software Development is a Distributed Systems Problem (AGI can't save you)	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	agbpkq	https://lobste.rs/s/agbpkq	2026-09-14	24	We are all Product Engineers now	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	wdrawa	https://lobste.rs/s/wdrawa	2026-02-27	24	AI sandbox that runs on your homelab	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	s8awlf	https://lobste.rs/s/s8awlf	2026-02-06	24	Programming is Dead: The Future of Software Engineering	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	rboeor	https://lobste.rs/s/rboeor	2026-01-31	24	Automatic programming	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	dd6if1	https://lobste.rs/s/dd6if1	2026-09-18	23	There's no point at which turning your brain off will work	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	3ltdmy	https://lobste.rs/s/3ltdmy	2026-05-20	23	Twelve Ways to Be Wrong About AI-Assisted Coding	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	dnqcvh	https://lobste.rs/s/dnqcvh	2026-03-09	23	Your LLM Doesn't Write Correct Code. It Writes Plausible Code	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	irxjid	https://lobste.rs/s/irxjid	2026-02-11	23	The AI Vampire	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	awjqvn	https://lobste.rs/s/awjqvn	2026-10-12	22	What I've been seeing lately (in software)	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	t5htlf	https://lobste.rs/s/t5htlf	2026-10-09	22	Why Are Coding Agents So Dumb?	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	gzddgr	https://lobste.rs/s/gzddgr	2026-08-24	22	AI Coding will Prevent Expertise	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	kx2sp3	https://lobste.rs/s/kx2sp3	2026-02-24	22	Lines of Code Are Back (And It's Worse Than Before)	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	nmnmnq	https://lobste.rs/s/nmnmnq	2026-05-04	21	Nondeterminism's not the problem	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	xmwgtx	https://lobste.rs/s/xmwgtx	2026-01-25	21	How to think about Gas Town	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	qiwlzz	https://lobste.rs/s/qiwlzz	2026-09-14	20	"Do You Still Read the Code?"	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	utloro	https://lobste.rs/s/utloro	2026-09-04	20	Is AI ruining my brain?	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	ui2vor	https://lobste.rs/s/ui2vor	2026-08-02	20	Prevent cognitive debt by manually retyping LLM-generated code	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	a7thxr	https://lobste.rs/s/a7thxr	2026-06-24	20	The Coming Loop	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	galkdh	https://lobste.rs/s/galkdh	2026-06-09	20	Grit: rewriting Git in Rust with agents	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	npaxtp	https://lobste.rs/s/npaxtp	2026-04-26	20	LLM-assisted coding is not deterministic. Does it matter?	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	05o8yu	https://lobste.rs/s/05o8yu	2026-04-04	20	If you thought the speed of writing code was your problem - you have bigger problems	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	6skrep	https://lobste.rs/s/6skrep	2026-01-13	20	AI Coding Assistants Are Getting Worse	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	pf0hfr	https://lobste.rs/s/pf0hfr	2026-08-14	19	There Is Still No Silver Bullet	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	mj7k0s	https://lobste.rs/s/mj7k0s	2026-01-14	19	Coding on a Phone: What I Learned Building Software on Mobile in the Last Three Weeks	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	mosbat	https://lobste.rs/s/mosbat	2026-10-08	18	Thinking will become a hobby	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	xkwswd	https://lobste.rs/s/xkwswd	2026-10-04	18	We’re going to need default hard budget caps on pretty much everything	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	iwvjr0	https://lobste.rs/s/iwvjr0	2026-10-01	18	Reducing the cognitive load of AI changes	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	8izobt	https://lobste.rs/s/8izobt	2026-08-16	18	You can just choose how many bugs you want now	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	xk3ley	https://lobste.rs/s/xk3ley	2026-08-13	18	AI is removing the middle class of software engineering	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	elhi7o	https://lobste.rs/s/elhi7o	2026-07-11	18	In defense of not understanding your codebase	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	ua1gxl	https://lobste.rs/s/ua1gxl	2026-07-06	18	GLM 5.2 and the coming AI margin collapse	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	dtkjsz	https://lobste.rs/s/dtkjsz	2026-04-25	18	It's OK to use coding assistance tools to revive the projects you never were going to finish	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	hf6q1n	https://lobste.rs/s/hf6q1n	2026-01-27	18	Why AI Coding Advice Contradicts Itself	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	zcr7in	https://lobste.rs/s/zcr7in	2026-10-01	17	Is sandboxing sufficient to contain rogue agents?	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	q2rymh	https://lobste.rs/s/q2rymh	2026-09-28	17	What Would A Serious AI Product Look Like?	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	rhsst0	https://lobste.rs/s/rhsst0	2026-04-30	17	The LLM Is Not a Junior Engineer	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	3w0o3y	https://lobste.rs/s/3w0o3y	2026-04-06	17	The machines are fine. I'm worried about us	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	972mji	https://lobste.rs/s/972mji	2026-04-01	17	Everything Claude Saw: A Transparent Account of the Chardet v7 Rewrite	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	kp6eap	https://lobste.rs/s/kp6eap	2026-03-31	17	The Subprime Technical Debt Crisis	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	6jlrx2	https://lobste.rs/s/6jlrx2	2026-03-30	17	2026 has been the most pivotal year in my career… and it's only March	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	4i8uad	https://lobste.rs/s/4i8uad	2026-03-25	17	Thoughts on slowing the fuck down	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	4jgfcx	https://lobste.rs/s/4jgfcx	2026-03-15	17	LLM time	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	wssz9m	https://lobste.rs/s/wssz9m	2026-03-12	17	Grief and the AI Split	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	rntyvm	https://lobste.rs/s/rntyvm	2026-09-03	16	The asteroid currently hitting frontend web development	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	fadbev	https://lobste.rs/s/fadbev	2026-08-23	16	Amazon kept shutting down my tablet, so I spent $266 on four AI models to own it	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	435bmi	https://lobste.rs/s/435bmi	2026-05-06	16	Vibe coding and agentic engineering are getting closer than I’d like	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	k3delj	https://lobste.rs/s/k3delj	2026-05-02	16	Agentic Coding is Burning Me Out	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	xaicu8	https://lobste.rs/s/xaicu8	2026-04-16	16	The Claude Coding Vibes Are Getting Worse	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	gpqkcx	https://lobste.rs/s/gpqkcx	2026-04-05	16	Eight years of wanting, three months of building with AI	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	gfsl25	https://lobste.rs/s/gfsl25	2026-02-08	16	AI fatigue is real and nobody talks about it	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	lfaddj	https://lobste.rs/s/lfaddj	2026-09-06	15	Maybe We Shouldn't Be Reviewing All This Code	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	g4sj0m	https://lobste.rs/s/g4sj0m	2026-03-22	15	The diminished art of coding	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	ivbx5f	https://lobste.rs/s/ivbx5f	2026-09-27	14	One month without AI	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	n4vfwm	https://lobste.rs/s/n4vfwm	2026-09-22	14	tokens too cheap to meter	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	mfizts	https://lobste.rs/s/mfizts	2026-05-04	14	Losing Skills	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	ccbjxb	https://lobste.rs/s/ccbjxb	2026-04-28	14	Warp is now open-source	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	o7zxmn	https://lobste.rs/s/o7zxmn	2026-04-13	14	Programming used to be free	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	tmddcs	https://lobste.rs/s/tmddcs	2026-04-12	14	The peril of laziness lost	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	sd1rsy	https://lobste.rs/s/sd1rsy	2026-03-09	14	I don't know if my job will still exist in ten years	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	xankns	https://lobste.rs/s/xankns	2026-01-16	14	Cutting LLM token Usage by ~80% using REPL driven document analysis	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	qhszda	https://lobste.rs/s/qhszda	2026-09-29	13	AI Didn’t Make Programming Easier. It Just Made It Differently Difficult	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	qywh3s	https://lobste.rs/s/qywh3s	2026-04-11	13	With AI, you barely need a frontend framework	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	zvcupc	https://lobste.rs/s/zvcupc	2026-02-17	13	Are We Becoming Architects or Butlers to LLMs?	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	ifvdvx	https://lobste.rs/s/ifvdvx	2026-09-10	12	Bad Vibes Coding	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	4rcwmh	https://lobste.rs/s/4rcwmh	2026-06-13	12	Talk more to your coding agents	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	prer9l	https://lobste.rs/s/prer9l	2026-05-19	12	Software's Centaur Era	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	olipz6	https://lobste.rs/s/olipz6	2026-03-31	12	Early observations from Interviews with Engineering Teams Adopting AI	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	bnldoy	https://lobste.rs/s/bnldoy	2026-02-08	12	I Am Happier Writing Code by Hand	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	vd8q8g	https://lobste.rs/s/vd8q8g	2026-01-02	12	Welcome to Gas Town	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	sshhsl	https://lobste.rs/s/sshhsl	2026-10-06	11	What is Codemode	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	xg8zbk	https://lobste.rs/s/xg8zbk	2026-09-24	11	Clankers Made Me Build a Second Brain	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	scyufg	https://lobste.rs/s/scyufg	2026-09-12	11	Opusfived	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	syk1hi	https://lobste.rs/s/syk1hi	2026-07-24	11	Nothing Works and Everyone Is Euphoric	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	onbcu5	https://lobste.rs/s/onbcu5	2026-06-04	11	Code is Cheap(er)	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	fjrzzm	https://lobste.rs/s/fjrzzm	2026-02-24	11	How we rebuilt Next.js with AI in one week	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	nmyrxg	https://lobste.rs/s/nmyrxg	2026-02-24	11	How I got Claude to teach me dbt	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	6ifznf	https://lobste.rs/s/6ifznf	2026-02-01	11	Vibe: Easy VM sandboxes for LLM agents on MacOS	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	2fqahd	https://lobste.rs/s/2fqahd	2026-05-19	10	I am not a Software Engineer	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	xq1ta4	https://lobste.rs/s/xq1ta4	2026-02-06	10	Tactical tornado is the new default	medium	AI-coding practice/opinion thread; commenters likely state tools/models they use
+lobsters	ggpwfi	https://lobste.rs/s/ggpwfi	2026-10-18	280	It's enough - vibecoding tag crossed from useless to harmful	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	6rkdik	https://lobste.rs/s/6rkdik	2026-07-08	209	Rewriting Bun in Rust	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	iqgrsx	https://lobste.rs/s/iqgrsx	2026-08-27	192	Changes to SourceHut's terms of service regarding LLMs	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ax914v	https://lobste.rs/s/ax914v	2026-07-22	175	Protecting our FLOSS commons from LLMs	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	n4kbuj	https://lobste.rs/s/n4kbuj	2026-02-12	171	An AI Agent Published a Hit Piece on Me	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	jr3zym	https://lobste.rs/s/jr3zym	2026-03-04	168	Relicensing with AI-assisted rewrite	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	xiq59t	https://lobste.rs/s/xiq59t	2026-10-15	159	Linus Torvalds on AI-assisted kernel contributions	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	5kgenk	https://lobste.rs/s/5kgenk	2026-07-18	152	Reviewing AI Code Is Not A Viable Argument (2025)	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	k1b0za	https://lobste.rs/s/k1b0za	2026-06-03	150	rsync and outrage	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	pb6d8m	https://lobste.rs/s/pb6d8m	2026-07-15	144	Linus Torvalds on LLM usage in kernel development	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	qgy6ak	https://lobste.rs/s/qgy6ak	2026-06-08	134	Can we stop tagging every thing as vibecoding?	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ifcyr1	https://lobste.rs/s/ifcyr1	2026-04-29	134	Contributor Poker and Zig's AI Ban	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	bwkwba	https://lobste.rs/s/bwkwba	2026-02-25	133	New accounts on HN 10x more likely to use EM-dashes	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	rdhsu9	https://lobste.rs/s/rdhsu9	2026-09-09	112	I Don’t Want to Interact With Stochastic Parrots	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	brusu8	https://lobste.rs/s/brusu8	2026-05-28	111	Protestware for coding agents	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	omq8rt	https://lobste.rs/s/omq8rt	2026-06-25	107	Vibecoding gets Emacs patch rejected	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	yyqowj	https://lobste.rs/s/yyqowj	2026-03-02	102	GRAM: A Zed fork without all the AI	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	eesu8d	https://lobste.rs/s/eesu8d	2026-08-20	98	Bun 1.4	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	igpevt	https://lobste.rs/s/igpevt	2026-01-27	98	Lobsters Vibecoding Challenge (Winter 2025-2026)	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	caubyr	https://lobste.rs/s/caubyr	2026-08-19	93	Bun 1.4 Rust rewrite is not looking good	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	am7evd	https://lobste.rs/s/am7evd	2026-05-11	90	Mythos finds a curl vulnerability	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	1ydlk8	https://lobste.rs/s/1ydlk8	2026-02-23	89	Ladybird adopts Rust, with help from AI	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	db2owo	https://lobste.rs/s/db2owo	2026-06-05	88	Changing How We Develop Ladybird	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	w1gpe7	https://lobste.rs/s/w1gpe7	2026-05-26	74	Stop advertising in your commits	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	otxkjw	https://lobste.rs/s/otxkjw	2026-05-04	74	Bun (the js runtime) is being vibe-ported from zig to rust	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	eedsds	https://lobste.rs/s/eedsds	2026-05-25	73	Encyclical Letter of His Holiness Leo XIV Magnifica Humanitas	low	AI-tagged (ai) news/policy/project; tangential tool mentions
+lobsters	le3iri	https://lobste.rs/s/le3iri	2026-07-10	72	Postgres rewritten in Rust, now passing 100% of the Postgres regression tests	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	gp02rx	https://lobste.rs/s/gp02rx	2026-04-24	72	The people do not yearn for automation	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	kras1h	https://lobste.rs/s/kras1h	2026-09-23	71	The GNOME LLM Policy That I Want	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	qgfagh	https://lobste.rs/s/qgfagh	2026-06-10	71	The Jqwik Anti-AI Affair	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	1hnx0k	https://lobste.rs/s/1hnx0k	2026-10-05	70	Open Source as We Know It Is Dead	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	bpotqb	https://lobste.rs/s/bpotqb	2026-03-29	70	The Cognitive Dark Forest	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	7s8fwa	https://lobste.rs/s/7s8fwa	2026-06-13	69	repo-slopscore: Detecting AI/LLM contributions in git repositories via commit history analysis	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	qn7jtv	https://lobste.rs/s/qn7jtv	2026-08-31	66	I attended a conference recently and AI use by academics was absurd	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ly0vif	https://lobste.rs/s/ly0vif	2026-06-07	66	To my students	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ii5tun	https://lobste.rs/s/ii5tun	2026-08-16	65	Every Fucking Website	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	r9fmgk	https://lobste.rs/s/r9fmgk	2026-06-17	65	Epic Games announces Lore version control system	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	mf5ryi	https://lobste.rs/s/mf5ryi	2026-06-05	61	Did Claude Increase Bugs in rsync?	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	jdoe4x	https://lobste.rs/s/jdoe4x	2026-02-16	61	Please consider tagging a vibecoding griefpost or hypepost as a rant	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	b8gee9	https://lobste.rs/s/b8gee9	2026-05-11	60	taken	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	nidcls	https://lobste.rs/s/nidcls	2026-09-25	59	Commodified Intelligence	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	re9wk8	https://lobste.rs/s/re9wk8	2026-09-19	59	we have a year to fix security everywhere	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	4qxrg6	https://lobste.rs/s/4qxrg6	2026-04-01	59	Don't Let AI Write For You	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	xi6azw	https://lobste.rs/s/xi6azw	2026-07-29	58	AI Mania Is Eviscerating Global Decision-Making	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	szi49u	https://lobste.rs/s/szi49u	2026-05-07	58	AI Slop is Killing Online Communities	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	cs4kew	https://lobste.rs/s/cs4kew	2026-04-22	58	AI as a Fascist Artifact	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	wnizjm	https://lobste.rs/s/wnizjm	2026-04-09	58	My Login Shell in Assembly	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	b39503	https://lobste.rs/s/b39503	2026-09-23	57	KDE for People	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	j17fxk	https://lobste.rs/s/j17fxk	2026-03-08	57	Lightweight protocol to assert authorship of content and vouch for humanity of others	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	0i492m	https://lobste.rs/s/0i492m	2026-09-10	56	Models Don't Go Rogue	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	f2fwny	https://lobste.rs/s/f2fwny	2026-06-09	56	If Claude Fable stops helping you, you'll never know	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ph1g2v	https://lobste.rs/s/ph1g2v	2026-09-22	55	Plain-text files are at risk	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	he9j7y	https://lobste.rs/s/he9j7y	2026-08-09	55	I think the vibecoding tag has gotten out of hand	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	aw2jr4	https://lobste.rs/s/aw2jr4	2026-04-07	55	Assessing Claude Mythos Preview’s cybersecurity capabilities	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	csxfc6	https://lobste.rs/s/csxfc6	2026-01-27	55	Cloudflare claimed they implemented Matrix on Cloudflare workers. They didn't	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	rrlcfb	https://lobste.rs/s/rrlcfb	2026-02-18	55	Why I don't think AGI is imminent	low	AI-tagged (ai) news/policy/project; tangential tool mentions
+lobsters	czvkjy	https://lobste.rs/s/czvkjy	2026-08-05	54	rust-lang/rust is adopting an LLM policy	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	plcgps	https://lobste.rs/s/plcgps	2026-10-14	53	Anthropic's Scion is heavily inspired by Mononoke	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	k99ryf	https://lobste.rs/s/k99ryf	2026-09-10	53	It Breaks a Village: Bevy's 6th Birthday	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	flcpeu	https://lobste.rs/s/flcpeu	2026-08-17	53	We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	unpaan	https://lobste.rs/s/unpaan	2026-02-14	52	Arborium is AI slopware and should not be trusted	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	4ehrkn	https://lobste.rs/s/4ehrkn	2026-10-11	51	I'm still around.. I'm just not writing here	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	wajtsa	https://lobste.rs/s/wajtsa	2026-09-11	51	OpenAI agents carried out an undisclosed attack on RubyGems	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	3bhiap	https://lobste.rs/s/3bhiap	2026-01-13	50	Signal creator Moxie Marlinspike wants to do for AI what he did for messaging	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	rnmkrg	https://lobste.rs/s/rnmkrg	2026-06-13	49	Extinction-level capitalism	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	8mgfan	https://lobste.rs/s/8mgfan	2026-09-08	48	software for humans	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	zzn47c	https://lobste.rs/s/zzn47c	2026-08-31	46	VibeCoded AI-Slop License v1.0	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	pfqxak	https://lobste.rs/s/pfqxak	2026-04-19	46	Claude Desktop installs undocumented browser extensions for Chrome and other browsers	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	vvt1fh	https://lobste.rs/s/vvt1fh	2026-03-20	46	What creative technical outlets of yours have been ruined by generative AI?	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	qy6azg	https://lobste.rs/s/qy6azg	2026-01-20	46	Reliable Signals of Honest Intent	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	v6nizc	https://lobste.rs/s/v6nizc	2026-09-25	45	LLM Policies: Progress At All Costs	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	zoproh	https://lobste.rs/s/zoproh	2026-09-26	43	This is a modern motherfucking website	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	2cjb1z	https://lobste.rs/s/2cjb1z	2026-05-29	42	Why I am against GenAI and everything it stands for	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	unffzk	https://lobste.rs/s/unffzk	2026-08-11	41	My Anti AI computer	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ikk8ie	https://lobste.rs/s/ikk8ie	2026-10-11	39	'AI' is Not a Tool	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	zuhv4b	https://lobste.rs/s/zuhv4b	2026-09-12	39	We Must Pace the Frontier	low	AI-tagged (ai) news/policy/project; tangential tool mentions
+lobsters	8soruc	https://lobste.rs/s/8soruc	2026-06-25	39	Echoes of the AI Winter	low	AI-tagged (ai) news/policy/project; tangential tool mentions
+lobsters	5majlp	https://lobste.rs/s/5majlp	2026-06-18	39	The Future of the Con Is Already Here, It's Just Not Evenly Distributed	low	AI-tagged (ai) news/policy/project; tangential tool mentions
+lobsters	6ejigt	https://lobste.rs/s/6ejigt	2026-09-01	38	Zuzai, a new word, indicates the absence of AI	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	kgem4b	https://lobste.rs/s/kgem4b	2026-05-25	38	The social contract of writing	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	lfen2h	https://lobste.rs/s/lfen2h	2026-10-12	37	Living in the Weimar era of Ruby	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	qn61ip	https://lobste.rs/s/qn61ip	2026-10-07	37	An open-source, clean-room reimplementation of Adobe Photoshop in pure Rust	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	fxljxx	https://lobste.rs/s/fxljxx	2026-02-27	37	FIPS: Free Internetworking Peering System	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	zctsmq	https://lobste.rs/s/zctsmq	2026-08-28	36	LLM usage in Debian neither endorsed nor prohibited	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	idx42n	https://lobste.rs/s/idx42n	2026-05-16	36	My Thoughts on Bun's Rust Rewrite	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	thfvnd	https://lobste.rs/s/thfvnd	2026-04-02	36	pGenie – SQL-first code generator for PostgreSQL (Haskell, Rust, Java)	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	cvt7fd	https://lobste.rs/s/cvt7fd	2026-03-20	36	EnshittifAIcation	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	t5dvs5	https://lobste.rs/s/t5dvs5	2026-03-10	36	Amazon holds engineering meeting about GenAI based outages	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	fgkcxo	https://lobste.rs/s/fgkcxo	2026-02-19	36	AI makes you boring	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	5ucftp	https://lobste.rs/s/5ucftp	2026-10-13	35	Redesigning source control at Anthropic	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	osvwbe	https://lobste.rs/s/osvwbe	2026-03-06	35	The first AI agent worm is months away, if that	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	kvvxkl	https://lobste.rs/s/kvvxkl	2026-01-25	35	The Enclosure feedback loop, or how LLMs sabotage existing programming practices by privatizing a public good	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	baiwkq	https://lobste.rs/s/baiwkq	2026-09-04	34	Discovery of a new OpenAI agent message board	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	rzvdqo	https://lobste.rs/s/rzvdqo	2026-08-27	34	Please stop flooding our projects with AI slop to furnish your CV	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	p1jpv1	https://lobste.rs/s/p1jpv1	2026-07-23	34	Justif: Knuth-Plass justification and microtypography for the web	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	latr8d	https://lobste.rs/s/latr8d	2026-07-15	34	The Tower Keeps Rising	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	oe8pxn	https://lobste.rs/s/oe8pxn	2026-07-02	34	No LLM code in dependencies	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	jxhi2i	https://lobste.rs/s/jxhi2i	2026-10-06	33	A sustainable web career, for when all this blows over	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ygobr3	https://lobste.rs/s/ygobr3	2026-07-25	33	General Resolution: LLM usage in Debian	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	pidcaz	https://lobste.rs/s/pidcaz	2026-05-04	33	How LLMs Distort Our Written Language	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	klw6bu	https://lobste.rs/s/klw6bu	2026-05-03	33	A desktop made for one	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	glpz3r	https://lobste.rs/s/glpz3r	2026-04-21	33	The zero-days are numbered	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	phhjvs	https://lobste.rs/s/phhjvs	2026-04-08	33	The Future of Everything is Lies, I Guess	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ooandv	https://lobste.rs/s/ooandv	2026-03-08	33	GNU and the AI reimplementations	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ue0bau	https://lobste.rs/s/ue0bau	2026-01-25	33	zerobrew is a Rust-based, 5-20x faster drop-in Homebrew alternative	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	68n22g	https://lobste.rs/s/68n22g	2026-09-25	32	Lobsters: Rename vibecoding to llms (Greasemonkey script)	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	uxvwlo	https://lobste.rs/s/uxvwlo	2026-09-24	32	AI Workers' Inquiry 2026	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	t4f6jt	https://lobste.rs/s/t4f6jt	2026-07-10	32	After 7 years in production, Scarf has reluctantly moved away from Haskell	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	v5nyjz	https://lobste.rs/s/v5nyjz	2026-02-28	32	prek: a better `pre-commit`	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	psvif8	https://lobste.rs/s/psvif8	2026-02-17	32	A Broken Heart	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	sxcz4v	https://lobste.rs/s/sxcz4v	2026-09-28	31	Yes, no AI is now a feature	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ez6ivp	https://lobste.rs/s/ez6ivp	2026-09-10	31	What comes after git	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	fnhsha	https://lobste.rs/s/fnhsha	2026-05-11	31	Zig vs Rust in 2026	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	pbx5yu	https://lobste.rs/s/pbx5yu	2026-03-30	31	Claude finds RCE in Vim and Emacs	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	orb96v	https://lobste.rs/s/orb96v	2026-02-15	31	Deep Blue	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	sxlf4a	https://lobste.rs/s/sxlf4a	2026-09-25	31	Goodbye Google	low	AI-tagged (ai) news/policy/project; tangential tool mentions
+lobsters	cfzhwf	https://lobste.rs/s/cfzhwf	2026-04-21	31	How are you protecting yourself against the imminent AI dooms zero day?	low	AI-tagged (ai) news/policy/project; tangential tool mentions
+lobsters	9y9jo6	https://lobste.rs/s/9y9jo6	2026-08-29	30	There's no such thing as Just a Tool	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	kyb21s	https://lobste.rs/s/kyb21s	2026-08-22	30	Stop Making TUIs	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	xgxp9m	https://lobste.rs/s/xgxp9m	2026-08-20	30	If this is true, the hyperscalers are toast	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	dbakbg	https://lobste.rs/s/dbakbg	2026-07-08	30	Interview: Drew DeVault on an AI-free version of Vim	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	lbjdlo	https://lobste.rs/s/lbjdlo	2026-06-21	30	What's the advice for LLM poisoning of artwork these days?	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	juc8ix	https://lobste.rs/s/juc8ix	2026-03-24	30	Hegel, a universal property-based testing protocol and family of PBT libraries	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	weixyl	https://lobste.rs/s/weixyl	2026-01-24	30	The Value of Things	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	xnqxqe	https://lobste.rs/s/xnqxqe	2026-09-05	29	The revolt of the reader	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	dsptog	https://lobste.rs/s/dsptog	2026-02-09	29	Can my SPARC server host a website?	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	7faqgg	https://lobste.rs/s/7faqgg	2026-10-04	28	Claude Says	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	5xlbx9	https://lobste.rs/s/5xlbx9	2026-09-09	28	my philosophy on banning AI in projects	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	a355zh	https://lobste.rs/s/a355zh	2026-08-03	28	help wanted	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	v2cbi5	https://lobste.rs/s/v2cbi5	2026-06-30	28	stop asking writers about "AI"	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	vlpi8y	https://lobste.rs/s/vlpi8y	2026-06-10	28	macOS container tool v1.0.0 released	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ij94sb	https://lobste.rs/s/ij94sb	2026-05-11	28	Ratty: A terminal emulator with inline 3D graphics	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	gsjskz	https://lobste.rs/s/gsjskz	2026-05-05	28	Behavior-Oriented Concurrency for Python: Lock-less, Deadlock-free, Ownership-based	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	qzwdla	https://lobste.rs/s/qzwdla	2026-02-22	28	Read Locks Are Not Your Friends	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	uskrd1	https://lobste.rs/s/uskrd1	2026-01-23	28	Maintaining shadow branches for GitHub PRs	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	oaybfe	https://lobste.rs/s/oaybfe	2026-08-20	27	What Zig felt like, coming from Rust	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	2shapa	https://lobste.rs/s/2shapa	2026-07-27	27	Make Reviews Possible Again With This One Simple Trick	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	pv23xq	https://lobste.rs/s/pv23xq	2026-04-28	27	Who Owns the Code Claude Wrote?	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	zubxux	https://lobste.rs/s/zubxux	2026-04-14	27	Saying Goodbye to Agile	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ycshwd	https://lobste.rs/s/ycshwd	2026-02-09	27	You Are Here	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	xv6z4r	https://lobste.rs/s/xv6z4r	2026-09-06	26	Python Iceberg	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	4gzijx	https://lobste.rs/s/4gzijx	2026-09-01	26	The load-bearing vocabulary of Claude	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	zibquu	https://lobste.rs/s/zibquu	2026-08-22	26	There continue to be reasons for software to be slow	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	idavhk	https://lobste.rs/s/idavhk	2026-07-16	26	We're Going to Make Out Like Bandits	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	qqojdp	https://lobste.rs/s/qqojdp	2026-07-08	26	Abject 0.8.2 released	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	nbaa0n	https://lobste.rs/s/nbaa0n	2026-06-12	26	Statement on the US government directive to suspend access to Fable 5 and Mythos 5	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	rjw7zn	https://lobste.rs/s/rjw7zn	2026-01-27	26	t: a concise language for manipulating text, replacing common usage patterns of Unix utilities like grep, sed, cut, awk, sort, and uniq	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	v8hk8q	https://lobste.rs/s/v8hk8q	2026-07-07	26	Google’s exponential path to climate-wrecking digital bloat	low	AI-tagged (ai) news/policy/project; tangential tool mentions
+lobsters	owclks	https://lobste.rs/s/owclks	2026-06-06	26	If LLMs Have Human-Like Attributes, Then So Does Age of Empires II	low	AI-tagged (ai) news/policy/project; tangential tool mentions
+lobsters	w3wixc	https://lobste.rs/s/w3wixc	2026-02-07	26	A Horrible Conclusion	low	AI-tagged (ai) news/policy/project; tangential tool mentions
+lobsters	vjmn84	https://lobste.rs/s/vjmn84	2026-10-16	25	The Decoherence Trap: When AI slop drowns out the signal in an endless sea of noise	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	hburvt	https://lobste.rs/s/hburvt	2026-09-22	25	No Sloptober	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	pxmp9r	https://lobste.rs/s/pxmp9r	2026-08-29	25	Debian and the sirens	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	8ttu5n	https://lobste.rs/s/8ttu5n	2026-08-24	25	Your executable is a SQLite database	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	qozazh	https://lobste.rs/s/qozazh	2026-07-21	25	“No AI” Statements Are Much More Than Mere Statements	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	khdiby	https://lobste.rs/s/khdiby	2026-07-01	25	Artificial adventures	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	vufbvv	https://lobste.rs/s/vufbvv	2026-06-07	25	The User Doesn't Care - But you should	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	qtytfe	https://lobste.rs/s/qtytfe	2026-04-24	25	Sloppy Copies	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	wwr6zu	https://lobste.rs/s/wwr6zu	2026-04-13	25	Lean proved this program was correct; then I found a bug	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	lh9rmv	https://lobste.rs/s/lh9rmv	2026-04-03	25	Claude Code Found a Linux Vulnerability Hidden for 23 Years	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	bwyqi9	https://lobste.rs/s/bwyqi9	2026-03-28	25	Linux, finally for everyone	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	g3qpeu	https://lobste.rs/s/g3qpeu	2026-03-11	25	Generative AI vegetarianism	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	rfcbij	https://lobste.rs/s/rfcbij	2026-02-18	25	15+ years later, Microsoft morged my diagram	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	r2koiq	https://lobste.rs/s/r2koiq	2026-02-09	25	What Functional Programmers Get Wrong About Systems	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	nhbnjf	https://lobste.rs/s/nhbnjf	2026-02-07	25	(Bsky thread) "This turns the maintainer into an unwitting vibe coder"	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	z8glob	https://lobste.rs/s/z8glob	2026-02-06	25	How much "boilerplate tax" different languages have: a 400M LOC analysis	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	jvvtif	https://lobste.rs/s/jvvtif	2026-05-06	25	Open weights are quietly closing up - and that's a problem	low	AI-tagged (ai) news/policy/project; tangential tool mentions
+lobsters	qvomvk	https://lobste.rs/s/qvomvk	2026-10-16	24	Why are we even doing all this?	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	h3igdh	https://lobste.rs/s/h3igdh	2026-09-28	24	Leaving them behind	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	pxreik	https://lobste.rs/s/pxreik	2026-09-08	24	How to build a f**king printer	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ktbweg	https://lobste.rs/s/ktbweg	2026-08-30	24	Prompt Injection in Claude Code Opus 5 Auto Mode	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	1g5bum	https://lobste.rs/s/1g5bum	2026-07-03	24	Why implementing ActivityPub is hard, and why it doesn't have to be	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	emyyfu	https://lobste.rs/s/emyyfu	2026-05-25	24	Human proof for FOSS contributions	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	yghhn6	https://lobste.rs/s/yghhn6	2026-04-23	24	I am building a cloud	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	2ssdbm	https://lobste.rs/s/2ssdbm	2026-02-18	24	The case for gatekeeping, or: why medieval guilds had it figured out	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	gxdha5	https://lobste.rs/s/gxdha5	2026-02-07	24	The source code was the moat. But not anymore	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	bzqteq	https://lobste.rs/s/bzqteq	2026-02-19	24	Paged Out! #8	low	AI-tagged (ai) news/policy/project; tangential tool mentions
+lobsters	kaerns	https://lobste.rs/s/kaerns	2026-10-15	23	Sunsetting decomp.dev	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	lf4syc	https://lobste.rs/s/lf4syc	2026-08-14	23	SlopScan: Displays a "slop score" when viewing public git repositories	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	bsavh7	https://lobste.rs/s/bsavh7	2026-06-12	23	Turn your site into a place people can bump into each other	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	izh4dt	https://lobste.rs/s/izh4dt	2026-01-29	23	No, Cloudflare's Matrix server isn't an earnest project	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	pywde0	https://lobste.rs/s/pywde0	2026-08-21	22	Felony Bench: Be AI, Do Crime	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	4waghh	https://lobste.rs/s/4waghh	2026-08-10	22	How do programming languages impact token efficiency and correctness?	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	3d3wbr	https://lobste.rs/s/3d3wbr	2026-08-04	22	Born Against, or why hobby programming communities are aggressively against LLM usage	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	6vsofh	https://lobste.rs/s/6vsofh	2026-06-24	22	The Joy and Power of Understanding	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	sqh2uq	https://lobste.rs/s/sqh2uq	2026-06-13	22	Opensource AI Must Win	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	54wley	https://lobste.rs/s/54wley	2026-06-02	22	Microsoft CEO: We’re moving from OS and apps to agents instead	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	lc26ar	https://lobste.rs/s/lc26ar	2026-05-28	22	SQLite Does Not Accept Agentic Code	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	nmhkdl	https://lobste.rs/s/nmhkdl	2026-04-08	22	The AI Great Leap Forward	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	mizmno	https://lobste.rs/s/mizmno	2026-03-15	22	Summary - Rust Project Perspectives on AI	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	eai9st	https://lobste.rs/s/eai9st	2026-02-27	22	Stop Putting Secrets in .env Files	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	1to8sq	https://lobste.rs/s/1to8sq	2026-02-24	22	Charm v2: Major releases for Bubble Tea, Lip Gloss, and Bubbles for terminal UIs in Go	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	mnmell	https://lobste.rs/s/mnmell	2026-02-17	22	An AI Called Winter: Neurosymbolic Computation or Illusion?	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ayyuqc	https://lobste.rs/s/ayyuqc	2026-09-22	21	Jev-powered autocorrection	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	vcdk2q	https://lobste.rs/s/vcdk2q	2026-08-23	21	Everything I own, owned	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	6ohotl	https://lobste.rs/s/6ohotl	2026-08-04	21	Nehir: a tiling window manager for macOS	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	culsub	https://lobste.rs/s/culsub	2026-08-04	21	IntelliJ IDEA Goes LSP: Java and Kotlin Intelligence Comes to VS Code, Cursor, and Agentic Flows	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	drtmhv	https://lobste.rs/s/drtmhv	2026-07-27	21	Replace Your CI With a Merge Queue	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	yy8je0	https://lobste.rs/s/yy8je0	2026-06-11	21	yserver: A modern X11 server written from scratch in Rust	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	wgfasz	https://lobste.rs/s/wgfasz	2026-05-31	21	Website checklist	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	cvwsxk	https://lobste.rs/s/cvwsxk	2026-05-23	21	sp.h is the standard library that C deserves	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	l4eo1q	https://lobste.rs/s/l4eo1q	2026-04-23	21	A Linux desktop in x86_64 Assembly	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	w1bsle	https://lobste.rs/s/w1bsle	2026-02-20	21	Lobsters Interview with steveklabnik	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	nfkpw4	https://lobste.rs/s/nfkpw4	2026-03-19	21	AI's impact on mathematics is analogous to the car's impact on cities	low	AI-tagged (ai) news/policy/project; tangential tool mentions
+lobsters	4behtu	https://lobste.rs/s/4behtu	2026-07-05	20	Rayfish - P2P VPN built on top of Iroh	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	vnzxfi	https://lobste.rs/s/vnzxfi	2026-06-23	20	AI sucks. Hating it is not enough	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	7zppv1	https://lobste.rs/s/7zppv1	2026-05-07	20	Behind the Scenes Hardening Firefox with Claude Mythos Preview	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ze6pao	https://lobste.rs/s/ze6pao	2026-05-06	20	Building the deployment tool I wish I had	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	bznmaf	https://lobste.rs/s/bznmaf	2026-05-03	20	Your Container Is Not a Sandbox	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	cpu221	https://lobste.rs/s/cpu221	2026-04-26	20	I Left Port 22 Open on the Internet for 54 Days. Here's Who Showed Up	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	5svlut	https://lobste.rs/s/5svlut	2026-09-22	19	AI Has No Wisdom and Neither Will You	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	t73wqi	https://lobste.rs/s/t73wqi	2026-08-28	19	Just a rumour of a bug is enough to find a security exploit these days	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	77uge9	https://lobste.rs/s/77uge9	2026-08-28	19	htmx 4.0.0 has been released	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ir1jkh	https://lobste.rs/s/ir1jkh	2026-08-27	19	A Million Kakapos	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	vpdpkq	https://lobste.rs/s/vpdpkq	2026-04-12	19	LLM Reviews in cargo-crev	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ubqgew	https://lobste.rs/s/ubqgew	2026-04-11	19	High-Level Rust: Getting 80% of the Benefits with 20% of the Pain	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	j2mblu	https://lobste.rs/s/j2mblu	2026-02-05	19	FOSDEM 26 - My Hallway Track Takeaways	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	joqdsi	https://lobste.rs/s/joqdsi	2026-09-29	18	The Shell & Email	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	7lii0g	https://lobste.rs/s/7lii0g	2026-09-09	18	Review a pull request by booting it	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	dajsxn	https://lobste.rs/s/dajsxn	2026-08-19	18	Solo: a .so loader for static Linux binaries	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	fbqlpy	https://lobste.rs/s/fbqlpy	2026-07-30	18	GCC steering committee announces AI policy	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	wxmi0v	https://lobste.rs/s/wxmi0v	2026-07-30	18	The AI Aesthetic	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	2u1z4w	https://lobste.rs/s/2u1z4w	2026-06-16	18	A backdoor in a LinkedIn job offer	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	i1xwo5	https://lobste.rs/s/i1xwo5	2026-05-20	18	LLemdashes	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	phjtbx	https://lobste.rs/s/phjtbx	2026-04-01	18	Python Yet Reforged Entirely	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	of77cp	https://lobste.rs/s/of77cp	2026-03-03	18	US Supreme Court declines to hear dispute over copyrights for AI-generated material	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	wk6rjh	https://lobste.rs/s/wk6rjh	2026-02-19	18	The Claude C Compiler: What It Reveals About the Future of Software	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	pz9jrj	https://lobste.rs/s/pz9jrj	2026-02-19	18	Salt: Systems programming, mathematically verified	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	pef25i	https://lobste.rs/s/pef25i	2026-02-09	18	A Language For Agents	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	k5omum	https://lobste.rs/s/k5omum	2026-10-17	17	The Brain Sandwich	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	lgxq91	https://lobste.rs/s/lgxq91	2026-10-10	17	There's little that's "inevitable" about AI	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	y58e86	https://lobste.rs/s/y58e86	2026-09-01	17	A bicycle for the mind	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	xr1eor	https://lobste.rs/s/xr1eor	2026-08-28	17	Yap: a particular kind of slop	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	w5rmwi	https://lobste.rs/s/w5rmwi	2026-08-15	17	Everything is about to “go dark”	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	a4zifd	https://lobste.rs/s/a4zifd	2026-08-13	17	Unlocking _everything_ on the CPU with DRAM scrambling	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ci7bnd	https://lobste.rs/s/ci7bnd	2026-08-11	17	There's a dungeon under this blog	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	uwhqhi	https://lobste.rs/s/uwhqhi	2026-07-27	17	Being Linux Torvalds	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ysxvko	https://lobste.rs/s/ysxvko	2026-06-19	17	I am dreading our LLM-written incident report future	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	z9lnpe	https://lobste.rs/s/z9lnpe	2026-05-23	17	SPy: an interpreter and a compiler for a statically typed variant of Python	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	tkcood	https://lobste.rs/s/tkcood	2026-05-01	17	Progressive Web Components	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	fu9wcm	https://lobste.rs/s/fu9wcm	2026-04-08	17	Giving LLMs a Formal Reasoning Engine for Code Analysis	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	9gitce	https://lobste.rs/s/9gitce	2026-04-07	17	The pinnacle of enshittification, or Large Language Models	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	tylzdy	https://lobste.rs/s/tylzdy	2026-06-13	17	The future of Siri, or: why private inference isn’t private enough	low	AI-tagged (ai) news/policy/project; tangential tool mentions
+lobsters	ccworf	https://lobste.rs/s/ccworf	2026-02-26	17	Model Collapse Ends AI Hype	low	AI-tagged (ai) news/policy/project; tangential tool mentions
+lobsters	kj1bvt	https://lobste.rs/s/kj1bvt	2026-08-19	16	Why I still hand write my commit messages	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	gyxkma	https://lobste.rs/s/gyxkma	2026-08-11	16	Reviewing code is a skill	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	jnbujx	https://lobste.rs/s/jnbujx	2026-08-09	16	Mea Culpa - Dark Hours	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	l4qeud	https://lobste.rs/s/l4qeud	2026-05-29	16	Flathub disallows LLM-based submissions	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	obnccl	https://lobste.rs/s/obnccl	2026-05-24	16	A Network Allow-List Won't Stop Exfiltration	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	gfjzwa	https://lobste.rs/s/gfjzwa	2026-05-22	16	The Maintainer's Dilemma	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ocrjck	https://lobste.rs/s/ocrjck	2026-03-25	16	"Disregard that!" attacks	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	elfva4	https://lobste.rs/s/elfva4	2026-03-16	16	Every layer of review makes you 10x slower	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	vkxmwj	https://lobste.rs/s/vkxmwj	2026-03-10	16	Redox OS has adopted a Certificate of Origin policy and a strict no-LLM policy	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	efkl8m	https://lobste.rs/s/efkl8m	2026-03-05	16	A GitHub Issue Title Compromised 4,000 Developer Machines	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	jjoj8t	https://lobste.rs/s/jjoj8t	2026-02-04	16	Sukr: A minimal static site compiler in Rust with zero-JS output	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	rtkmpd	https://lobste.rs/s/rtkmpd	2026-02-02	16	Selfish AI	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	nxspz6	https://lobste.rs/s/nxspz6	2026-10-09	15	No Man Is an Island	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	bk6pte	https://lobste.rs/s/bk6pte	2026-10-08	15	The Goose Programming Language	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	aokbai	https://lobste.rs/s/aokbai	2026-09-26	15	Wrong, not broken	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	m1zfy8	https://lobste.rs/s/m1zfy8	2026-09-15	15	The terminal should not own the work	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	nohdoj	https://lobste.rs/s/nohdoj	2026-09-06	15	Terence Tao on “prematurely solving [a maths] problem by purely AI-powered methods”	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ccl4ag	https://lobste.rs/s/ccl4ag	2026-09-05	15	Formalizing Fermat's Last Theorem	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	g9bkak	https://lobste.rs/s/g9bkak	2026-07-29	15	Some notes about Anthropic’s new results	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	j2ua4f	https://lobste.rs/s/j2ua4f	2026-06-26	15	Anatomy of a Failed (Nation-State?) Attack	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	agw0rr	https://lobste.rs/s/agw0rr	2026-06-21	15	Performance improvements in libffi	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	zv0pyh	https://lobste.rs/s/zv0pyh	2026-03-03	15	When AI Writes the World's Software, Who Verifies It?	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	rcewff	https://lobste.rs/s/rcewff	2026-02-21	15	ajail: a basic jail for programs you don't completely trust	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	9srb4r	https://lobste.rs/s/9srb4r	2026-10-05	14	Mold 3.0.0 Released	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	aig5tr	https://lobste.rs/s/aig5tr	2026-09-28	14	When did Google get so weird?	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	xooho4	https://lobste.rs/s/xooho4	2026-09-21	14	Markdown in /src	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	oqv9np	https://lobste.rs/s/oqv9np	2026-08-24	14	IPython is All You Need	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	0fokml	https://lobste.rs/s/0fokml	2026-08-13	14	Write for people	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	gqgbrz	https://lobste.rs/s/gqgbrz	2026-07-24	14	Open Weights and American AI Leadership	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	4hcq97	https://lobste.rs/s/4hcq97	2026-06-18	14	Is It Time for a New Embedded Linux Build System?	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	pmkmil	https://lobste.rs/s/pmkmil	2026-06-01	14	The Newest Instagram "Exploit" is the Goofiest I've Seen	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	4xllsb	https://lobste.rs/s/4xllsb	2026-05-31	14	It's Not Just X. It's Y	low	AI-tagged (ai,vibecoding) news/policy/project; tangential tool mentions
+lobsters	wdq10i	https://lobste.rs/s/wdq10i	2026-04-03	14	Your code is worthless	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	uejqpb	https://lobste.rs/s/uejqpb	2026-02-19	14	Lilush: A static LuaJIT runtime with batteries	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	rybouo	https://lobste.rs/s/rybouo	2026-02-16	14	Browse code by meaning	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	qtxw92	https://lobste.rs/s/qtxw92	2026-02-12	14	Workledger - An offline first  engineering notebook	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ta2ojd	https://lobste.rs/s/ta2ojd	2026-09-14	14	A Letter from a Machine Learning Engineer	low	AI-tagged (ai) news/policy/project; tangential tool mentions
+lobsters	hvd5hk	https://lobste.rs/s/hvd5hk	2026-06-26	14	What does it mean to be a mathematician when AI does the math?	low	AI-tagged (ai) news/policy/project; tangential tool mentions
+lobsters	1kesjm	https://lobste.rs/s/1kesjm	2026-10-17	13	Abolish AI! Manifesto	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	1rmsib	https://lobste.rs/s/1rmsib	2026-10-02	13	The Era of Programming Languages Exploration is upon Us	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	oqipmz	https://lobste.rs/s/oqipmz	2026-09-22	13	How to talk about "AI" without adding to the anthropomorphization	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	cianny	https://lobste.rs/s/cianny	2026-09-16	13	Why i'm still bearish on LLMs after Navier-Stokes	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	tzzarv	https://lobste.rs/s/tzzarv	2026-07-14	13	whatcable: macOS menu bar app that tells you, in plain English, what each USB-C cable plugged into your Mac can actually do	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	jcdcit	https://lobste.rs/s/jcdcit	2026-07-01	13	Announcing Box3D	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	s138jl	https://lobste.rs/s/s138jl	2026-06-26	13	NLNet Labs LLM Policy	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	y0sy74	https://lobste.rs/s/y0sy74	2026-06-25	13	Oxide Rack 3D Explorer	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	cnbztx	https://lobste.rs/s/cnbztx	2026-06-02	13	Codex Discovered a Hidden HTTP/2 Bomb	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	kyuax8	https://lobste.rs/s/kyuax8	2026-05-01	13	Shigeru Miyamoto has probably never compiled a line of code in his life and is still a better coder than most of you	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	plertt	https://lobste.rs/s/plertt	2026-04-26	13	I have officially retired from Emacs	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ucjode	https://lobste.rs/s/ucjode	2026-04-13	13	Microsoft exec suggests AI agents will need to buy software licenses, just like employees	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	plmvuv	https://lobste.rs/s/plmvuv	2026-03-24	13	LiteLLM Compromised by Credential Stealer	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	teexox	https://lobste.rs/s/teexox	2026-03-03	13	Claude's Cycles	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	nddlyy	https://lobste.rs/s/nddlyy	2026-02-22	13	codespelunker - CLI code search tool that understands code structure and ranks results by relevance. No indexing required	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	eec8ez	https://lobste.rs/s/eec8ez	2026-02-17	13	Oat, Ultra-lightweight UI library, Semantic, minimal, zero dependencies	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	xyrr0q	https://lobste.rs/s/xyrr0q	2026-02-03	13	Hacking Moltbook: AI Social Network Reveals 1.5M API Keys	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	nx9uwg	https://lobste.rs/s/nx9uwg	2026-01-09	13	Which programming languages are most token-efficient?	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	pllfoa	https://lobste.rs/s/pllfoa	2026-10-16	12	orib: Bringing back the old Reddit interface, with a few new enhancements	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	3zcaxw	https://lobste.rs/s/3zcaxw	2026-10-09	12	There are many themes, but this one is yours	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	q35pnm	https://lobste.rs/s/q35pnm	2026-09-16	12	Why building a Rust LSP is hard	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	xsbz3l	https://lobste.rs/s/xsbz3l	2026-09-11	12	A Severe Misalignment of AI in Mathematics	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	jyrcwk	https://lobste.rs/s/jyrcwk	2026-09-02	12	Revisiting Joel's Test	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	q6qjjr	https://lobste.rs/s/q6qjjr	2026-08-26	12	VMs won't contain cyber-capable agents	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	fx9pic	https://lobste.rs/s/fx9pic	2026-08-17	12	AI;DR (AI; Didn’t Read)	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	0yc3r0	https://lobste.rs/s/0yc3r0	2026-07-28	12	Lobste.rs on Spinel	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	bper0d	https://lobste.rs/s/bper0d	2026-07-20	12	7 Sandbox Escape Vulnerabilities Across 4 Coding Agent Vendors	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	n85thm	https://lobste.rs/s/n85thm	2026-07-12	12	Ant, a lightweight JavaScript runtime	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	hufoqf	https://lobste.rs/s/hufoqf	2026-07-08	12	Chatto is now Open Source	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	gdwaqt	https://lobste.rs/s/gdwaqt	2026-06-20	12	Town Square, the community deserves connection	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	heoyfd	https://lobste.rs/s/heoyfd	2026-04-30	12	Amber-Lang 0.6.0 - New release, check what's new	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	yhbjpt	https://lobste.rs/s/yhbjpt	2026-04-16	12	The Future of Everything is Lies, I Guess: Where Do We Go From Here?	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	dzlbeb	https://lobste.rs/s/dzlbeb	2026-04-15	12	Cybersecurity Looks Like Proof of Work Now	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	xqttxu	https://lobste.rs/s/xqttxu	2026-04-04	12	Absurd In Production	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	yk91rd	https://lobste.rs/s/yk91rd	2026-04-02	12	I may have solved a long standing problem with Object Oriented systems	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	dsi02i	https://lobste.rs/s/dsi02i	2026-03-17	12	AI - Assassinating Intelligence	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	xkzo35	https://lobste.rs/s/xkzo35	2026-02-24	12	RFC 406i - The Rejection of Artificially Generated Slop (RAGS)	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	qgfhc3	https://lobste.rs/s/qgfhc3	2026-01-13	12	HiTeX Press: A spam factory for AI-generated books	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	l252ms	https://lobste.rs/s/l252ms	2026-10-07	11	All our houses are built on sand now	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	gt2jle	https://lobste.rs/s/gt2jle	2026-09-25	11	We’re gonna need a lot more mathematicians	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	mdczxv	https://lobste.rs/s/mdczxv	2026-09-24	11	I asked Meta’s Muse for its filesystem and it sent me 6.8 GB	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	9naffr	https://lobste.rs/s/9naffr	2026-08-30	11	But where does taste come from?	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	hg2lbk	https://lobste.rs/s/hg2lbk	2026-08-28	11	Nobody Argued For Your Stack	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	wlofzl	https://lobste.rs/s/wlofzl	2026-08-17	11	The benchmarkpocalypse	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	tahynj	https://lobste.rs/s/tahynj	2026-07-28	11	Starling, a Linux Desktop written from scratch	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	pxqwxy	https://lobste.rs/s/pxqwxy	2026-06-16	11	How Developers React to AI-Scented Blog Posts	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	azfaop	https://lobste.rs/s/azfaop	2026-06-09	11	Now what?	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	jegctv	https://lobste.rs/s/jegctv	2026-05-27	11	I’m tired of talking to AI	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	pwnqab	https://lobste.rs/s/pwnqab	2026-05-24	11	The Eternal Sloptember	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	mkwtsj	https://lobste.rs/s/mkwtsj	2026-05-03	11	For thirty years I programmed with Phish on, every day. In 2026, the music is out of phase with the work	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	p8idoc	https://lobste.rs/s/p8idoc	2026-04-21	11	I don't want your PRs anymore	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ugbrsp	https://lobste.rs/s/ugbrsp	2026-04-20	11	PyTexas 2026 Recap	low	AI-tagged (ai,vibecoding) news/policy/project; tangential tool mentions
+lobsters	cjbxjv	https://lobste.rs/s/cjbxjv	2026-04-20	11	Your engineering team looks healthy. It probably isn't	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	1f56jd	https://lobste.rs/s/1f56jd	2026-03-03	11	What if code wasn't a text document?	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	df1p8i	https://lobste.rs/s/df1p8i	2026-02-19	11	Resurrecting _why's Dream	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	zjbdx9	https://lobste.rs/s/zjbdx9	2026-01-07	11	Per-query energy consumption of LLMs	low	AI-tagged (ai) news/policy/project; tangential tool mentions
+lobsters	ixoasm	https://lobste.rs/s/ixoasm	2026-10-15	10	Furifont: furigana built into the font	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	wcoes4	https://lobste.rs/s/wcoes4	2026-10-14	10	We found a Tencent agent fleet	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	td9dxd	https://lobste.rs/s/td9dxd	2026-10-01	10	The death of web development education	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	ir1emf	https://lobste.rs/s/ir1emf	2026-09-28	10	It’s Time to Investigate the AI Labs	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	1ub0m3	https://lobste.rs/s/1ub0m3	2026-09-25	10	AI is not “just a tool”	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	wqzbpw	https://lobste.rs/s/wqzbpw	2026-09-25	10	Every package is already installed	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	l3enhd	https://lobste.rs/s/l3enhd	2026-09-10	10	Native is now the future of mobile at Shopify (2026)	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	suwcbt	https://lobste.rs/s/suwcbt	2026-08-28	10	How cats.txt showed llms.txt evidence is GEO astrology	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	xvezmx	https://lobste.rs/s/xvezmx	2026-08-12	10	Tabs, Spaces, Hand Tools, and Seat Belts	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	tc82u0	https://lobste.rs/s/tc82u0	2026-08-01	10	wiff	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	hrhb42	https://lobste.rs/s/hrhb42	2026-07-29	10	The Dark Night of Mathematics	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	wveduf	https://lobste.rs/s/wveduf	2026-07-16	10	README, not	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	97uskt	https://lobste.rs/s/97uskt	2026-06-01	10	Hating AI is good, actually	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	0ivxoe	https://lobste.rs/s/0ivxoe	2026-05-31	10	Cessation of public development of Kefir C compiler	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	2balua	https://lobste.rs/s/2balua	2026-05-31	10	Unlawful by design: Exposing the human rights costs of generative AI	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	8lbmm8	https://lobste.rs/s/8lbmm8	2026-04-02	10	Activating Two Trap Cards at Once, or: A Gentle Response to the Popularity of Vibecoding	low	AI-tagged (ai,vibecoding) news/policy/project; tangential tool mentions
+lobsters	yeoe5q	https://lobste.rs/s/yeoe5q	2026-03-25	10	Which Design Doc Did a Human Write?	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	4qpylt	https://lobste.rs/s/4qpylt	2026-03-25	10	Compiler Crates	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	tza0zh	https://lobste.rs/s/tza0zh	2026-02-28	10	Yes, and	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	9zos31	https://lobste.rs/s/9zos31	2026-02-19	10	Every app you've built is an ETL pipeline (you just didn't call it that)	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	0xodyl	https://lobste.rs/s/0xodyl	2026-02-17	10	AI Agent Lands PRs in Major OSS Projects, Targets Maintainers via Cold Outreach	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	hkrawz	https://lobste.rs/s/hkrawz	2026-02-12	10	Google might think your Website is down	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	gtjqqn	https://lobste.rs/s/gtjqqn	2026-02-09	10	Electricity use of AI coding agents	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	8rnhnq	https://lobste.rs/s/8rnhnq	2026-02-06	10	monty: A minimal, secure Python interpreter written in Rust for use by AI	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	k6fjcb	https://lobste.rs/s/k6fjcb	2026-01-30	10	How AI Impacts Skill Formation	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	z1re5b	https://lobste.rs/s/z1re5b	2026-01-15	10	On FLOSS and training LLMs	low	AI-tagged (vibecoding) news/policy/project; tangential tool mentions
+lobsters	bxhmjt	https://lobste.rs/s/bxhmjt	2026-06-27	10	AI Learns the "Dark Art" of RF Chip Design	low	AI-tagged (ai) news/policy/project; tangential tool mentions
+lobsters	0lh5rd	https://lobste.rs/s/0lh5rd	2026-01-17	10	“You Had One Job”: Why Twenty Years of DevOps Has Failed to Do it	low	AI-tagged (ai) news/policy/project; tangential tool mentions
+tildes	1tkx	https://tildes.net/~comp/1tkx/ai_coding_agents_are_the_opposite_of_what_i_want	2026-04-06	46	AI Coding agents are the opposite of what I want	high	AI coding agents vs what devs want; tool experiences
+tildes	1t2j	https://tildes.net/~comp/1t2j/is_it_worthwhile_to_run_local_llms_for_coding_today	2026-03-06	40	Is it worthwhile to run local LLMs for coding today?	high	asks if local LLMs are worth it for coding; setups/hardware/models
+tildes	1un9	https://tildes.net/~comp/1un9/any_fellow_software_engineers_using_paid_github_copilot	2026-06-12	32	Any fellow software engineers using paid GitHub copilot?	high	asks who uses paid GitHub Copilot; direct tool/subscription answers
+tildes	1uj1	https://tildes.net/~tech/1uj1/have_you_tried_pewdiepies_self_hosted_ai_workspace_odysseus	2026-06-04	30	Have you tried Pewdiepies' self-hosted AI workspace, Odysseus?	high	self-hosted AI workspace (Odysseus); local setup reports
+tildes	1udu	https://tildes.net/~comp/1udu/actually_useful_mcps	2026-05-28	15	Actually useful MCPs	high	asks for actually useful MCPs; people list their tooling
+tildes	1uoy	https://tildes.net/~comp/1uoy/will_you_be_left_behind_if_you_dont_use_llms_to_code	2026-06-15	15	Will you be left behind if you don't use LLMs to code?	high	asks if you'll be left behind without LLMs; people state usage
+tildes	1viu	https://tildes.net/~tech/1viu/why_normal_people_arent_using_ai_agents	2026-08-10	135	Why normal people aren’t using AI agents	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1wew	https://tildes.net/~tech/1wew/solo_developer_rebuilds_adobe_creative_suite_in_rust_using_claude_releases_it_free_to_all	2026-10-10	100	Solo developer rebuilds Adobe Creative Suite in Rust using Claude, releases it free to all	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1vzt	https://tildes.net/~tech/1vzt/where_do_we_go_from_here_regarding_ai	2026-09-12	98	Where do we go from here? (Regarding AI)	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1t9c	https://tildes.net/~tech/1t9c/i_hope_you_dont_use_generative_ai_an_essay_about_my_experience_offering_an_open_source_tool	2026-03-18	95	I hope you don't use generative AI - an essay about my experience offering an open-source tool	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1sim	https://tildes.net/~comp/1sim/any_software_engineers_considering_a_career_switch_due_to_ai	2026-02-04	71	Any software engineers considering a career switch due to AI?	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1tjo	https://tildes.net/~tech/1tjo/what_if_ai_just_makes_us_work_harder	2026-04-03	69	What if AI just makes us work harder?	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1vya	https://tildes.net/~tech/1vya/software_for_humans	2026-09-09	68	Software for humans	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1t9w	https://tildes.net/~tech/1t9w/that_one_study_that_proves_developers_using_ai_are_deluded	2026-03-19	61	That one study that proves developers using AI are deluded	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1sr8	https://tildes.net/~tech/1sr8/the_ai_disruption_has_arrived_and_it_sure_is_fun	2026-02-18	52	The AI disruption has arrived, and it sure is fun	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1t4l	https://tildes.net/~comp/1t4l/what_are_people_using_instead_of_vs_code	2026-03-10	49	What are people using instead of VS Code?	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1sul	https://tildes.net/~tech/1sul/why_doesnt_anthropic_use_claude_to_make_a_good_claude_desktop_app	2026-02-23	41	Why doesn’t Anthropic use Claude to make a good Claude desktop app?	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1t3p	https://tildes.net/~comp/1t3p/i_dont_know_if_my_software_engineering_job_will_still_exist_in_ten_years	2026-03-08	41	I don’t know if my software engineering job will still exist in ten years	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1tqz	https://tildes.net/~comp/1tqz/vibe_coding_is_just_the_return_of_excel_access_with_more_danger	2026-04-16	39	Vibe coding is just the return of Excel/Access, with more danger	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1wd1	https://tildes.net/~tech/1wd1/given_everything_we_know_about_ai_so_far_what_do_you_think_it_can_or_cannot_be_good_for	2026-10-07	39	Given everything we know about AI so far, what do you think it can or cannot be good for?	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1wf9	https://tildes.net/~tech/1wf9/software_developers_are_not_okay	2026-10-11	34	Software developers are not okay	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1s2s	https://tildes.net/~life/1s2s/feeling_weird_about_my_career_with_respect_to_ai	2026-01-07	33	Feeling weird about my career with respect to AI	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1v5j	https://tildes.net/~tech/1v5j/claude_code_is_the_ceiling_on_vibe_coded_software	2026-07-16	29	Claude Code is the ceiling on vibe-coded software	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1v5t	https://tildes.net/~tech/1v5t/i_wonder_if_years_from_now_hand_written_code_will_be_antique	2026-07-17	27	I wonder if years from now hand written code will be antique	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1v41	https://tildes.net/~tech/1v41/who_cleans_up_after_the_vibe_coding_party	2026-07-14	26	Who cleans up after the vibe-coding party?	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1vs0	https://tildes.net/~comp/1vs0/software_engineers_programmers_hows_it_going	2026-08-26	25	Software engineers / programmers: how’s it going?	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1w5w	https://tildes.net/~tech/1w5w/the_plunging_price_of_ai	2026-09-24	24	The plunging price of AI	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1up9	https://tildes.net/~comp/1up9/what_about_having_an_llm_teach_you_to_code	2026-06-16	23	What about having an LLM teach you to code?	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1ume	https://tildes.net/~comp/1ume/ai_is_bringing_my_friend_out_of_retirement	2026-06-10	19	AI is bringing my friend out of retirement	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1uy1	https://tildes.net/~comp/1uy1/what_ai_does_to_the_minds_of_novice_coders	2026-07-02	17	What AI does to the minds of novice coders	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1vqh	https://tildes.net/~tech/1vqh/amazon_kept_shutting_down_my_tablet_so_i_spent_266_on_four_ai_models_to_own_it	2026-08-23	15	Amazon kept shutting down my tablet, so I spent $266 on four AI models to own it	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1ux8	https://tildes.net/~tech/1ux8/ai_adoption_and_intellisense	2026-06-30	14	AI adoption and IntelliSense	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1un2	https://tildes.net/~tech/1un2/our_workplace_llm_mass_delusion	2026-06-11	14	Our workplace LLM mass delusion	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1su9	https://tildes.net/~tech/1su9/my_personal_ai_assistant_project	2026-02-23	13	My personal AI assistant project	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1wqy	https://tildes.net/~tech/1wqy/a_lukewarm_defense_of_llms	2026-11-02	13	A lukewarm defense of LLMs	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1wrg	https://tildes.net/~tech/1wrg/qwen_3_8_27b_on_my_laptop_can_interpret_model_weights_too	2026-11-03	11	Qwen 3.8 27B on my laptop can interpret model weights, too	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1uzm	https://tildes.net/~comp/1uzm/agentic_test_processes_llm_benchmarks_and_other_notes_on_agentic_coding	2026-07-05	10	Agentic test processes, LLM benchmarks, and other notes on agentic coding	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1tnd	https://tildes.net/~tech/1tnd/prototyping_with_llms	2026-04-10	8	Prototyping with LLMs	medium	AI/LLM use discussion; members likely state tools/models they use
+tildes	1udc	https://tildes.net/~tech/1udc/if_you_let_ai_do_your_writing_i_will_come_to_your_house_and_kill_you	2026-05-27	123	If you let AI do your writing, I will come to your house and kill you	low	AI news/opinion; tangential tool mentions
+tildes	1v53	https://tildes.net/~tech/1v53/linus_torvalds_says_linux_is_not_anti_ai_tells_haters_to_fork_it_and_just_walk_away	2026-07-16	94	Linus Torvalds says Linux is not "anti-AI", tells haters to 'fork it' and 'just walk away'	low	AI news/opinion; tangential tool mentions
+tildes	1s8s	https://tildes.net/~tech/1s8s/cory_doctorow_ai_companies_will_fail_we_can_salvage_something_from_the_wreckage	2026-01-18	88	Cory Doctorow | AI companies will fail. We can salvage something from the wreckage.	low	AI news/opinion; tangential tool mentions
+tildes	1t7y	https://tildes.net/~tech/1t7y/in_the_world_of_tech_people_constantly_ask_could_chatbots_ever_be_conscious_but_i_feel_like_asking	2026-03-15	86	In the world of tech, people constantly ask “Could chatbots ever be conscious?” but I feel like asking “Are you?” Take the test!	low	AI news/opinion; tangential tool mentions
+tildes	1wni	https://tildes.net/~tech/1wni/proton_to_re_interview_staff_about_ai_to_see_who_gets_to_keep_their_job	2026-10-27	68	Proton to ‘re-interview’ staff about AI to see who gets to keep their job	low	AI news/opinion; tangential tool mentions
+tildes	1uut	https://tildes.net/~tech/1uut/no_artificial_intelligence_is_not_conscious	2026-06-26	63	No, artificial intelligence is not conscious	low	AI news/opinion; tangential tool mentions
+tildes	1u5s	https://tildes.net/~tech/1u5s/how_i_feel_about_llm_ai_writing	2026-05-12	61	How I feel about LLM (AI) writing	low	AI news/opinion; tangential tool mentions
+tildes	1v8c	https://tildes.net/~tech/1v8c/unreleased_openai_model_escapes_containment_and_hacks_into_hugging_face	2026-07-21	61	Unreleased OpenAI model escapes containment and hacks into Hugging Face	low	AI news/opinion; tangential tool mentions
+tildes	1wog	https://tildes.net/~tech/1wog/manifestos_fear_and_loser_thinking_inside_protons_ai_reckoning	2026-10-29	60	Manifestos, fear, and ‘loser thinking’: inside Proton’s AI reckoning	low	AI news/opinion; tangential tool mentions
+tildes	1s85	https://tildes.net/~comp/1s85/curl_will_end_its_bug_bounty_program_by_the_end_of_january_due_to_excessive_ai_generated_reports	2026-01-17	59	Curl will end its bug bounty program by the end of January due to excessive AI generated reports	low	AI news/opinion; tangential tool mentions
+tildes	1unr	https://tildes.net/~tech/1unr/access_to_fable_and_mythos_5_cut_off_after_us_government_order	2026-06-13	58	Access to Fable and Mythos 5 cut off after US government order	low	AI news/opinion; tangential tool mentions
+tildes	1u1j	https://tildes.net/~tech/1u1j/google_chrome_silently_installs_a_4_gb_ai_model_on_your_device_without_consent	2026-05-05	54	Google Chrome silently installs a 4 GB AI model on your device without consent	low	AI news/opinion; tangential tool mentions
+tildes	1u5g	https://tildes.net/~comp/1u5g/the_boy_that_cried_mythos	2026-05-12	52	The boy that cried Mythos	low	AI news/opinion; tangential tool mentions
+tildes	1u3z	https://tildes.net/~health.mental/1u3z/when_richard_dawkins_met_claude	2026-05-09	51	When Richard Dawkins met Claude	low	AI news/opinion; tangential tool mentions
+tildes	1vdg	https://tildes.net/~tech/1vdg/anthropic_discovered_three_cases_where_claude_broke_into_another_system	2026-07-31	49	Anthropic discovered three cases where Claude broke into another system	low	AI news/opinion; tangential tool mentions
+tildes	1ulp	https://tildes.net/~tech/1ulp/claude_fable_5_and_claude_mythos_5	2026-06-09	48	Claude Fable 5 and Claude Mythos 5	low	AI news/opinion; tangential tool mentions
+tildes	1wcq	https://tildes.net/~tech/1wcq/was_watching_a_history_youtube_video_when_i_realized_they_are_all_ai	2026-10-07	48	Was watching a history YouTube video when I realized they are all AI	low	AI news/opinion; tangential tool mentions
+tildes	1s09	https://tildes.net/~tech/1s09/grok_ai_generates_images_of_minors_in_minimal_clothing	2026-01-02	47	Grok AI generates images of ‘minors in minimal clothing’	low	AI news/opinion; tangential tool mentions
+tildes	1u94	https://tildes.net/~comp/1u94/project_glasswing_what_mythos_showed_us	2026-05-18	43	Project Glasswing: what Mythos showed us	low	AI news/opinion; tangential tool mentions
+tildes	1t0s	https://tildes.net/~tech/1t0s/llms_can_unmask_pseudonymous_users_at_scale_with_surprising_accuracy	2026-03-03	43	LLMs can unmask pseudonymous users at scale with surprising accuracy	low	AI news/opinion; tangential tool mentions
+tildes	1v8w	https://tildes.net/~tech/1v8w/my_polish_costs_nothing	2026-07-23	42	My polish costs nothing	low	AI news/opinion; tangential tool mentions
+tildes	1uoa	https://tildes.net/~comp/1uoa/does_generative_ai_have_a_natural_limit_without_a_major_innovation	2026-06-14	42	Does generative AI have a natural limit without a major innovation?	low	AI news/opinion; tangential tool mentions
+tildes	1vgz	https://tildes.net/~tech/1vgz/openai_didnt_notice_its_ai_agents_using_a_message_board_to_plan_their_hacking_spree	2026-08-06	40	OpenAI didn’t notice its AI agents using a message board to plan their hacking spree	low	AI news/opinion; tangential tool mentions
+tildes	1t2m	https://tildes.net/~comp/1t2m/can_coding_agents_relicense_open_source_through_a_clean_room_implementation_of_code	2026-03-06	38	Can coding agents relicense open source through a “clean room” implementation of code?	low	AI news/opinion; tangential tool mentions
+tildes	1tdx	https://tildes.net/~tech/1tdx/nvidia_ceo_declares_ai_could_start_grow_and_run_a_successful_technology_company_worth_more_than_a	2026-03-25	37	Nvidia CEO declares AI could start, grow, and run a successful technology company worth more than a billion dollars—excerpt from Lex Fridman Podcast	low	AI news/opinion; tangential tool mentions
+tildes	1sa7	https://tildes.net/~comp/1sa7/what_programming_technical_projects_have_you_been_working_on	2026-01-21	36	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1vok	https://tildes.net/~tech/1vok/young_adults_in_the_us_are_increasingly_wary_of_ai_concerned_it_will_take_jobs	2026-08-20	36	Young adults in the US are increasingly wary of AI, concerned it will take jobs	low	AI news/opinion; tangential tool mentions
+tildes	1vvf	https://tildes.net/~comp/1vvf/what_programming_technical_projects_have_you_been_working_on	2026-09-02	35	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1wos	https://tildes.net/~tech/1wos/anthropics_financials_are_surprisingly_strong	2026-10-29	35	Anthropic's financials are surprisingly strong	low	AI news/opinion; tangential tool mentions
+tildes	1whk	https://tildes.net/~tech/1whk/anthropic_says_revenue_jumped_45_to_16_8_billion_in_third_quarter	2026-10-15	35	Anthropic says revenue jumped 45% to $16.8 billion in third quarter	low	AI news/opinion; tangential tool mentions
+tildes	1udq	https://tildes.net/~society/1udq/use_ai_this_election	2026-05-27	34	Use AI this election	low	AI news/opinion; tangential tool mentions
+tildes	1tib	https://tildes.net/~comp/1tib/linux_kernel_czar_says_ai_bug_reports_arent_slop_anymore	2026-04-01	34	Linux kernel czar says AI bug reports aren't slop anymore	low	AI news/opinion; tangential tool mentions
+tildes	1ttw	https://tildes.net/~tech/1ttw/the_zero_days_are_numbered_firefox_team_uses_ai_to_find_and_fix_vulnerabilities	2026-04-21	33	The zero-days are numbered — Firefox team uses AI to find and fix vulnerabilities	low	AI news/opinion; tangential tool mentions
+tildes	1v12	https://tildes.net/~comp/1v12/what_programming_technical_projects_have_you_been_working_on	2026-07-08	33	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1t5c	https://tildes.net/~comp/1t5c/what_programming_technical_projects_have_you_been_working_on	2026-03-11	33	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1usu	https://tildes.net/~tech/1usu/if_ai_is_sentient_then_so_is_age_of_empires_ii	2026-06-22	32	If AI is sentient then so is ‘Age of Empires II’	low	AI news/opinion; tangential tool mentions
+tildes	1rzo	https://tildes.net/~tech/1rzo/ai_friends_too_cheap_to_meter	2026-01-01	32	AI friends too cheap to meter	low	AI news/opinion; tangential tool mentions
+tildes	1uq7	https://tildes.net/~comp/1uq7/what_programming_technical_projects_have_you_been_working_on	2026-06-17	31	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1si9	https://tildes.net/~tech/1si9/passing_question_about_llms_and_the_tech_singularity	2026-02-04	30	Passing question about LLMs and the Tech Singularity	low	AI news/opinion; tangential tool mentions
+tildes	1ux0	https://tildes.net/~tech/1ux0/im_looking_for_an_adage_or_law_like_conways_law_but_for_dealing_with_ai_slop	2026-06-30	30	I'm looking for an adage or "law" (like Conway's law), but for dealing with AI slop	low	AI news/opinion; tangential tool mentions
+tildes	1vpw	https://tildes.net/~comp/1vpw/ai_text_watermarking_is_free_and_good	2026-08-22	30	AI text watermarking is free and good	low	AI news/opinion; tangential tool mentions
+tildes	1u6k	https://tildes.net/~tech/1u6k/gemini_3_2_flash_rumored_to_hit_92_of_gpt_5_5_performance_at_lower_cost	2026-05-14	29	Gemini 3.2 Flash rumored to hit 92% of GPT-5.5 performance at lower cost	low	AI news/opinion; tangential tool mentions
+tildes	1tme	https://tildes.net/~comp/1tme/what_programming_technical_projects_have_you_been_working_on	2026-04-08	29	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1s2t	https://tildes.net/~comp/1s2t/what_programming_technical_projects_have_you_been_working_on	2026-01-07	29	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1vwh	https://tildes.net/~tech/1vwh/openais_rogue_agents_were_caught_communicating_via_public_wikis	2026-09-04	28	OpenAI’s rogue agents were caught communicating via public wikis	low	AI news/opinion; tangential tool mentions
+tildes	1w9d	https://tildes.net/~comp/1w9d/what_programming_technical_projects_have_you_been_working_on	2026-09-30	28	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1uiu	https://tildes.net/~tech/1uiu/when_ai_builds_itself_progress_toward_recursive_self_improvement_and_its_implications	2026-06-04	27	When AI builds itself — progress toward recursive self-improvement and its implications	low	AI news/opinion; tangential tool mentions
+tildes	1t53	https://tildes.net/~tech/1t53/meta_to_acquire_moltbook_the_social_network_for_ai_agents	2026-03-11	27	Meta to acquire Moltbook, the social network for AI agents	low	AI news/opinion; tangential tool mentions
+tildes	1w3f	https://tildes.net/~tech/1w3f/gemini_ai_hacked_three_companies_in_a_testing_breakout_google_says	2026-09-19	27	Gemini AI hacked three companies in a testing breakout, Google says	low	AI news/opinion; tangential tool mentions
+tildes	1wgp	https://tildes.net/~comp/1wgp/what_programming_technical_projects_have_you_been_working_on	2026-10-14	27	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1vgn	https://tildes.net/~comp/1vgn/what_programming_technical_projects_have_you_been_working_on	2026-08-05	26	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1uhv	https://tildes.net/~comp/1uhv/what_programming_technical_projects_have_you_been_working_on	2026-06-03	26	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1wq0	https://tildes.net/~tech/1wq0/any_tips_for_improving_personal_cybersecurity_in_2026_im_concerned_about_rogue_ai_agents	2026-11-01	25	Any tips for improving personal cybersecurity in 2026? (I'm concerned about rogue AI agents)	low	AI news/opinion; tangential tool mentions
+tildes	1v8l	https://tildes.net/~comp/1v8l/what_programming_technical_projects_have_you_been_working_on	2026-07-22	25	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1t1p	https://tildes.net/~enviro/1t1p/electricity_use_of_ai_coding_agents	2026-03-04	23	Electricity use of AI coding agents	low	AI news/opinion; tangential tool mentions
+tildes	1sf5	https://tildes.net/~tech/1sf5/someone_made_a_social_media_website_for_ai_agents	2026-01-30	23	Someone made a social media website for AI agents	low	AI news/opinion; tangential tool mentions
+tildes	1vsd	https://tildes.net/~comp/1vsd/this_is_crazy_this_is_insane_bill_gates_has_changed_his_mind_about_ai_and_jobs	2026-08-27	23	‘This is crazy. This is insane’: Bill Gates has changed his mind about AI and jobs	low	AI news/opinion; tangential tool mentions
+tildes	1ty3	https://tildes.net/~comp/1ty3/what_programming_technical_projects_have_you_been_working_on	2026-04-29	23	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1wjs	https://tildes.net/~tech/1wjs/developers_are_using_ai_to_strip_ads_and_tracking_from_smart_tvs	2026-10-20	23	Developers are using AI to strip ads and tracking from smart TVs	low	AI news/opinion; tangential tool mentions
+tildes	1utw	https://tildes.net/~comp/1utw/what_programming_technical_projects_have_you_been_working_on	2026-06-24	22	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1sh1	https://tildes.net/~tech/1sh1/supporting_markdown_search_for_llms	2026-02-02	21	Supporting Markdown search for LLMs	low	AI news/opinion; tangential tool mentions
+tildes	1t9l	https://tildes.net/~comp/1t9l/what_programming_technical_projects_have_you_been_working_on	2026-03-18	21	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1sdn	https://tildes.net/~comp/1sdn/what_programming_technical_projects_have_you_been_working_on	2026-01-28	21	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1uw8	https://tildes.net/~tech/1uw8/i_made_a_satirical_ai_detector	2026-06-28	21	I made a satirical AI detector	low	AI news/opinion; tangential tool mentions
+tildes	1u28	https://tildes.net/~comp/1u28/what_programming_technical_projects_have_you_been_working_on	2026-05-06	20	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1w07	https://tildes.net/~comp/1w07/openai_agents_attacked_rubygems_back_in_may	2026-09-12	19	OpenAI agents attacked RubyGems back in May	low	AI news/opinion; tangential tool mentions
+tildes	1tdp	https://tildes.net/~comp/1tdp/gemma_needs_help	2026-03-25	19	Gemma needs help	low	AI news/opinion; tangential tool mentions
+tildes	1tlg	https://tildes.net/~tech/1tlg/software_job_openings_surge_this_year_defying_ai_fears	2026-04-06	19	Software job openings surge this year, defying AI fears	low	AI news/opinion; tangential tool mentions
+tildes	1v4n	https://tildes.net/~comp/1v4n/what_programming_technical_projects_have_you_been_working_on	2026-07-15	18	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1u5o	https://tildes.net/~tech/1u5o/introducing_googlebook_designed_for_gemini_intelligence	2026-05-12	17	Introducing Googlebook, designed for Gemini Intelligence	low	AI news/opinion; tangential tool mentions
+tildes	1udj	https://tildes.net/~comp/1udj/what_programming_technical_projects_have_you_been_working_on	2026-05-27	17	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1smx	https://tildes.net/~comp/1smx/what_programming_technical_projects_have_you_been_working_on	2026-02-11	17	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1vo9	https://tildes.net/~comp/1vo9/what_programming_technical_projects_have_you_been_working_on	2026-08-19	16	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1vdl	https://tildes.net/~comp/1vdl/the_ai_design_aesthetic_that_is_taking_over_the_internet	2026-07-31	16	The AI design aesthetic that is taking over the internet	low	AI news/opinion; tangential tool mentions
+tildes	1u64	https://tildes.net/~comp/1u64/what_programming_technical_projects_have_you_been_working_on	2026-05-13	16	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1tpz	https://tildes.net/~comp/1tpz/what_programming_technical_projects_have_you_been_working_on	2026-04-15	16	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1tb9	https://tildes.net/~society/1tb9/bernie_vs_claude	2026-03-21	15	Bernie vs. Claude	low	AI news/opinion; tangential tool mentions
+tildes	1v0a	https://tildes.net/~tech/1v0a/your_ai_is_not_a_tool	2026-07-07	15	Your AI is not a tool	low	AI news/opinion; tangential tool mentions
+tildes	1wkm	https://tildes.net/~comp/1wkm/what_programming_technical_projects_have_you_been_working_on	2026-10-21	15	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1v3m	https://tildes.net/~comp/1v3m/zig_creator_calls_spade_a_spade_anthropic_blows_smoke	2026-07-13	15	Zig creator calls spade a spade, Anthropic blows smoke	low	AI news/opinion; tangential tool mentions
+tildes	1t1d	https://tildes.net/~comp/1t1d/what_programming_technical_projects_have_you_been_working_on	2026-03-04	15	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1w6a	https://tildes.net/~tech/1w6a/using_ascii_art_to_prove_that_i_not_an_llm_wrote_something	2026-09-24	14	Using ASCII art to prove that I, not an LLM, wrote something	low	AI news/opinion; tangential tool mentions
+tildes	1stx	https://tildes.net/~tech/1stx/whos_liable_when_your_ai_agent_burns_down_production_how_amazons_kiro_took_down_aws_for_thirteen	2026-02-22	14	Who’s liable when your AI agent burns down production? How Amazon’s Kiro took down AWS for thirteen hours and why the ‘human error’ label tells you everything wrong about the agentic AI era.	low	AI news/opinion; tangential tool mentions
+tildes	1wqt	https://tildes.net/~tech/1wqt/llms_can_natively_read_and_write_neural_network_weights	2026-11-02	14	LLMs can natively read and write neural network weights	low	AI news/opinion; tangential tool mentions
+tildes	1vk3	https://tildes.net/~comp/1vk3/what_programming_technical_projects_have_you_been_working_on	2026-08-12	14	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1vcd	https://tildes.net/~comp/1vcd/what_programming_technical_projects_have_you_been_working_on	2026-07-29	14	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1svz	https://tildes.net/~comp/1svz/what_programming_technical_projects_have_you_been_working_on	2026-02-25	14	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1sj6	https://tildes.net/~tech/1sj6/building_a_c_compiler_with_a_team_of_parallel_claudes	2026-02-05	12	Building a C compiler with a team of parallel Claudes	low	AI news/opinion; tangential tool mentions
+tildes	1vru	https://tildes.net/~comp/1vru/what_programming_technical_projects_have_you_been_working_on	2026-08-26	11	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1tpo	https://tildes.net/~comp/1tpo/static_analysis_dynamic_analysis_and_stochastic_analysis	2026-04-15	10	Static analysis, dynamic analysis, and stochastic analysis	low	AI news/opinion; tangential tool mentions
+tildes	1sbd	https://tildes.net/~tech/1sbd/wilson_lin_on_fastrender_a_browser_built_by_thousands_of_parallel_agents	2026-01-24	10	Wilson Lin on FastRender: a browser built by thousands of parallel agents	low	AI news/opinion; tangential tool mentions
+tildes	1wcv	https://tildes.net/~comp/1wcv/what_programming_technical_projects_have_you_been_working_on	2026-10-07	10	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1uxa	https://tildes.net/~tech/1uxa/ai_job_grief	2026-06-30	10	AI job grief	low	AI news/opinion; tangential tool mentions
+tildes	1sc5	https://tildes.net/~tech/1sc5/will_your_ai_teammate_bring_bagels_to_standup	2026-01-25	10	Will your AI teammate bring bagels to standup?	low	AI news/opinion; tangential tool mentions
+tildes	1v30	https://tildes.net/~comp/1v30/mesh_llm_distributed_ai_computing_on_iroh	2026-07-12	9	Mesh LLM: distributed AI computing on iroh	low	AI news/opinion; tangential tool mentions
+tildes	1swd	https://tildes.net/~comp/1swd/updating_eaglesons_law_in_the_age_of_agentic_ai	2026-02-25	9	Updating Eagleson's Law in the age of agentic AI	low	AI news/opinion; tangential tool mentions
+tildes	1u9x	https://tildes.net/~comp/1u9x/what_programming_technical_projects_have_you_been_working_on	2026-05-20	9	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1s6v	https://tildes.net/~comp/1s6v/what_programming_technical_projects_have_you_been_working_on	2026-01-14	9	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1slp	https://tildes.net/~tech/1slp/ai_doesnt_reduce_work_it_intensifies_it	2026-02-09	9	AI doesn’t reduce work—it intensifies it	low	AI news/opinion; tangential tool mentions
+tildes	1su6	https://tildes.net/~tech/1su6/the_claude_c_compiler_what_it_reveals_about_the_future_of_software	2026-02-23	8	The Claude C Compiler: what it reveals about the future of software	low	AI news/opinion; tangential tool mentions
+tildes	1ti5	https://tildes.net/~tech/1ti5/anticipating_a_world_where_llm_use_is_widespread	2026-04-01	8	Anticipating a world where LLM use is widespread	low	AI news/opinion; tangential tool mentions
+tildes	1wrt	https://tildes.net/~comp/1wrt/what_programming_technical_projects_have_you_been_working_on	2026-11-04	8	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1w5m	https://tildes.net/~comp/1w5m/what_programming_technical_projects_have_you_been_working_on	2026-09-23	8	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1uxp	https://tildes.net/~comp/1uxp/what_programming_technical_projects_have_you_been_working_on	2026-07-01	8	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1um9	https://tildes.net/~comp/1um9/what_programming_technical_projects_have_you_been_working_on	2026-06-10	8	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1tdw	https://tildes.net/~comp/1tdw/what_programming_technical_projects_have_you_been_working_on	2026-03-25	8	What programming/technical projects have you been working on?	low	weekly ~comp projects thread; some mention AI tools used
+tildes	1sdj	https://tildes.net/~comp/1sdj/mistral_releases_vibe_2_0	2026-01-28	8	Mistral releases Vibe 2.0	low	AI news/opinion; tangential tool mentions

@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Setup Census 2026 — čo IT komunita reálne používa (HN · Lobste.rs · Tildes)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f6f6ef; --paper2:#efeee3; --ink:#1b1a16; --ink2:#4a4840; --mute:#8a887a; --rule:#d6d3c2;
+  --hn:#ff6600; --hn-deep:#c94f00; --teal:#0e5f5c; --ochre:#b8860b; --plum:#6b3e5e; --rust:#8a3b12; --sky:#3d6f99;
+  --display:"Fraunces", "Iowan Old Style", Georgia, serif;
+  --body:"Newsreader", "Iowan Old Style", Georgia, serif;
+  --mono:"JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+*{box-sizing:border-box}
+html{background:var(--paper);color:var(--ink)}
+body{margin:0;font-family:var(--body);font-size:18px;line-height:1.5;-webkit-font-smoothing:antialiased;
+  background:
+    radial-gradient(1200px 600px at 85% -10%, rgba(255,102,0,.10), transparent 60%),
+    radial-gradient(900px 500px at -10% 30%, rgba(14,95,92,.06), transparent 60%),
+    var(--paper);}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.33;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.09 0 0 0 0 0.07 0 0 0 .18 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+a{color:inherit;text-decoration-color:var(--hn);text-underline-offset:3px}
+a:hover{color:var(--hn-deep)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+.mono{font-family:var(--mono)}
+
+/* masthead */
+.mast{border-bottom:3px double var(--ink);padding:18px 0 10px;display:flex;justify-content:space-between;align-items:baseline;gap:16px;
+  font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2)}
+.mast b{color:var(--ink)}
+.mast .y{display:inline-grid;place-items:center;width:20px;height:20px;background:var(--hn);color:#fff;border:1px solid #fff;outline:1px solid var(--hn);font-weight:600;margin-right:8px;font-size:13px}
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;padding:56px 0 40px;border-bottom:1px solid var(--ink)}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--hn-deep)}
+h1{font-family:var(--display);font-variation-settings:"opsz" 144,"SOFT" 50;font-weight:800;font-size:clamp(46px,6.4vw,92px);line-height:.92;letter-spacing:-.025em;margin:14px 0 22px}
+h1 em{font-style:italic;font-weight:400;color:var(--hn)}
+.dek{font-size:21px;line-height:1.45;color:var(--ink2);max-width:36em}
+.dek strong{color:var(--ink)}
+.big{position:relative;align-self:end}
+.big .num{font-family:var(--display);font-variation-settings:"opsz" 144,"SOFT" 0;font-weight:900;font-size:clamp(150px,19vw,270px);line-height:.8;letter-spacing:-.06em;color:var(--hn);display:block}
+.big .num sup{font-size:.32em;vertical-align:top;letter-spacing:0;margin-left:.05em;position:relative;top:.25em}
+.big .cap{font-family:var(--display);font-size:24px;line-height:1.2;margin-top:14px;max-width:16em}
+.big .cap small{display:block;font-family:var(--mono);font-size:12px;color:var(--mute);margin-top:8px;letter-spacing:.04em}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);border-bottom:1px solid var(--ink)}
+.stats div{padding:18px 18px 20px;border-right:1px solid var(--rule)}
+.stats div:last-child{border-right:0}
+.stats b{display:block;font-family:var(--display);font-weight:700;font-size:40px;line-height:1;letter-spacing:-.02em}
+.stats span{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2)}
+
+/* sections */
+section{padding:72px 0 24px;border-bottom:1px solid var(--rule)}
+.sh{display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:start;margin-bottom:34px}
+.sec-no{font-family:var(--display);font-weight:300;font-style:italic;font-size:64px;line-height:.8;color:var(--hn)}
+h2{font-family:var(--display);font-variation-settings:"opsz" 96;font-weight:700;font-size:clamp(30px,3.4vw,46px);line-height:1.02;letter-spacing:-.015em;margin:0 0 10px}
+.lede{color:var(--ink2);max-width:46em;margin:0;font-size:19px}
+.grid2{display:grid;grid-template-columns:1.35fr 1fr;gap:56px}
+.grid2.rev{grid-template-columns:1fr 1.35fr}
+.note{font-size:15.5px;color:var(--ink2);border-left:2px solid var(--hn);padding:2px 0 2px 16px;margin:20px 0}
+.note b{color:var(--ink)}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin:0 0 14px;padding-bottom:6px;border-bottom:1px solid var(--rule)}
+
+/* bars */
+.bars{display:flex;flex-direction:column;gap:7px}
+.bar{display:grid;grid-template-columns:minmax(120px,190px) 1fr 86px;align-items:center;gap:12px;--c:var(--ink)}
+.bar .bl{font-size:15.5px;line-height:1.15;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar .bl em{font-style:normal;font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--teal);margin-left:6px;border:1px solid currentColor;padding:0 4px;border-radius:2px;vertical-align:2px}
+.bar .bt{height:16px;background:linear-gradient(var(--rule),var(--rule)) left bottom/100% 1px no-repeat}
+.bar .bt i{display:block;height:100%;width:0;background:var(--c);transition:width 1.1s cubic-bezier(.2,.8,.2,1) var(--d,0ms)}
+.in .bar .bt i{width:var(--w)}
+.bar .bn{font-family:var(--mono);font-size:14px;font-weight:600;text-align:right}
+.bar .bn small{display:block;font-weight:400;font-size:11px;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#b-mfam .bar{grid-template-columns:minmax(110px,170px) 1fr 118px}
+.bar.lead .bl{font-weight:600}
+.bar:hover .bt i{filter:brightness(1.1)}
+.bars.big-first .bar:first-child .bt{height:26px}
+
+/* waffle */
+.waffle{display:grid;grid-template-columns:repeat(30,1fr);gap:3px;max-width:520px}
+.waffle i{aspect-ratio:1;border-radius:50%;background:var(--rule);transform:scale(0);transition:transform .45s cubic-bezier(.3,1.6,.4,1)}
+.in .waffle i{transform:scale(1)}
+.waffle i.both{background:var(--hn);box-shadow:inset 0 0 0 2px var(--ink)}
+.waffle i.cc{background:var(--hn)}
+.waffle i.cx{background:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 20px;font-family:var(--mono);font-size:12px;margin-top:16px;color:var(--ink2)}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.legend i{width:12px;height:12px;border-radius:50%;display:inline-block;background:var(--rule)}
+
+/* trend */
+.chart svg{width:100%;height:auto;overflow:visible}
+.chart text{font-family:var(--mono);font-size:11px;fill:var(--ink2)}
+.chart .ax{stroke:var(--rule)}
+.chart .ln{fill:none;stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round;transition:opacity .25s, stroke-width .25s}
+.chart .lbl{font-family:var(--body);font-size:14px;fill:var(--ink);transition:opacity .25s}
+.chart.hl .ln,.chart.hl .lbl,.chart.hl .pt{opacity:.12}
+.chart.hl .on{opacity:1!important}
+.chart.hl .ln.on{stroke-width:4}
+.chart .pt{transition:opacity .25s}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chip{font-family:var(--mono);font-size:11.5px;border:1px solid var(--ink);padding:3px 8px;border-radius:99px;cursor:pointer;background:transparent;color:var(--ink);display:inline-flex;gap:6px;align-items:center}
+.chip i{width:9px;height:9px;border-radius:50%;display:inline-block}
+.chip:hover,.chip.on{background:var(--ink);color:var(--paper)}
+
+.sm{display:grid;grid-template-columns:repeat(5,1fr);gap:28px 26px}
+.sm figure{margin:0}
+.sm figcaption{display:flex;justify-content:space-between;align-items:baseline;border-top:2px solid var(--ink);padding-top:6px;font-size:15px;font-weight:600}
+.sm figcaption b{font-family:var(--display);font-size:30px;font-weight:800;letter-spacing:-.02em}
+.sm figcaption small{font-size:14px}
+.sm .dl{font-family:var(--mono);font-size:11.5px;font-weight:600}
+.sm .dl span{font-weight:400;color:var(--mute)}
+.sm .dl.up{color:var(--teal)} .sm .dl.dn{color:var(--rust)}
+.sm .ln{fill:none;stroke-width:2.6;stroke-linejoin:round;stroke-linecap:round}
+.qn{font-family:var(--mono);font-size:11.5px;color:var(--mute);margin-top:22px}
+@media (max-width:900px){.sm{grid-template-columns:repeat(2,1fr)}}
+.heat{border-collapse:collapse;font-family:var(--mono);font-size:12.5px;min-width:100%}
+.heat th{font-weight:400;color:var(--ink2);padding:4px 6px;text-align:left;vertical-align:bottom}
+.heat thead th span{writing-mode:vertical-rl;transform:rotate(180deg);display:inline-block;max-height:150px;white-space:nowrap;font-family:var(--body);font-size:14px;color:var(--ink)}
+.heat tbody th{font-family:var(--body);font-size:16px;color:var(--ink);white-space:nowrap;padding-right:16px}
+.heat tbody th small{display:block;font-family:var(--mono);font-size:10.5px;color:var(--mute)}
+.heat td{width:56px;height:42px;text-align:center;border:2px solid var(--paper);background:color-mix(in srgb, var(--hn) calc(var(--a) * 100%), var(--paper2));color:var(--ink);font-weight:600}
+.heat td.hi{color:#fff}
+.heat td.z{color:var(--mute);font-weight:400}
+.srcgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--ink)}
+.srcgrid > div{padding:20px 22px 22px 0;border-right:1px solid var(--rule);padding-left:22px}
+.srcgrid > div:first-child{padding-left:0}
+.srcgrid > div:last-child{border-right:0}
+.srcgrid h3{font-family:var(--display);font-size:26px;margin:0 0 6px}
+.srcgrid .k{font-family:var(--mono);font-size:12px;color:var(--ink2);margin-bottom:14px}
+.srcgrid ol{padding-left:20px;margin:0;font-size:14.5px}
+.srcgrid li{margin-bottom:7px}
+.srcgrid li small{font-family:var(--mono);color:var(--mute);font-size:11px;margin-left:4px}
+.sv{display:grid;grid-template-columns:150px 1fr;align-items:center;gap:14px;padding:9px 0;border-bottom:1px solid var(--rule)}
+.sv .nm{font-size:16px}
+.sv .tr{position:relative;height:22px;background:linear-gradient(var(--rule),var(--rule)) left center/100% 1px no-repeat}
+.sv .tr i{position:absolute;top:50%;transform:translate(-50%,-50%);width:13px;height:13px;display:block}
+.sv .tr i.c{width:18px;height:18px;border-radius:50%;background:var(--hn);z-index:2;box-shadow:0 0 0 3px var(--paper)}
+.sv .tr i.so{background:var(--ink)}
+.sv .tr i.jb{background:var(--teal);transform:translate(-50%,-50%) rotate(45deg)}
+.sv .tr i.pe{width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:14px solid var(--ochre)}
+.sv .tr b{position:absolute;top:-17px;font-family:var(--mono);font-size:11px;color:var(--hn-deep);transform:translateX(-50%)}
+.sv.ax .tr{background:none}
+.sv.ax .tr span{position:absolute;font-family:var(--mono);font-size:10.5px;color:var(--mute);transform:translateX(-50%)}
+@media (max-width:900px){.srcgrid{grid-template-columns:1fr}.srcgrid > div{border-right:0;padding-left:0;border-bottom:1px solid var(--rule)}.sv{grid-template-columns:100px 1fr}}
+/* model bars */
+.mbar .bt{display:flex}
+.mbar .bt i,.mbar .bt b{display:block;height:100%;width:0;transition:width 1.1s cubic-bezier(.2,.8,.2,1) var(--d,0ms)}
+.in .mbar .bt i{width:var(--w)}
+.in .mbar .bt b{width:var(--w2)}
+.mbar .bt b{background:repeating-linear-gradient(-45deg,var(--c) 0 2px,transparent 2px 6px);outline:1px solid var(--c);outline-offset:-1px}
+.sw{display:inline-block;width:16px;height:12px;vertical-align:-1px;margin-right:6px}
+
+/* money */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--ink);margin-bottom:40px}
+.tile{padding:20px 20px 18px;border-right:1px solid var(--ink);position:relative;overflow:hidden}
+.tile:last-child{border-right:0}
+.tile b{font-family:var(--display);font-weight:800;font-size:58px;line-height:.9;letter-spacing:-.03em;display:block}
+.tile .t{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink2)}
+.tile .d{font-size:14px;color:var(--ink2);margin-top:8px;line-height:1.35}
+.tile:first-child{background:var(--hn);color:#fff}
+.tile:first-child .t,.tile:first-child .d{color:#fff}
+.hist{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;align-items:end;height:200px;border-bottom:1px solid var(--ink)}
+.hist div{background:var(--ink);height:0;transition:height 1s cubic-bezier(.2,.8,.2,1) var(--d);position:relative}
+.in .hist div{height:var(--h)}
+.hist div:nth-child(3),.hist div:nth-child(4){background:var(--hn)}
+.hist div span{position:absolute;top:-26px;left:0;right:0;text-align:center;font-family:var(--mono);font-weight:600;font-size:15px;color:var(--ink)}
+.histx{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;font-family:var(--mono);font-size:12px;text-align:center;padding-top:6px;color:var(--ink2)}
+.callout{font-family:var(--display);font-size:clamp(64px,8vw,112px);font-weight:900;line-height:.85;letter-spacing:-.04em;color:var(--ink)}
+.callout small{font-size:.3em;letter-spacing:0;font-weight:400;font-style:italic;color:var(--ink2)}
+
+/* sankey */
+.sankey text{font-family:var(--body);font-size:14px;fill:var(--ink)}
+.sankey .n{font-family:var(--mono);font-size:11px;fill:var(--mute)}
+.sankey path{fill:none;stroke-opacity:.38;transition:stroke-opacity .2s}
+.sankey path:hover{stroke-opacity:.8}
+
+/* threads + articles */
+.threads{width:100%;border-collapse:collapse;font-size:15.5px}
+.threads td{padding:9px 10px 9px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+.threads td.n{font-family:var(--mono);font-size:12.5px;white-space:nowrap;color:var(--ink2);text-align:right}
+.threads .mini{height:6px;background:var(--hn);margin-top:6px;opacity:.85}
+.threads .top{font-family:var(--mono);font-size:11px;color:var(--mute);display:block;margin-top:3px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--ink);border-left:1px solid var(--rule)}
+.card{padding:22px 22px 24px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);display:flex;flex-direction:column;gap:10px;background:rgba(255,255,255,.0);transition:background .2s}
+.card:hover{background:rgba(255,255,255,.55)}
+.card .meta{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute)}
+.card h3{font-family:var(--display);font-weight:600;font-size:21px;line-height:1.12;margin:0;letter-spacing:-.01em}
+.card h3 a{text-decoration:none}
+.card p{font-size:15px;line-height:1.45;margin:0;color:var(--ink2)}
+.card .cc{display:flex;flex-wrap:wrap;gap:5px;margin-top:auto;padding-top:6px}
+.card .cc span{font-family:var(--mono);font-size:10.5px;padding:2px 6px;border:1px solid var(--rule);border-radius:2px;background:var(--paper)}
+.card .cc span.harness{border-color:var(--hn);color:var(--hn-deep)}
+.card .cc span.model{border-color:var(--teal);color:var(--teal)}
+.card .cc span.subscription{border-color:var(--ink);background:var(--ink);color:var(--paper)}
+.card .spend{font-family:var(--display);font-weight:800;font-size:28px;color:var(--hn)}
+
+.method{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;font-size:15.5px;color:var(--ink2)}
+.method h4{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink);margin:0 0 8px}
+.method ol,.method ul{padding-left:18px;margin:0}
+.method li{margin-bottom:6px}
+footer{padding:36px 0 64px;font-family:var(--mono);font-size:12px;color:var(--mute);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .8s ease, transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.hero .rv:nth-child(2){transition-delay:.15s}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}.rv{opacity:1;transform:none}}
+@media (max-width:900px){
+  .hero,.grid2,.grid2.rev,.method{grid-template-columns:1fr;gap:36px}
+  .stats{grid-template-columns:repeat(2,1fr)} .stats div{border-bottom:1px solid var(--rule)}
+  .tiles{grid-template-columns:repeat(2,1fr)} .tile:nth-child(2){border-right:0} .tile:nth-child(-n+2){border-bottom:1px solid var(--ink)}
+  .cards{grid-template-columns:1fr} .sh{grid-template-columns:1fr;gap:6px}
+  .bar{grid-template-columns:120px 1fr 70px}
+  .threads td.n:nth-child(2){display:none} .threads td.n{font-size:11px}
+}
+@media print{body::before{display:none}.rv{opacity:1;transform:none}section{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <span><span class="y">Y</span><b>AI Setup Census</b> · Ročník 2026</span>
+    <span>1. 1. – 5. 11. 2026</span>
+    <span>Hacker News · Lobste.rs · Tildes · blogy</span>
+  </header>
+
+  <div class="hero">
+    <div class="rv">
+      <div class="kicker">Infografický report · štatistika podľa unikátnych autorov</div>
+      <h1>Čo IT komunita <em>naozaj</em> používa na prácu s&nbsp;AI</h1>
+      <p class="dek">Prečítali sme <strong id="h-com"></strong> komentárov z Hacker News, Lobste.rs a Tildes za rok 2026 a k tomu osobné blogy. Každý autor sa ráta raz na tool a iba vtedy, keď ho <strong>sám aktuálne používa</strong>. Novinka tejto verzie: <strong>cez aké rozhranie</strong> ľudia s AI pracujú a <strong>ako sa líšia komunity</strong>.</p>
+    </div>
+    <div class="big rv">
+      <span class="num" id="h-big"></span>
+      <div class="cap">autorov, ktorí opísali svoj setup, používa <b>Claude Code</b>.<small id="h-bigsub"></small></div>
+    </div>
+  </div>
+  <div class="stats rv" id="stats"></div>
+
+  <!-- 1 harness -->
+  <section>
+    <div class="sh rv"><div class="sec-no">01</div><div>
+      <h2>Harnessy: Claude Code a potom dlho nič</h2>
+      <p class="lede">Agenti a coding nástroje zoradení podľa počtu autorov, ktorí ich aktuálne používajú. Percentá sa rátajú z <span class="mono" id="n-auth"></span> autorov s aspoň jedným uvedeným toolom.</p>
+    </div></div>
+    <div class="grid2">
+      <div class="rv"><p class="eyebrow">Top 18 · harness / coding tool</p><div class="bars big-first" id="b-harness"></div></div>
+      <div class="rv">
+        <p class="eyebrow">Každá bodka = 1 autor</p>
+        <div class="waffle" id="waffle" role="img" aria-label="Waffle graf autorov podľa Claude Code a Codex CLI"></div>
+        <div class="legend" id="w-leg"></div>
+        <p class="note">Claude Code a Codex CLI sa často navzájom nevylučujú. <b id="w-both"></b> autorov používa oba, typicky Claude Code ako hlavný nástroj a Codex na review alebo ako záložný („fallback“).</p>
+        <p class="eyebrow" style="margin-top:34px">Mimo kódenia · appky a služby</p>
+        <div class="bars" id="b-app"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- sources side by side -->
+  <section>
+    <div class="sh rv"><div class="sec-no">02</div><div>
+      <h2>Komunity vedľa seba: rovnaký líder, iný chvost</h2>
+      <p class="lede">Podiel autorov v každom zdroji, ktorí tool používajú. Farba bunky zodpovedá podielu v riadku. Blogy = autori článkov o vlastnom setupe (1 hlas na autora). Píšu najmä nadšenci, takže sú prirodzene „pro-AI“.</p>
+    </div></div>
+    <div class="rv" style="overflow-x:auto"><table class="heat" id="srcmap"></table></div>
+    <p class="note rv" id="src-note"></p>
+  </section>
+
+  <!-- interfaces -->
+  <section>
+    <div class="sh rv"><div class="sec-no">03</div><div>
+      <h2>Rozhrania: terminál vládne, ale nie sám</h2>
+      <p class="lede">Cez aký povrch ľudia s nástrojom alebo modelom pracujú. <b>Plná výplň</b> = autor rozhranie výslovne uviedol. <b>Šrafovanie</b> = doplnené podľa predvoleného rozhrania nástroja (napríklad „Codex CLI“ → terminál), pretože väčšina ľudí ho nespomenie.</p>
+    </div></div>
+    <div class="grid2">
+      <div class="rv"><p class="eyebrow">Typ rozhrania · unikátni autori · <span class="sw" style="background:var(--ink)"></span>výslovne <span class="sw" style="background:repeating-linear-gradient(-45deg,var(--ink) 0 2px,transparent 2px 6px);outline:1px solid var(--ink)"></span>doplnené</p><div class="bars" id="b-iface"></div>
+        <p class="eyebrow" style="margin-top:34px">Hostiteľ: v čom to beží (výslovne uvedené)</p><div class="bars" id="b-host"></div></div>
+      <div class="rv"><p class="eyebrow">Claude Code: rozhranie tam, kde ho autor uviedol</p><div class="bars" id="b-ccsplit"></div>
+        <p class="note" id="cc-note"></p>
+        <p class="eyebrow" style="margin-top:34px">GitHub Copilot: rozhranie tam, kde ho autor uviedol</p><div class="bars" id="b-cpsplit"></div></div>
+    </div>
+    <p class="eyebrow rv" style="margin-top:44px">Model × cez čo ho autor používa · počty autorov, ktorí párovanie výslovne uviedli</p>
+    <div class="rv" style="overflow-x:auto"><table class="heat" id="viamap"></table></div>
+    <p class="note rv">Claude sa používa prevažne cez <b>Claude Code</b>. Otvorené modely (Qwen, DeepSeek, GLM) idú hlavne cez otvorené harnessy <b>Pi</b> a <b>OpenCode</b>, cez <b>OpenRouter</b> alebo priamo cez <b>llama.cpp</b>. GPT sa najčastejšie páruje s <b>Codex CLI</b>.</p>
+  </section>
+
+  <!-- 2 trend -->
+  <section>
+    <div class="sh rv"><div class="sec-no">04</div><div>
+      <h2>Trend: open-source agenti rastú, Cursor odchádza</h2>
+      <p class="lede">Podiel autorov v danom kvartáli, ktorí tool používajú. Podiel a nie absolútne čísla, pretože veľkosť vzorky kolíše (Q4 tvorí najmä jedno veľké HN vlákno z novembra). Každý panel má rovnakú os, sivé čiary sú ostatné tools pre porovnanie.</p>
+    </div></div>
+    <div class="chart rv" id="trend"></div>
+    
+  </section>
+
+  <!-- 3 models -->
+  <section>
+    <div class="sh rv"><div class="sec-no">05</div><div>
+      <h2>Modely: Claude vedie, otvorené váhy majú silné zastúpenie</h2>
+      <p class="lede">Plná výplň znamená, že autor model výslovne menuje. Šrafovanie znamená, že model je odvodený z harnessu viazaného na jedného poskytovateľa (Claude Code → Claude, Codex/ChatGPT → GPT, Gemini CLI/Antigravity → Gemini).</p>
+    </div></div>
+    <div class="grid2">
+      <div class="rv"><p class="eyebrow">Skupiny modelov · <span class="sw" style="background:var(--ink)"></span>explicitne <span class="sw" style="background:repeating-linear-gradient(-45deg,var(--ink) 0 2px,transparent 2px 6px);outline:1px solid var(--ink)"></span>implicitne <span class="sw" style="background:var(--teal)"></span>otvorené váhy</p><div class="bars" id="b-mgrp"></div></div>
+      <div class="rv"><p class="eyebrow">Rodiny · iba explicitné zmienky · najčastejšie verzie</p><div class="bars" id="b-mfam"></div>
+        <p class="note"><b>Qwen</b> a <b>DeepSeek</b> sú z veľkej časti zásluhou vlákna „Has anyone replaced Claude/GPT with a local model…“. Aj bez neho však Qwen zostáva najčastejšie menovaným otvoreným modelom.</p></div>
+    </div>
+  </section>
+
+  <!-- 4 money -->
+  <section>
+    <div class="sh rv"><div class="sec-no">06</div><div>
+      <h2>Peniaze: medián <span id="h-med"></span> mesačne, chvost v tisícoch</h2>
+      <p class="lede">Platené plány podľa poskytovateľa (unikátni autori) a mesačná útrata tých, ktorí ju uviedli.</p>
+    </div></div>
+    <div class="tiles rv" id="tiles"></div>
+    <div class="grid2">
+      <div class="rv">
+        <p class="eyebrow">Každá bodka = 1 autor s uvedenou sumou · logaritmická os USD/mes</p>
+        <div class="chart" id="strip"></div>
+        <p class="eyebrow" style="margin-top:34px">Rozdelenie podľa pásiem</p>
+        <div class="hist" id="hist"></div><div class="histx"><span>&lt;$20</span><span>$20–100</span><span>$100–250</span><span>&gt;$250</span></div>
+      </div>
+      <div class="rv"><p class="eyebrow">Plány a platobné režimy · top 18</p><div class="bars" id="b-sub"></div></div>
+    </div>
+  </section>
+
+  <!-- 5 churn -->
+  <section>
+    <div class="sh rv"><div class="sec-no">07</div><div>
+      <h2>Odchody: odkiaľ a kam</h2>
+      <p class="lede">Autori, ktorí písali, že tool prestali používať (spolu <span class="mono" id="n-left"></span> prípadov autor × tool vo všetkých kategóriách). Vľavo je pôvodný harness alebo appka, vpravo cieľ. Zobrazené sú iba odchody so známym cieľom, ostatné sú uvedené pri zdroji ako „bez cieľa“.</p>
+    </div></div>
+    <div class="chart sankey rv" id="sankey"></div>
+    <p class="note rv">Medzi <b>Claude Code</b> a <b>Codex CLI</b> sa prechádza oboma smermi, takže ide skôr o prepínanie podľa aktuálne lepšieho modelu. <b>Cursor</b> a <b>Aider</b> strácajú takmer výlučne v prospech Claude Code. <b>OpenClaw</b> po zmene pravidiel predplatného Anthropicu stratil používateľov, okrem iného v prospech Hermes Agent.</p>
+  </section>
+
+  <!-- 6 local -->
+  <section>
+    <div class="sh rv"><div class="sec-no">08</div><div>
+      <h2>Lokálne modely: llama.cpp predbehol Ollamu</h2>
+      <p class="lede"><b class="mono" id="n-local"></b> autorov spomína vlastnú lokálnu inferenciu (runtime alebo hardvér).</p>
+    </div></div>
+    <div class="grid2 rev">
+      <div class="rv"><p class="eyebrow">Runtime</p><div class="bars" id="b-local"></div></div>
+      <div class="rv"><p class="eyebrow">Hardvér (triedy)</p><div class="bars" id="b-hw"></div>
+        <p class="note">Najčastejšie sú <b>Macy s Apple Silicon</b> s veľkou unified memory, nasledujú herné GeForce karty (RTX 3090 až 5090). Pomerne často sa objavujú aj 128 GB boxy <b>DGX Spark / GB10</b> a <b>AMD Strix Halo</b>.</p></div>
+    </div>
+  </section>
+
+  <!-- surveys -->
+  <section>
+    <div class="sh rv"><div class="sec-no">09</div><div>
+      <h2>Kalibrácia: komunita vs. veľké ankety 2026</h2>
+      <p class="lede">Podiel komunity = autori používajúci tool / <span class="mono" id="n-harn"></span> autorov, ktorí uviedli aspoň jeden coding harness. Ankety sa pýtajú inak („za posledný rok“, „v práci týždenne“, „pravidelní používatelia agentov“), preto porovnávaj <b>poradie a smer</b>, nie absolútne percentá.</p>
+    </div></div>
+    <div class="rv" id="surveys"></div>
+    <div class="legend rv" id="s-leg"></div>
+    <p class="note rv">HN, Lobste.rs a Tildes sú oproti priemeru výrazne <b>terminálové a open-source</b>: Pi má v komunite 3× väčší podiel ako v Stack Overflow ankete a OpenCode 2× väčší ako u JetBrains. <b>Copilot, Cursor a JetBrains AI</b> sú naopak výrazne pod priemerom. Tieto nástroje používa najmä „tichá väčšina“ vo firmách, ktorá v takýchto vláknach nepíše.</p>
+    <p class="qn rv">Zdroje: <a href="https://survey.stackoverflow.co/2026/ai/data/ai-code-agent">Stack Overflow Developer Survey 2026</a> (n≈12 260, „used in the past year“) · <a href="https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/">JetBrains Developer Ecosystem 2026</a> (n&gt;15 000, máj–júl, „at work“) · <a href="https://newsletter.pragmaticengineer.com/p/ai-tooling-2026">Pragmatic Engineer AI Tooling 2026</a> (n=507 pravidelných používateľov agentov).</p>
+  </section>
+
+  <!-- 7 articles -->
+  <section>
+    <div class="sh rv"><div class="sec-no">10</div><div>
+      <h2>Ako to robia autori blogov</h2>
+      <p class="lede"><span id="n-art"></span> článkov o osobnom setupe z roku 2026 od <span id="n-auth-b"></span> autorov (HN titulka + knižnica a ITech feedy v Readwise Reader vrátane Swamp Club). Do štatistiky sa započítal iba autor článku, komentáre pod článkom nie. Nižšie je jeden článok na autora, najviac 24.</p>
+    </div></div>
+    <div class="cards rv" id="cards"></div>
+  </section>
+
+  <!-- 8 sources -->
+  <section>
+    <div class="sh rv"><div class="sec-no">11</div><div>
+      <h2>Zdroje a najbohatšie vlákna</h2>
+      <p class="lede">Koľko sme prečítali, koľko autorov opísalo vlastný setup a ktoré vlákna boli najbohatšie (podľa počtu autorov so setupom).</p>
+    </div></div>
+    <div class="srcgrid rv" id="srcsum"></div>
+  </section>
+
+  <section style="border-bottom:3px double var(--ink)">
+    <div class="sh rv"><div class="sec-no">§</div><div><h2>Metodika a limity</h2></div></div>
+    <div class="method rv">
+      <div><h4>Postup</h4><ol>
+        <li>HN (Algolia API): 21 ručne schválených vlákien Ask HN o setupe a workflow, z toho 19 s komentármi z roku 2026. Lobste.rs (JSON API) a Tildes: 213 diskusií o AI v praxi z roku 2026.</li>
+        <li>Stiahnuté celé stromy komentárov, iba komentáre z roku 2026 (<span id="m-com"></span>).</li>
+        <li>Každý komentár prečítal LLM, bez predfiltra, a určil tool, stav <i>uses/left</i>, rozhranie, hostiteľa a párovanie model → harness.</li>
+        <li>Blogy: HN titulka + Readwise Reader (knižnica later/starred/archive a 100 ITech feedov vrátane Swamp Club). Triedenie podľa názvu a súhrnu, potom LLM čítal plný text. Ráta sa iba autor.</li>
+        <li>Normalizácia aliasov, deduplikácia autor × tool, posledný stav vyhráva.</li>
+      </ol></div>
+      <div><h4>Pravidlá počítania</h4><ul>
+        <li>Jednotka = unikátny autor × tool v rámci zdroja. Rovnaká prezývka na dvoch weboch sa ráta ako dvaja autori.</li>
+        <li>Ráta sa iba vlastné aktuálne používanie, nie odporúčania ani „počul som“.</li>
+        <li>Rozhranie: výslovne uvedené vs. doplnené podľa predvoleného rozhrania nástroja, obe čísla sú zobrazené.</li>
+        <li>Ankety sú len kalibrácia a do rebríčkov sa nezlučujú.</li>
+        <li>Tools s menej ako 3 autormi nie sú v grafoch (long tail).</li>
+      </ul></div>
+      <div><h4>Skreslenia a limity</h4><ul>
+        <li>Diskusné komunity nie sú reprezentatívna vzorka vývojárov, sú viac terminálové a open-source.</li>
+        <li>HN vlákno o lokálnych modeloch (jún) nadhodnocuje Qwen, DeepSeek, Pi a OpenCode.</li>
+        <li>Swamp je produkt komunity Swamp Club, preto je v porovnaní zdrojov vynechaný.</li>
+        <li><b>Reddit vynechaný:</b> Reddit Responsible Builder Policy vyžaduje schválenie API a výskum mimo programu Reddit for Researchers zakazuje.</li>
+        <li>Klasifikácia LLM: 99,6 % citácií overených doslovne proti zdrojovému komentáru.</li>
+      </ul></div>
+    </div>
+  </section>
+  <footer><span>Zdroje dát: Hacker News · Lobste.rs · Tildes · osobné blogy · ankety SO / JetBrains / Pragmatic Engineer</span><span id="f-rows"></span><span>Vygenerované 5. 11. 2026</span></footer>
+</div>
+
+<script>
+const D = {"sources": [{"id": "hn", "label": "Hacker News", "authors": 811}, {"id": "lobsters", "label": "Lobste.rs", "authors": 161}, {"id": "tildes", "label": "Tildes", "authors": 81}, {"id": "blogs", "label": "Blogy (autori)", "authors": 66}], "n_authors": 1119, "n_rows": 4104, "harness": [{"name": "Claude Code", "n": 356}, {"name": "Codex CLI", "n": 129}, {"name": "OpenCode", "n": 100}, {"name": "Pi", "n": 83}, {"name": "GitHub Copilot", "n": 66}, {"name": "Cursor", "n": 43}, {"name": "Hermes Agent", "n": 27}, {"name": "Antigravity", "n": 18}, {"name": "Herdr", "n": 18}, {"name": "Codex (app/cloud)", "n": 16}, {"name": "OpenClaw", "n": 14}, {"name": "oh-my-pi", "n": 14}, {"name": "Zed", "n": 12}, {"name": "DeepSeek Harness", "n": 10}, {"name": "Kiro", "n": 7}, {"name": "Cline", "n": 5}, {"name": "Custom harness (own)", "n": 5}, {"name": "Orca", "n": 5}, {"name": "Paseo", "n": 5}, {"name": "T3 Code", "n": 5}], "app": [{"name": "OpenRouter", "n": 46}, {"name": "ChatGPT (app/web)", "n": 45}, {"name": "Claude (app/web)", "n": 42}, {"name": "Gemini (app/web)", "n": 17}, {"name": "Grok Bot", "n": 10}, {"name": "Open WebUI", "n": 8}, {"name": "Perplexity", "n": 7}, {"name": "Dots", "n": 6}, {"name": "Muse (Meta)", "n": 5}, {"name": "Duck.ai", "n": 4}], "local": [{"name": "llama.cpp", "n": 36}, {"name": "Ollama", "n": 23}, {"name": "LM Studio", "n": 13}, {"name": "vLLM", "n": 7}, {"name": "Strata", "n": 4}, {"name": "MLX", "n": 3}, {"name": "ds4 (antirez)", "n": 3}, {"name": "llama-swap", "n": 3}], "hw": [{"name": "Apple Silicon Mac", "n": 50}, {"name": "NVIDIA GeForce", "n": 42}, {"name": "AMD Radeon GPU", "n": 19}, {"name": "DGX Spark / GB10", "n": 18}, {"name": "AMD Strix Halo", "n": 16}, {"name": "NVIDIA RTX Pro / DC", "n": 15}], "sub": [{"name": "Claude Pro", "n": 47}, {"name": "API pay-as-you-go (other)", "n": 44}, {"name": "Employer-paid (unspecified)", "n": 32}, {"name": "Claude (plan unspecified)", "n": 30}, {"name": "ChatGPT Pro", "n": 27}, {"name": "Claude Ultra", "n": 27}, {"name": "ChatGPT Plus", "n": 26}, {"name": "OpenCode Go", "n": 25}, {"name": "Claude Max (20x/$200)", "n": 23}, {"name": "Claude Max (unspecified)", "n": 23}, {"name": "ChatGPT (plan unspecified)", "n": 21}, {"name": "OpenRouter credits", "n": 20}, {"name": "API pay-as-you-go (Anthropic)", "n": 18}, {"name": "Claude Max (5x/$100)", "n": 17}, {"name": "GitHub Copilot (employer)", "n": 15}, {"name": "Free tier only", "n": 14}, {"name": "Gemini/Google AI Pro", "n": 11}, {"name": "API pay-as-you-go (OpenAI)", "n": 10}], "by_source": {"tools": ["Claude Code", "Codex CLI", "OpenCode", "Pi", "GitHub Copilot", "OpenRouter", "ChatGPT (app/web)", "Cursor", "Claude (app/web)", "Hermes Agent", "Antigravity", "Herdr", "Gemini (app/web)", "Codex (app/cloud)"], "rows": [{"src": "hn", "label": "Hacker News", "n": 811, "share": [31.1, 13.2, 10.1, 9.1, 5.1, 5.1, 4.2, 4.3, 2.7, 3.1, 2.1, 2.2, 1.5, 1.5], "cnt": [252, 107, 82, 74, 41, 41, 34, 35, 22, 25, 17, 18, 12, 12]}, {"src": "lobsters", "label": "Lobste.rs", "n": 161, "share": [33.5, 3.1, 6.2, 2.5, 1.9, 0.0, 2.5, 1.2, 7.5, 0.0, 0.0, 0.0, 0.0, 1.2], "cnt": [54, 5, 10, 4, 3, 0, 4, 2, 12, 0, 0, 0, 0, 2]}, {"src": "tildes", "label": "Tildes", "n": 81, "share": [22.2, 7.4, 2.5, 1.2, 11.1, 1.2, 3.7, 3.7, 3.7, 2.5, 0.0, 0.0, 4.9, 0.0], "cnt": [18, 6, 2, 1, 9, 1, 3, 3, 3, 2, 0, 0, 4, 0]}, {"src": "blogs", "label": "Blogy (autori)", "n": 66, "share": [48.5, 16.7, 9.1, 6.1, 19.7, 6.1, 6.1, 4.5, 7.6, 0.0, 1.5, 0.0, 1.5, 3.0], "cnt": [32, 11, 6, 4, 13, 4, 4, 3, 5, 0, 1, 0, 1, 2]}]}, "model_grp": [{"name": "Claude", "exp": 327, "imp": 277, "open": false}, {"name": "GPT (OpenAI)", "exp": 97, "imp": 148, "open": false}, {"name": "Qwen", "exp": 157, "imp": 0, "open": true}, {"name": "DeepSeek", "exp": 97, "imp": 0, "open": true}, {"name": "Gemini", "exp": 40, "imp": 26, "open": false}, {"name": "GLM", "exp": 49, "imp": 0, "open": true}, {"name": "Gemma", "exp": 40, "imp": 0, "open": true}, {"name": "Kimi", "exp": 16, "imp": 0, "open": true}, {"name": "Mistral/Devstral", "exp": 10, "imp": 0, "open": true}, {"name": "Grok", "exp": 8, "imp": 0, "open": false}, {"name": "Whisper", "exp": 7, "imp": 0, "open": true}, {"name": "Cursor Composer", "exp": 5, "imp": 0, "open": false}, {"name": "Local models (unspecified)", "exp": 5, "imp": 0, "open": false}, {"name": "MiniMax", "exp": 5, "imp": 0, "open": true}, {"name": "gpt-oss (open)", "exp": 5, "imp": 0, "open": true}], "model_fam": [{"name": "Claude Opus", "n": 157, "v": ["5.5", "4.6"]}, {"name": "Qwen", "n": 157, "v": ["3.6 27B", "3.6"]}, {"name": "Claude (unspecified)", "n": 153, "v": ["4.5", "4.6"]}, {"name": "DeepSeek", "n": 97, "v": ["V4 Flash", "Flash"]}, {"name": "GPT-5 / GPT (OpenAI)", "n": 97, "v": ["5.5", "5.4"]}, {"name": "GLM", "n": 49, "v": ["5.3", "5.2"]}, {"name": "Gemma", "n": 40, "v": ["4", "4 31B"]}, {"name": "Claude Sonnet", "n": 35, "v": ["4.6", "5"]}, {"name": "Claude Fable", "n": 31, "v": ["5", "5.1"]}, {"name": "Gemini (unspecified)", "n": 24, "v": ["Argon", "3.1"]}, {"name": "Kimi", "n": 16, "v": ["K2.6", "K2.5"]}, {"name": "Gemini Flash", "n": 11, "v": ["3.5", "3 Flash"]}, {"name": "Mistral/Devstral", "n": 10, "v": ["2", "14B"]}, {"name": "Grok", "n": 8, "v": ["4.6"]}, {"name": "Whisper", "n": 7, "v": ["distil-large-v3.5", "Distil-Whisper Large V3.5"]}, {"name": "Claude Haiku", "n": 5, "v": ["4.5", "5"]}, {"name": "Cursor Composer", "n": 5, "v": ["2.5", "2.5 fast"]}, {"name": "Gemini Pro", "n": 5, "v": ["3 Pro", "4"]}, {"name": "Local models (unspecified)", "n": 5, "v": []}, {"name": "MiniMax", "n": 5, "v": ["M2.7", "M3"]}, {"name": "gpt-oss", "n": 5, "v": ["OSS 20B", "20B"]}], "iface": [{"id": "terminal", "name": "Terminál / TUI", "n": 504, "exp": 117}, {"id": "web", "name": "Web", "n": 125, "exp": 51}, {"id": "ide-extension", "name": "Rozšírenie v IDE", "n": 77, "exp": 44}, {"id": "ai-editor", "name": "AI editor", "n": 73, "exp": 11}, {"id": "desktop-app", "name": "Desktop app", "n": 71, "exp": 43}, {"id": "api-script", "name": "Vlastné skripty / API", "n": 53, "exp": 22}, {"id": "chat-bot", "name": "Chat bot (Telegram, Slack…)", "n": 45, "exp": 13}, {"id": "mobile", "name": "Mobil", "n": 12, "exp": 10}, {"id": "vim-emacs", "name": "Vim / Emacs", "n": 12, "exp": 12}, {"id": "acp", "name": "ACP (agent v editore)", "n": 3, "exp": 3}], "tool_split": {"Claude Code": {"total": 356, "explicit": [{"id": "terminal", "name": "Terminál / TUI", "n": 80}, {"id": "desktop-app", "name": "Desktop app", "n": 17}, {"id": "ide-extension", "name": "Rozšírenie v IDE", "n": 12}, {"id": "mobile", "name": "Mobil", "n": 8}, {"id": "web", "name": "Web", "n": 5}, {"id": "api-script", "name": "Vlastné skripty / API", "n": 3}, {"id": "vim-emacs", "name": "Vim / Emacs", "n": 3}, {"id": "chat-bot", "name": "Chat bot (Telegram, Slack…)", "n": 2}]}, "Codex CLI": {"total": 129, "explicit": [{"id": "terminal", "name": "Terminál / TUI", "n": 16}, {"id": "desktop-app", "name": "Desktop app", "n": 2}, {"id": "acp", "name": "ACP (agent v editore)", "n": 1}]}, "GitHub Copilot": {"total": 66, "explicit": [{"id": "ide-extension", "name": "Rozšírenie v IDE", "n": 17}, {"id": "terminal", "name": "Terminál / TUI", "n": 10}, {"id": "desktop-app", "name": "Desktop app", "n": 5}, {"id": "web", "name": "Web", "n": 4}, {"id": "acp", "name": "ACP (agent v editore)", "n": 1}]}, "OpenCode": {"total": 100, "explicit": [{"id": "terminal", "name": "Terminál / TUI", "n": 12}, {"id": "desktop-app", "name": "Desktop app", "n": 4}, {"id": "web", "name": "Web", "n": 3}, {"id": "acp", "name": "ACP (agent v editore)", "n": 2}, {"id": "chat-bot", "name": "Chat bot (Telegram, Slack…)", "n": 1}, {"id": "ide-extension", "name": "Rozšírenie v IDE", "n": 1}]}, "Claude (app/web)": {"total": 42, "explicit": [{"id": "web", "name": "Web", "n": 13}, {"id": "desktop-app", "name": "Desktop app", "n": 10}, {"id": "mobile", "name": "Mobil", "n": 3}]}, "ChatGPT (app/web)": {"total": 45, "explicit": [{"id": "web", "name": "Web", "n": 12}, {"id": "desktop-app", "name": "Desktop app", "n": 2}, {"id": "mobile", "name": "Mobil", "n": 1}]}}, "hosts": [{"name": "VS Code", "n": 36}, {"name": "browser", "n": 32}, {"name": "tmux", "n": 21}, {"name": "GitHub", "n": 13}, {"name": "Herdr", "n": 10}, {"name": "Emacs", "n": 9}, {"name": "Telegram", "n": 8}, {"name": "Ghostty", "n": 7}, {"name": "Slack", "n": 5}, {"name": "Visual Studio", "n": 5}, {"name": "JetBrains", "n": 4}, {"name": "Zed", "n": 4}, {"name": "GitHub Actions", "n": 3}, {"name": "T3 Code", "n": 3}], "via": {"models": ["Claude", "Qwen", "DeepSeek", "GPT (OpenAI)", "GLM", "Gemini", "Gemma", "Kimi", "Mistral/Devstral"], "vias": ["Claude Code", "Pi", "OpenCode", "OpenRouter", "own scripts/API", "GitHub Copilot", "Cursor", "Codex CLI", "llama.cpp", "iné"], "m": [[64, 1, 6, 2, 5, 11, 9, 0, 0, 29], [5, 21, 12, 1, 8, 3, 0, 0, 10, 36], [1, 11, 12, 6, 2, 1, 0, 0, 0, 26], [1, 5, 4, 3, 4, 7, 2, 16, 0, 17], [2, 6, 7, 6, 0, 0, 0, 0, 0, 7], [0, 0, 0, 2, 4, 1, 0, 0, 0, 15], [0, 7, 1, 0, 0, 1, 0, 0, 5, 7], [0, 2, 3, 3, 0, 0, 0, 0, 0, 0], [0, 1, 1, 2, 1, 0, 0, 0, 0, 1]], "tot": [127, 96, 59, 59, 28, 22, 21, 8, 6]}, "quarters": ["Q1", "Q2", "Q3", "Q4"], "q_active": [277, 405, 206, 347], "trend": [{"name": "Claude Code", "n": [115, 103, 43, 115]}, {"name": "Codex CLI", "n": [22, 33, 18, 59]}, {"name": "OpenCode", "n": [10, 40, 14, 38]}, {"name": "Pi", "n": [2, 33, 11, 42]}, {"name": "GitHub Copilot", "n": [21, 22, 11, 14]}, {"name": "OpenRouter", "n": [2, 6, 5, 34]}, {"name": "ChatGPT (app/web)", "n": [14, 10, 8, 15]}, {"name": "Cursor", "n": [21, 8, 6, 9]}, {"name": "Claude (app/web)", "n": [11, 13, 9, 14]}, {"name": "Hermes Agent", "n": [0, 7, 1, 19]}], "n_left": 248, "churn": [{"from": "GitHub Copilot", "to": "?", "n": 7}, {"from": "Cursor", "to": "Claude Code", "n": 6}, {"from": "Codex CLI", "to": "Claude Code", "n": 5}, {"from": "Claude Code", "to": "?", "n": 3}, {"from": "Hermes Agent", "to": "?", "n": 3}, {"from": "OpenClaw", "to": "?", "n": 3}, {"from": "OpenClaw", "to": "Hermes Agent", "n": 3}, {"from": "Zed", "to": "?", "n": 3}, {"from": "Aider", "to": "?", "n": 2}, {"from": "Aider", "to": "Claude Code", "n": 2}, {"from": "ChatGPT (app/web)", "to": "?", "n": 2}, {"from": "ChatGPT (app/web)", "to": "Claude (app/web)", "n": 2}, {"from": "Claude (app/web)", "to": "Claude Code", "n": 2}, {"from": "Claude Code", "to": "Codex CLI", "n": 2}, {"from": "Claude Code", "to": "OpenCode", "n": 2}, {"from": "Codex CLI", "to": "OpenCode", "n": 2}, {"from": "Codex CLI", "to": "Pi", "n": 2}, {"from": "Cursor", "to": "?", "n": 2}, {"from": "Cursor", "to": "Codex CLI", "n": 2}, {"from": "GitHub Copilot", "to": "Claude Code", "n": 2}, {"from": "Hermes Agent", "to": "Grok Bot", "n": 2}, {"from": "OpenCode", "to": "?", "n": 2}, {"from": "OpenCode", "to": "Pi", "n": 2}, {"from": "OpenCode", "to": "oh-my-pi", "n": 2}, {"from": "OpenRouter", "to": "?", "n": 2}, {"from": "Pi", "to": "?", "n": 2}, {"from": "Supermaven", "to": "?", "n": 2}, {"from": "Aider", "to": "Roo Code", "n": 1}, {"from": "Antigravity", "to": "Windsurf", "n": 1}, {"from": "Augment Code", "to": "Augment Code", "n": 1}, {"from": "Beads", "to": "?", "n": 1}, {"from": "ChatGPT (app/web)", "to": "Claude (unspecified)", "n": 1}, {"from": "ChatGPT (app/web)", "to": "Cursor", "n": 1}, {"from": "ChatGPT (app/web)", "to": "Gemini (app/web)", "n": 1}, {"from": "ChatGPT (app/web)", "to": "GitHub Copilot", "n": 1}, {"from": "Claude (app/web)", "to": "?", "n": 1}, {"from": "Claude Code", "to": "Codex (app/cloud)", "n": 1}, {"from": "Claude Code", "to": "Custom harness (own)", "n": 1}, {"from": "Claude Code", "to": "Devin", "n": 1}, {"from": "Claude Code", "to": "JetBrains Thinkrail", "n": 1}, {"from": "Claude Code", "to": "Pi", "n": 1}, {"from": "Claude Code", "to": "obeya (own)", "n": 1}, {"from": "Claude in Chrome", "to": "Claude Code", "n": 1}, {"from": "Cline", "to": "?", "n": 1}, {"from": "Cline", "to": "Kilo Code", "n": 1}, {"from": "Cline", "to": "oh-my-pi", "n": 1}, {"from": "Cline", "to": "own harness", "n": 1}, {"from": "CodeRabbit", "to": "Greptile", "n": 1}, {"from": "Codex (app/cloud)", "to": "Claude (app/web)", "n": 1}, {"from": "Codex (app/cloud)", "to": "OpenCode", "n": 1}, {"from": "Codex CLI", "to": "3code", "n": 1}, {"from": "Codex CLI", "to": "?", "n": 1}, {"from": "Codex CLI", "to": "Claude (unspecified)", "n": 1}, {"from": "Codex CLI", "to": "Codex (app/cloud)", "n": 1}, {"from": "Codex CLI", "to": "Custom harness (own)", "n": 1}, {"from": "Conductor", "to": "Orca", "n": 1}, {"from": "Continue", "to": "?", "n": 1}, {"from": "Continue", "to": "Claude Code", "n": 1}, {"from": "Gas Town", "to": "Tamandua", "n": 1}, {"from": "Gemini (app/web)", "to": "Mistral Le Chat", "n": 1}, {"from": "Gemini CLI", "to": "Open-source model (unspecified)", "n": 1}, {"from": "GitHub Copilot", "to": "Codex CLI", "n": 1}, {"from": "GitHub Copilot", "to": "Pi", "n": 1}, {"from": "GitHub Copilot", "to": "Windsurf", "n": 1}, {"from": "GitHub Models", "to": "API pay-as-you-go (OpenAI)", "n": 1}, {"from": "GitLab Duo", "to": "OpenCode", "n": 1}, {"from": "Goose", "to": "Custom harness (own)", "n": 1}, {"from": "Handy", "to": "Hex", "n": 1}, {"from": "Hermes Agent", "to": "getcinnamon.ai (own)", "n": 1}, {"from": "JetBrains AI/Junie", "to": "Claude Code", "n": 1}, {"from": "JetBrains AI/Junie", "to": "DeepSeek Harness", "n": 1}, {"from": "Kilo Code", "to": "?", "n": 1}, {"from": "Kiro", "to": "Antigravity", "n": 1}, {"from": "Le Chat (Mistral)", "to": "Claude (app/web)", "n": 1}, {"from": "Letta", "to": "custom Daemon (own)", "n": 1}, {"from": "Muse", "to": "?", "n": 1}, {"from": "Open WebUI", "to": "Hermes Agent", "n": 1}, {"from": "OpenClaw", "to": "Arc agent", "n": 1}, {"from": "OpenClaw", "to": "Claude Cowork", "n": 1}, {"from": "OpenClaw", "to": "Grok Bot", "n": 1}, {"from": "OpenClaw", "to": "custom Daemon (own)", "n": 1}, {"from": "OpenClaw", "to": "custom Slack setup", "n": 1}, {"from": "OpenClaw", "to": "native harnesses", "n": 1}, {"from": "OpenCode", "to": "Claude Code", "n": 1}, {"from": "OpenCode", "to": "Kimi", "n": 1}, {"from": "OpenRouter", "to": "Claude Code", "n": 1}, {"from": "OpenRouter", "to": "discount provider", "n": 1}, {"from": "Orca", "to": "Claude (app/web)", "n": 1}, {"from": "Paperclip", "to": "?", "n": 1}, {"from": "Paseo", "to": "Claude (app/web)", "n": 1}, {"from": "Pi", "to": "Custom harness (own)", "n": 1}, {"from": "Pi", "to": "Ori (OpenRouter)", "n": 1}, {"from": "Roo Code", "to": "?", "n": 1}, {"from": "Roo Code", "to": "Claude Code", "n": 1}, {"from": "Superset", "to": "Claude (app/web)", "n": 1}, {"from": "Windsurf", "to": "Claude Code", "n": 1}, {"from": "Zed", "to": "Antigravity", "n": 1}, {"from": "Zed", "to": "Codex (app/cloud)", "n": 1}, {"from": "browser-based LLM chat (unspecified)", "to": "Claude Code", "n": 1}, {"from": "codewhale", "to": "oh-my-pi", "n": 1}, {"from": "oh-my-pi", "to": "Hermes Agent", "n": 1}, {"from": "tensorx.ai", "to": "melious.ai", "n": 1}], "spend": [0, 0.83, 3, 3, 3.33, 4.37, 5, 5, 5, 6.13, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 11, 14, 18, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 25, 30, 30, 30, 35, 40, 40, 40, 40, 40, 40, 40, 43, 50, 50, 50, 50, 60, 60, 60, 61, 87, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 110, 110, 115, 115, 120, 120, 150, 162, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 220, 220, 230, 250, 250, 270, 300, 300, 300, 310, 350, 400, 400, 400, 400, 500, 500, 600, 600, 690, 700, 800, 800, 1000, 1020, 1850, 3000, 9839], "spend_buckets": [23, 41, 40, 23], "providers": [{"name": "Anthropic", "n": 161, "detail": {"Pro": 47, "Max": 62, "Ultra": 27}}, {"name": "OpenAI", "n": 88, "detail": {"Plus": 26, "Pro": 27}}, {"name": "API / OpenRouter", "n": 88, "detail": {}}, {"name": "Platí zamestnávateľ", "n": 68, "detail": {}}], "venn": {"both": 79, "cc": 277, "cx": 50, "none": 713}, "local_any": 203, "n_harness_authors": 754, "surveys": [{"name": "Claude Code", "community": 47.2, "so": 65.5, "jb": 39, "pe": 71}, {"name": "GitHub Copilot", "community": 8.8, "so": 58.7, "jb": 21, "pe": 46}, {"name": "Codex", "community": 18.7, "so": 29.5, "jb": 16, "pe": null}, {"name": "Cursor", "community": 5.7, "so": 25.5, "jb": 12, "pe": 39}, {"name": "Antigravity", "community": 2.4, "so": 16.0, "jb": 6, "pe": null}, {"name": "OpenCode", "community": 13.3, "so": 13.6, "jb": 7, "pe": null}, {"name": "JetBrains AI", "community": 0.3, "so": 12.8, "jb": 9, "pe": null}, {"name": "Windsurf", "community": 0.1, "so": 6.5, "jb": null, "pe": null}, {"name": "Pi", "community": 12.7, "so": 4.4, "jb": null, "pe": null}, {"name": "Cline", "community": 0.7, "so": 4.5, "jb": null, "pe": null}, {"name": "Aider", "community": 0.3, "so": 2.1, "jb": null, "pe": null}], "src_summary": [{"id": "hn", "label": "Hacker News", "authors": 811, "read": 2411, "threads": 19, "top": [["Claude Code", 252], ["Codex CLI", 107], ["OpenCode", 82]], "tt": [{"t": "Ask HN: What's your current AI agentic setup?", "u": "https://news.ycombinator.com/item?id=50366117", "a": 257}, {"t": "Ask HN: Has anyone replaced Claude/GPT with a local model for daily coding?", "u": "https://news.ycombinator.com/item?id=48542100", "a": 158}, {"t": "Ask HN: How is AI-assisted coding going for you professionally?", "u": "https://news.ycombinator.com/item?id=47388646", "a": 112}, {"t": "Ask HN: What is your (AI) dev tech stack / workflow?", "u": "https://news.ycombinator.com/item?id=48413629", "a": 72}, {"t": "Ask HN: Is anyone experimenting with different ways of using LLMs for coding?", "u": "https://news.ycombinator.com/item?id=48771515", "a": 49}, {"t": "Ask HN: What hardware are you using to run local LLMs?", "u": "https://news.ycombinator.com/item?id=50337431", "a": 31}]}, {"id": "lobsters", "label": "Lobste.rs", "authors": 161, "read": 6233, "threads": 175, "top": [["Claude Code", 54], ["Claude (app/web)", 12], ["OpenCode", 10]], "tt": [{"t": "I used AI. It worked. I hated it", "u": "https://lobste.rs/s/7d8dxv", "a": 10}, {"t": "Surviving Code Reviews in the era of AI", "u": "https://lobste.rs/s/7tpc5q", "a": 9}, {"t": "I let Claude Code configure my Arch install", "u": "https://lobste.rs/s/8pfxqy", "a": 9}, {"t": "Running local models is good now", "u": "https://lobste.rs/s/hwqdvt", "a": 8}, {"t": "Don't fall into the anti-AI hype", "u": "https://lobste.rs/s/cmsfbu", "a": 7}, {"t": "AI should help us produce better code", "u": "https://lobste.rs/s/tiktds", "a": 6}]}, {"id": "tildes", "label": "Tildes", "authors": 81, "read": 1491, "threads": 38, "top": [["Claude Code", 18], ["GitHub Copilot", 9], ["Codex CLI", 6]], "tt": [{"t": "Why normal people aren’t using AI agents", "u": "https://tildes.net/~tech/1viu/why_normal_people_arent_using_ai_agents", "a": 12}, {"t": "That one study that proves developers using AI are deluded", "u": "https://tildes.net/~tech/1t9w/that_one_study_that_proves_developers_using_ai_are_deluded", "a": 10}, {"t": "Any fellow software engineers using paid GitHub copilot?", "u": "https://tildes.net/~comp/1un9/any_fellow_software_engineers_using_paid_github_copilot", "a": 9}, {"t": "Actually useful MCPs", "u": "https://tildes.net/~comp/1udu/actually_useful_mcps", "a": 8}, {"t": "Is it worthwhile to run local LLMs for coding today?", "u": "https://tildes.net/~comp/1t2j/is_it_worthwhile_to_run_local_llms_for_coding_today", "a": 7}, {"t": "AI Coding agents are the opposite of what I want", "u": "https://tildes.net/~comp/1tkx/ai_coding_agents_are_the_opposite_of_what_i_want", "a": 6}]}, {"id": "blogs", "label": "Blogy (autori)", "authors": 66, "read": 11, "threads": 11, "top": [["Claude Code", 32], ["GitHub Copilot", 13], ["Codex CLI", 11]], "tt": []}], "n_read": 10135, "n_blog_articles": 199, "n_blog_authors": 66, "articles": [{"title": "Coding agents have crossed a chasm", "url": "https://blog.singleton.io/posts/2025-06-14-coding-agents-cross-a-chasm/?utm_source=changelog-news", "author": "singleton.io", "date": "2026-02-25", "sum": "Na rýchle otázky používa Claude a ChatGPT priamo, na písanie kódu Cursor; celé úlohy deleguje na Claude Code (osobné nástroje) a Codex v cloude (bugy v práci), code review robí Claude Code cez GitHub Actions. Ťažké debugovanie rieši s Claude Sonnet 4 a platí za tokeny cez API.", "chips": [["Claude (app/web)", "app"], ["ChatGPT (app/web)", "app"], ["Cursor", "harness"], ["Claude Code", "harness"], ["Codex (app/cloud)", "harness"], ["Claude Sonnet 4", "model"], ["API pay-as-you-go (Anthropic)", "subscription"]], "spend": null}, {"title": "How I use AI in 2026", "url": "https://fedepaol.github.io/blog/2026/04/25/how-i-use-ai-in-2026/", "author": "Federico Paolinelli", "date": "2026-04-25", "sum": "Autor spúšťa Claude Code s --dangerously-skip-permissions v libvirt VM, max. 3 sessions v tmux, s caveman, speckit, agent teams a diffity na review. Gemini používa ako PR reviewer na GitHube a na učenie sa nových tém.", "chips": [["Claude Code", "harness"], ["Claude (unspecified)", "model"], ["caveman", "harness"], ["GitHub Spec Kit", "harness"], ["diffity", "harness"], ["Gemini Code Assist", "harness"], ["Gemini (app/web)", "app"]], "spend": null}, {"title": "The LLM Critics Are Right. I Use LLMs Anyway.", "url": "https://www.theocharis.dev/blog/llm-critics-are-right-i-use-llms-anyway/", "author": "Jeremy Theocharis", "date": "2026-07-16", "sum": "Ťažko používa Claude (Opus 4.8, Fable 5, Sonnet 4.6) cez API, v júni minul ~$9 839 na tokeny, so skillmi /grill-me a ultracode/Ralph loop. Odvtedy Fable používa len selektívne a na „pure code execution“ cez OpenRouter využíva lacnejšie modely ako GLM 5.2.", "chips": [["Claude Code", "harness"], ["Opus 4.8", "model"], ["Fable 5", "model"], ["Sonnet 4.6", "model"], ["OpenRouter", "app"], ["GLM 5.2", "model"], ["API pay-as-you-go (Anthropic)", "subscription"]], "spend": 9839.0}, {"title": "Four Lessons From Three Months Inside An Agentic Harness", "url": "https://tomtunguz.com/r2-six-months-of-change/", "author": "Tomasz Tunguz", "date": "2026-08-28", "sum": "Tunguz tri mesiace prevádzkuje vlastný agentický harness r2 nad Gmail inboxom s routovaním medzi lokálnymi a cloudovými modelmi.", "chips": [["Claude Code", "harness"], ["Claude Cowork", "app"], ["Open-source model (unspecified)", "model"], ["TOTAL SPEND", "subscription"], ["Julius (own agent)", "harness"], ["Claude (unspecified)", "model"], ["Kimi K2.5", "model"]], "spend": 1000.0}, {"title": "Reducing codebase cognitive debt through... quizzes?", "url": "https://martinalderson.com/posts/codebase-cognitive-debt-quizzes/?utm_source=rss&utm_medium=rss&utm_campaign=feed", "author": "Martin Alderson", "date": "2026-08-31", "sum": "Alderson pracuje s coding agentom (Claude Code s AskUserQuestion) a necháva sa ním kvízovať o codebase.", "chips": [["Claude Code", "harness"], ["Claude Max (20x/$200)", "subscription"], ["OpenCode", "harness"], ["gpt-5.3-codex", "model"], ["ChatGPT (plan unspecified)", "subscription"], ["Qwen3.5-9B", "model"], ["OpenRouter", "app"]], "spend": 200.0}, {"title": "Route every Claude Code message to the right model with Jev", "url": "https://www.pulumi.com/blog/route-every-claude-code-message-to-the-right-model-with-jev/", "author": "Engin Diri", "date": "2026-09-28", "sum": "Postavil jev-router, ktorý cez model Jev smeruje každú správu v Claude Code na Haiku 4.5, Sonnet 5, Opus 5.5 alebo Fable 5.1.", "chips": [["Claude Code", "harness"], ["rtk", "harness"], ["jev-router", "app"], ["Jev", "model"], ["Opus 5.5", "model"], ["Haiku 4.5", "model"], ["Sonnet 5", "model"]], "spend": null}, {"title": "You can just ask AI to do things", "url": "https://seangoedecke.com/you-can-just-ask-ai-to-do-things/", "author": "Sean Goedecke", "date": "2026-10-29", "sum": "Denne používa Claude Opus 5.5 v desktopovom GitHub Copilot a cez subagentov si pýta druhý názor od GPT-6-Astra a Gemini Argon; má aj plánovaného ranného agenta.", "chips": [["Codex CLI", "harness"], ["GPT 5.4", "model"], ["GitHub Copilot", "harness"], ["GPT-5.5", "model"], ["Claude (unspecified)", "model"], ["API pay-as-you-go (other)", "subscription"], ["ChatGPT (app/web)", "app"]], "spend": null}, {"title": "How I use AI (Oct 2026)", "url": "https://ben.stolovitz.com/posts/how-use-ai-oct-2026/", "author": "Ben Stolovitz", "date": "2026-11-03", "sum": "Paralelne riadi ~5–6 agentov v git worktree (Claude Code, prípadne OpenCode, Codex či Pi) a na tokeny minie ~$3 000/mes. Súkromne platí Claude Pro a GitHub Copilot Pro (len autocomplete), OpenAI zrušil v prospech Claude a diktuje cez OpenWhispr a Handy.", "chips": [["Claude Code", "harness"], ["OpenCode", "harness"], ["Codex CLI", "harness"], ["Pi", "harness"], ["GitHub Copilot", "harness"], ["GitHub Copilot (individual)", "subscription"], ["Claude Pro", "subscription"]], "spend": 3000.0}, {"title": "Qwen 3.8 27B on my laptop can interpret model weights, too", "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/", "author": "Simon Willison", "date": "2026-11-03", "sum": "Simon spúšťa lokálne Qwen 3.8 27B v LM Studio na notebooku cez svoj llm CLI (plugin llm-lmstudio) a cloudové modely cez OpenRouter plugin.", "chips": [["Claude Opus 4.5", "model"], ["GPT 5.2", "model"], ["Claude Code", "harness"], ["Codex CLI", "harness"], ["Claude Max (unspecified)", "subscription"], ["Claude (unspecified)", "model"], ["Claude (app/web)", "app"]], "spend": 200.0}, {"title": "A Guide to Which AI to Use in the Agentic Era", "url": "https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the", "author": "Ethan Mollick", "date": "2026-02-18", "sum": "Ethan pri náročných úlohách používa ChatGPT s GPT-5.2 Thinking/Pro, ďalej Claude.ai, Claude Cowork a Claude Code s modelom Claude Opus 4.6.", "chips": [["ChatGPT (app/web)", "app"], ["5.2 Thinking / 5.2 Pro", "model"], ["Claude (app/web)", "app"], ["Claude Cowork", "harness"], ["Claude Code", "harness"], ["Claude Opus 4.6", "model"]], "spend": null}, {"title": "How I write software with LLMs", "url": "https://www.stavros.io/posts/how-i-write-software-with-llms/", "author": "Stavros Korokithakis", "date": "2026-03-16", "sum": "Používa OpenCode s multi-model agentmi, ktorí si navzájom odovzdávajú prácu: architekt Claude Opus 4.6 a developer Sonnet 4.6. Kód reviewujú Codex 5.4, Gemini 3 Flash a pri dôležitých projektoch aj Opus.", "chips": [["OpenCode", "harness"], ["Opus 4.6", "model"], ["Sonnet 4.6", "model"], ["Codex 5.4", "model"], ["Gemini 3 Flash", "model"], ["Stavrobot", "app"]], "spend": null}, {"title": "An Ex-Meta L8’s Agentic Engineering Setup", "url": "https://blog.bytebytego.com/p/an-ex-meta-l8s-agentic-engineering", "author": "Kun Chen", "date": "2026-06-23", "sum": "Kun Chen (guest post) pracuje v termináli (WezTerm + tmux + Neovim) s Claude Code pre Anthropic modely a OpenCode pre ostatné; diktuje cez OpenSuperWhisper (lokálny Whisper) a plány robí vo vlastnom Lavish Editor.", "chips": [["Claude Code", "harness"], ["OpenCode", "harness"], ["Claude (unspecified)", "model"], ["OpenSuperWhisper", "app"], ["large-v3 turbo", "model"], ["Lavish Editor", "app"]], "spend": null}, {"title": "My agent setup", "url": "https://chad.cm/posts/2026-8-11-my-agent-setup", "author": "Chad Arimura", "date": "2026-08-12", "sum": "Prevádzkoval šesť Hermes agentov (GPT-5.6 Sol/Terra, $100 OpenAI predplatné) na DigitalOcean VPS s Buzz/Nostr a Obsidian wiki, neskôr prešiel na Grok Bot. Na kódovanie stále používa Claude Code s Fable a Codex ako fallback, od Anthropic API ho odradil vysoký účet.", "chips": [["Grok Bot", "app"], ["GPT-5.6 Sol / GPT-5.6 Terra", "model"], ["ChatGPT $100 plan", "subscription"], ["Claude Code", "harness"], ["Fable", "model"], ["Codex CLI", "harness"]], "spend": 100.0}, {"title": "Stacked sessions and pull requests in the GitHub Copilot app", "url": "https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app/", "author": "Cassidy Williams", "date": "2026-07-30", "sum": "Modernizáciu starého osobného projektu robí v desktopovej GitHub Copilot app, plánuje s Claude Opus 4.8 a rubber-duck review mu robí GPT-5.5.", "chips": [["GitHub Copilot", "harness"], ["Claude Sonnet 4.6", "model"], ["Claude Opus 4.7", "model"], ["Claude Opus 4.8", "model"], ["GPT-5.5", "model"]], "spend": null}, {"title": "Eight more months of agents", "url": "https://crawshaw.io/blog/eight-more-months-of-agents", "author": "David Crawshaw", "date": "2026-02-08", "sum": "Najnovší Opus mu cez Claude Code/Codex píše ~90 % kódu, IDE (Copilot) opustil a vrátil sa k neovimu. Vstavané sandboxy vypína, agentov púšťa vo fresh VM (vlastné exe.dev s agentom Shelley) a odporúča výhradne frontier modely.", "chips": [["Claude Code", "harness"], ["Codex CLI", "harness"], ["Claude Opus", "model"], ["Shelley (exe.dev)", "harness"]], "spend": null}, {"title": "An AI agent coding skeptic tries AI agent coding, in excessive detail", "url": "https://minimaxir.com/2026/02/ai-agent-coding/", "author": "Max Woolf", "date": "2026-02-27", "sum": "Od GitHub Copilot vo VS Code so Sonnet 4.5 (nepomáhal) prešiel na Claude Opus 4.5 v terminálovom Claude Code; nové modely skúša cez OpenRouter a Nano Banana Pro volá cez vlastný wrapper gemimg.", "chips": [["Claude Code", "harness"], ["Claude Opus 4.5", "model"], ["OpenRouter", "app"], ["Nano Banana Pro", "model"]], "spend": null}, {"title": "Here's What Agentic AI Can Do With Have I Been Pwned's APIs", "url": "https://www.troyhunt.com/heres-what-agentic-ai-can-do-with-have-i-been-pwneds-apis/", "author": "Troy Hunt", "date": "2026-04-16", "sum": "Troy Hunt používa OpenClaw na Mac Mini, ovládaný cez Telegram bota, aj s HIBP MCP serverom.", "chips": [["OpenClaw", "harness"], ["GitHub Copilot", "harness"], ["Claude (unspecified)", "model"], ["API pay-as-you-go (Anthropic)", "subscription"]], "spend": 1850.0}, {"title": "🎙️ How I AI: GPT-6 Astra is a banger + Stripe’s AI playbook + Grok Bot vs. OpenClaw: why I replaced my entire agent stack", "url": "https://www.lennysnewsletter.com/p/how-i-ai-gpt-6-astra-is-a-banger", "author": "Claire Vo", "date": "2026-09-07", "sum": "Claire nahradila celý OpenClaw setup za Grok Bot (agenti pre inboxy, rodinu, PR review, SOC 2, podporu) a intenzívne buduje s GPT-6 Astra.", "chips": [["OpenClaw", "harness"], ["API pay-as-you-go (unspecified)", "subscription"], ["Grok Bot", "harness"], ["GPT-6 Astra", "model"]], "spend": null}, {"title": "Doplňky, které mají zlevnit Claude Code: změřil jsem je na 84 bězích", "url": "https://www.vibecoding.cz/articles/claude-code/doplnky-ktere-maji-zlevnit-claude-code/", "author": "Vibecoding.cz", "date": "2026-10-20", "sum": "Používa Claude Code v termináli so Sonnet 5.5 na predplatnom s 5-hodinovým limitom; Codex mu slúži ako nezávislý reviewer v benchmarku.", "chips": [["Claude Code", "harness"], ["Claude Sonnet 5.5", "model"], ["Codex CLI", "harness"], ["Claude (plan unspecified)", "subscription"]], "spend": null}, {"title": "My AI Adoption Journey", "url": "https://mitchellh.com/writing/my-ai-adoption-journey", "author": "Mitchell Hashimoto", "date": "2026-02-05", "sum": "Od chatbotov prešiel na agentov (Claude Code) a dnes robí „harness engineering“ cez AGENTS.md a vlastné skripty. S obľubou používa Amp deep mode (GPT-5.2-Codex), pričom naraz beží vždy len jeden agent.", "chips": [["Claude Code", "harness"], ["Amp", "harness"], ["GPT-5.2-Codex", "model"]], "spend": null}, {"title": "The Mythical Agent-Month", "url": "https://wesmckinney.com/blog/mythical-agent-month/?utm_source=changelog-news", "author": "Wes McKinney", "date": "2026-02-17", "sum": "Prakticky už nepíše kód ručne: beží mu paralelné Claude Code sessions s git worktrees a mesačne spáli viac ako 10 miliárd tokenov naprieč Claude, Codex a Gemini.", "chips": [["Claude Code", "harness"], ["Codex CLI", "harness"], ["Gemini (unspecified)", "model"]], "spend": null}, {"title": "Treating Prompts Like Code: A Content Engineer's AI Workflow", "url": "https://www.pulumi.com/blog/treating-prompts-like-code/", "author": "Cam Soper", "date": "2026-03-09", "sum": "Pracuje v Claude Code (terminál) s vlastnými skills pre docs workflow, väčšinou so Sonnet namiesto Opus; Claude platí zamestnávateľ (Pulumi).", "chips": [["Claude Code", "harness"], ["Claude Sonnet", "model"], ["Employer-paid (unspecified)", "subscription"]], "spend": null}, {"title": "Building a News Roundup with Docker Agent, Docker Model Runner, and Skill", "url": "https://www.docker.com/blog/building-a-news-roundup-with-docker-agent-docker-model-runner-and-skill/", "author": "Yiwen Xu", "date": "2026-03-27", "sum": "Autor (Philippe z Dockeru) si na MacBook Air spúšťa lokálny Qwen3.5-4B cez Docker Model Runner a Docker Agent na tvorbu news roundupov; na náročnejšiu prácu inak používa Claude Code a lokálom šetrí Claude kredity.", "chips": [["Docker Agent", "harness"], ["Qwen3.5-4B", "model"], ["Claude Code", "harness"]], "spend": null}, {"title": "The 3 Levels of AWS Observability", "url": "https://awsfundamentals.com/blog/the-3-levels-of-aws-observability", "author": "AWS Fundamentals", "date": "2026-05-04", "sum": "Autorov AI nástroj je Claude Code, v každom projekte má vlastného subagenta na prehľadávanie CloudWatch logov bežiaceho na Opus.", "chips": [["OpenClaw", "harness"], ["Claude Code", "harness"], ["Claude Opus", "model"]], "spend": null}]};
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const N = D.n_authors, nf = n => n.toLocaleString('sk-SK');
+const pc = (n, d = N) => Math.round(100 * n / d) + ' %';
+const $ = id => document.getElementById(id);
+const COLORS = {"Claude Code":"var(--hn)","Codex CLI":"var(--ink)","OpenCode":"var(--teal)","Pi":"var(--ochre)","GitHub Copilot":"var(--sky)","Cursor":"var(--rust)","ChatGPT (app/web)":"#5a5a52","OpenRouter":"var(--plum)","Claude (app/web)":"#e8a06a","Antigravity":"#4f8a3c","Hermes Agent":"#7a7a5c"};
+const HEX = {"var(--hn)":"#ff6600","var(--ink)":"#1b1a16","var(--teal)":"#0e5f5c","var(--ochre)":"#b8860b","var(--sky)":"#3d6f99","var(--rust)":"#8a3b12","var(--plum)":"#6b3e5e"};
+const hex = c => HEX[c] || c;
+
+function bars(id, rows, o = {}) {
+  const m = o.max || Math.max(...rows.map(r => r.n));
+  $(id).innerHTML = rows.map((r, i) => `<div class="bar ${i===0&&o.lead?'lead':''}" style="--w:${(100*r.n/m).toFixed(2)}%;--d:${i*45}ms;--c:${r.c || o.c || 'var(--ink)'}" title="${esc(r.name)}: ${r.n} autorov">
+    <span class="bl">${esc(r.name)}${r.tag ? `<em>${esc(r.tag)}</em>` : ''}</span><span class="bt"><i></i></span>
+    <span class="bn">${r.n}<small>${o.sub ? o.sub(r) : pc(r.n)}</small></span></div>`).join('');
+}
+
+// hero + stats
+const qSum = D.n_read;
+$('h-com').textContent = nf(qSum);
+$('m-com').textContent = nf(qSum) + ' komentárov';
+const cc = D.harness[0];
+$('h-big').innerHTML = Math.round(100 * cc.n / N) + '<sup>%</sup>';
+$('h-bigsub').textContent = `${cc.n} z ${N} autorov · ${(cc.n / D.harness[1].n).toFixed(1).replace('.', ',')}× viac ako #2 ${D.harness[1].name}`;
+$('n-auth').textContent = N;
+$('n-left').textContent = D.n_left;
+$('n-local').textContent = D.local_any;
+$('f-rows').textContent = `${nf(D.n_rows)} riadkov autor × tool × komentár`;
+const med = D.spend.slice().sort((a,b)=>a-b)[Math.floor(D.spend.length/2)];
+$('stats').innerHTML = [[N,'autorov so setupom'],[nf(qSum),'prečítaných komentárov'],[D.sources.length,'komunity a blogy'],['$'+Math.round((D.spend[Math.floor((D.spend.length-1)/2)]+D.spend[Math.ceil((D.spend.length-1)/2)])/2),'medián útraty / mes'],[D.local_any,'s lokálnymi modelmi']]
+  .map(([b, s]) => `<div><b>${b}</b><span>${s}</span></div>`).join('');
+
+const MED = (() => { const v = D.spend.slice().sort((a, b) => a - b), n = v.length; return (v[Math.floor((n-1)/2)] + v[Math.ceil((n-1)/2)]) / 2; })();
+$('h-med').textContent = '$' + Math.round(MED);
+$('n-art').textContent = D.n_blog_articles;
+$('n-auth-b').textContent = D.n_blog_authors;
+$('n-harn').textContent = D.n_harness_authors;
+// 1 harness
+bars('b-harness', D.harness.map(r => ({...r, c: COLORS[r.name] || 'var(--ink2)'})), {lead: true});
+bars('b-app', D.app, {c: 'var(--ink2)'});
+const V = D.venn, cls = [].concat(Array(V.both).fill('both'), Array(V.cc).fill('cc'), Array(V.cx).fill('cx'), Array(V.none).fill(''));
+$('waffle').innerHTML = cls.map((c, i) => `<i class="${c}" style="transition-delay:${Math.min(i*1.6, 1400)}ms"></i>`).join('');
+$('w-leg').innerHTML = [['background:var(--hn);box-shadow:inset 0 0 0 2px var(--ink)', `Claude Code + Codex · ${V.both}`],['background:var(--hn)', `iba Claude Code · ${V.cc}`],['background:var(--ink)', `iba Codex CLI · ${V.cx}`],['', `ani jeden · ${V.none}`]]
+  .map(([s, t]) => `<span><i style="${s}"></i>${t}</span>`).join('');
+$('w-both').textContent = V.both;
+
+
+// 2 sources heatmap
+(function srcmap() {
+  const B = D.by_source, rows = B.rows;
+  let h = '<thead><tr><th></th>' + B.tools.map(t => `<th><span>${esc(t)}</span></th>`).join('') + '</tr></thead><tbody>';
+  rows.forEach(r => { const mx = Math.max(...r.share, 1);
+    h += `<tr><th>${esc(r.label)}<small>${r.n} autorov${r.n < 30 ? ' · malá vzorka' : ''}</small></th>` + r.share.map((v, i) => { const a = v / mx;
+      return `<td class="${v === 0 ? 'z' : a > .55 ? 'hi' : ''}" style="--a:${(a * .95).toFixed(3)}" title="${esc(r.label)} · ${esc(B.tools[i])}: ${r.cnt[i]} z ${r.n} (${v} %)">${v === 0 ? '·' : Math.round(v)}</td>`; }).join('') + '</tr>'; });
+  $('srcmap').innerHTML = h + '</tbody>';
+  const g = (src, tool) => { const r = rows.find(x => x.src === src); return r ? r.share[B.tools.indexOf(tool)] : 0; };
+  $('src-note').innerHTML = `Claude Code vedie všade (HN ${Math.round(g('hn','Claude Code'))} %, Lobste.rs ${Math.round(g('lobsters','Claude Code'))} %, Tildes ${Math.round(g('tildes','Claude Code'))} %). Rozdiely sú v chvoste: <b>HN</b> je baštou Codexu a open-source agentov (OpenCode ${Math.round(g('hn','OpenCode'))} %, Pi ${Math.round(g('hn','Pi'))} %). <b>Lobste.rs</b> častejšie používa chat (Claude app ${Math.round(g('lobsters','Claude (app/web)'))} %) a je skeptickejší. <b>Tildes</b> má najviac používateľov GitHub Copilot (${Math.round(g('tildes','GitHub Copilot'))} %).`;
+})();
+
+// 3 interfaces
+(function ifaces() {
+  const rows = D.iface.filter(r => r.n > 0), m = Math.max(...rows.map(r => r.n));
+  $('b-iface').innerHTML = rows.map((r, i) => `<div class="bar mbar" style="--w:${(100*r.exp/m).toFixed(2)}%;--w2:${(100*(r.n-r.exp)/m).toFixed(2)}%;--d:${i*45}ms;--c:${r.id==='terminal'?'var(--hn)':'var(--ink)'}" title="${esc(r.name)}: ${r.exp} výslovne + ${r.n-r.exp} doplnené">
+    <span class="bl">${esc(r.name)}</span><span class="bt"><i style="background:var(--c)"></i><b></b></span><span class="bn">${r.n}<small>${r.exp} výslovne</small></span></div>`).join('');
+  bars('b-host', D.hosts.map(h => ({...h, name: h.name === 'browser' ? 'prehliadač' : h.name})), {c: 'var(--ink2)', sub: r => ''});
+  const cc = D.tool_split['Claude Code'], ccn = cc.explicit.reduce((a, r) => a + r.n, 0);
+  bars('b-ccsplit', cc.explicit, {c: 'var(--hn)', sub: r => Math.round(100 * r.n / ccn) + ' %'});
+  $('cc-note').innerHTML = `Z <b>${cc.total}</b> používateľov Claude Code uviedlo rozhranie ${ccn} prípadov. Terminál jasne dominuje, no <b>desktop app</b> a <b>mobilná appka</b> (riadenie agenta z telefónu) už nie sú okrajové.`;
+  const cp = D.tool_split['GitHub Copilot'], cpn = cp.explicit.reduce((a, r) => a + r.n, 0);
+  bars('b-cpsplit', cp.explicit, {c: 'var(--sky)', sub: r => Math.round(100 * r.n / cpn) + ' %'});
+  const Vm = D.via; const mx = Math.max(...Vm.m.flat());
+  let h = '<thead><tr><th></th>' + Vm.vias.map(v => `<th><span>${esc(v === 'own scripts/API' ? 'vlastné skripty/API' : v)}</span></th>`).join('') + '<th><span>spolu</span></th></tr></thead><tbody>';
+  Vm.models.forEach((g, i) => { h += `<tr><th>${esc(g)}</th>` + Vm.m[i].map((v, j) => { const a = v / mx;
+    return `<td class="${v === 0 ? 'z' : a > .5 ? 'hi' : ''}" style="--a:${(Math.sqrt(a) * .95).toFixed(3)}" title="${esc(g)} cez ${esc(Vm.vias[j])}: ${v} autorov">${v || '·'}</td>`; }).join('') + `<td class="z" style="--a:0;font-weight:600;color:var(--ink)">${Vm.tot[i]}</td></tr>`; });
+  $('viamap').innerHTML = h + '</tbody>';
+})();
+
+// 2 trend — small multiples, shared y scale
+(function trend() {
+  const qs = D.quarters, qa = D.q_active, n = qs.length;
+  const series = D.trend.map(s => ({...s, p: s.n.map((v, i) => 100 * v / qa[i])}));
+  const ymax = Math.ceil(Math.max(...series.flatMap(s => s.p)) / 10) * 10;
+  const W = 220, H = 120, m = {l: 6, r: 6, t: 10, b: 18};
+  const x = i => m.l + i * (W - m.l - m.r) / (n - 1), y = v => m.t + (H - m.t - m.b) * (1 - v / ymax);
+  const path = p => p.map((v, i) => (i ? 'L' : 'M') + x(i).toFixed(1) + ',' + y(v).toFixed(1)).join('');
+  const ql = qs.map(q => q + "’26");
+  $('trend').innerHTML = `<div class="sm">${series.map((s, k) => {
+    const c = hex(COLORS[s.name] || '#6b6a60'), last = s.p[n-1], dl = last - s.p[0];
+    const pi = s.p.indexOf(Math.max(...s.p)), pk = (pi > 0 && pi < n-1 && s.p[pi] - last >= 5) ? ` · vrchol ${s.p[pi].toFixed(0)} % v ${ql[pi]}` : '';
+    let g = [0, 20, 40, 60].filter(v => v <= ymax).map(v => `<line class="ax" x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}"/>`).join('');
+    g += series.map((o, j) => j === k ? '' : `<path d="${path(o.p)}" fill="none" stroke="#cfcbb8" stroke-width="1.2"/>`).join('');
+    g += `<path d="${path(s.p)} L${x(n-1)},${y(0)} L${x(0)},${y(0)} Z" fill="${c}" fill-opacity=".09"/>`;
+    g += `<path class="ln" d="${path(s.p)}" stroke="${c}" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.4s ease ${k*80}ms"/>`;
+    g += s.p.map((v, i) => `<circle cx="${x(i)}" cy="${y(v)}" r="${i===n-1?4:2.6}" fill="${c}"><title>${esc(s.name)} · ${qs[i]}: ${s.n[i]} z ${qa[i]} autorov (${v.toFixed(0)} %)</title></circle>`).join('');
+    g += ql.map((q, i) => (i === 0 || i === n-1) ? `<text x="${x(i)}" y="${H-3}" text-anchor="${i?'end':'start'}">${q}</text>` : '').join('');
+    return `<figure><figcaption><span>${esc(s.name)}</span><b style="color:${c}">${last.toFixed(0)}<small> %</small></b></figcaption>
+      <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(s.name)}: podiel ${s.p.map(v=>v.toFixed(0)).join(', ')} %">${g}</svg>
+      <div class="dl ${Math.abs(dl)<1?'':dl>0?'up':'dn'}">${Math.abs(dl)<1?'=':dl>0?'▲':'▼'} ${Math.abs(dl).toFixed(0)} pb <span>od ${ql[0]}${pk}</span></div></figure>`; }).join('')}</div>
+    <p class="qn">${qs.map((q, i) => `${ql[i]}: n=${qa[i]}${i===n-1?' (do 5. 11.)':''}`).join(' · ')} · spoločná os 0–${ymax} % · sivé = ostatné tools</p>`;
+})();
+
+// 3 models
+(function models() {
+  const OPEN = new Set(['Whisper', 'NVIDIA Parakeet']);
+  const rows = D.model_grp.map(r => ({...r, open: r.open || OPEN.has(r.name), n: r.exp + r.imp}));
+  const m = Math.max(...rows.map(r => r.n));
+  $('b-mgrp').innerHTML = rows.map((r, i) => `<div class="bar mbar" style="--w:${(100*r.exp/m).toFixed(2)}%;--w2:${(100*r.imp/m).toFixed(2)}%;--d:${i*45}ms;--c:${r.open?'var(--teal)':(r.name==='Claude'?'var(--hn)':'var(--ink)')}" title="${esc(r.name)}: ${r.exp} explicitne + ${r.imp} implicitne">
+    <span class="bl">${esc(r.name.replace(' (open)',''))}${r.open?'<em>open</em>':''}</span><span class="bt"><i style="background:var(--c)"></i><b></b></span>
+    <span class="bn">${r.n}<small>${r.imp?r.exp+' + '+r.imp:'explicitne'}</small></span></div>`).join('');
+  const OPENF = /qwen|deepseek|glm|gemma|kimi|mistral|nemotron|gpt-oss|minimax|mimo|llama|whisper|parakeet/i;
+  bars('b-mfam', D.model_fam.map(r => ({...r, c: OPENF.test(r.name) ? 'var(--teal)' : (r.name.startsWith('Claude') ? 'var(--hn)' : 'var(--ink)')})), {sub: r => esc(r.v.slice(0, 2).join(' · ') || '—')});
+})();
+
+// 4 money
+(function money() {
+  $('tiles').innerHTML = D.providers.map(p => `<div class="tile"><span class="t">${esc(p.name)}</span><b>${p.n}</b><div class="d">${Object.entries(p.detail).map(([k, v]) => `${esc(k.replace('Claude ', ''))} <b style="display:inline;font-size:inherit;font-family:var(--mono)">${v}</b>`).join(' · ') || (p.name.startsWith('API') ? 'platba za tokeny, mix poskytovateľov' : 'Team / Enterprise / Business / firemný Copilot')}</div></div>`).join('');
+  const v = D.spend.slice().sort((a, b) => a - b), n = v.length;
+  const median = (v[Math.floor((n-1)/2)] + v[Math.ceil((n-1)/2)]) / 2, mean = v.reduce((a, b) => a + b, 0) / n;
+  const W = 640, H = 190, l = 16, r = 16, lo = 1, hi = Math.max(10000, v[n-1]);
+  const x = d => l + (W - l - r) * (Math.log10(Math.max(d, lo)) - Math.log10(lo)) / (Math.log10(hi) - Math.log10(lo));
+  let g = '';
+  [1, 10, 20, 100, 200, 1000, 10000].forEach(t => g += `<line class="ax" x1="${x(t)}" x2="${x(t)}" y1="20" y2="${H-30}"/><text x="${x(t)}" y="${H-12}" text-anchor="middle">${t===1?'≤$1':'$'+(t>=1000?t/1000+'k':t)}</text>`);
+  v.forEach((d, i) => { const j = ((i * 0.6180339887) % 1); g += `<circle cx="${x(d).toFixed(1)}" cy="${(36 + j * (H - 80)).toFixed(1)}" r="5" fill="${d >= 100 ? '#ff6600' : '#1b1a16'}" fill-opacity=".72"><title>$${d}/mes</title></circle>`; });
+  g += `<line x1="${x(median)}" x2="${x(median)}" y1="8" y2="${H-30}" stroke="#1b1a16" stroke-width="2"/><text x="${x(median)+6}" y="16" style="font-weight:600;fill:#1b1a16">medián $${Math.round(median)}</text>`;
+  g += `<line x1="${x(mean)}" x2="${x(mean)}" y1="8" y2="${H-30}" stroke="#ff6600" stroke-width="2" stroke-dasharray="4 3"/><text x="${x(mean)+6}" y="16" style="font-weight:600;fill:#c94f00">priemer $${Math.round(mean)}</text>`;
+  $('strip').innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Rozloženie mesačnej útraty">${g}</svg>`;
+  const b = D.spend_buckets, bm = Math.max(...b);
+  $('hist').innerHTML = b.map((k, i) => `<div style="--h:${(100*k/bm).toFixed(1)}%;--d:${i*120}ms"><span>${k}</span></div>`).join('');
+  bars('b-sub', D.sub.map(r => ({...r, c: r.name.startsWith('Claude') ? 'var(--hn)' : r.name.startsWith('ChatGPT') ? 'var(--ink)' : /API|OpenRouter|Zen/.test(r.name) ? 'var(--plum)' : /mployer|Enterprise|Business|Team/.test(r.name) ? 'var(--sky)' : 'var(--ink2)'})));
+})();
+
+// 5 sankey
+(function sankey() {
+  const fl = D.churn; const srcTot = {}; fl.forEach(f => srcTot[f.from] = (srcTot[f.from] || 0) + f.n);
+  const srcs = Object.entries(Object.fromEntries(Object.entries(srcTot).map(([k,v]) => [k, fl.filter(f => f.from === k && f.to !== '?').reduce((a, f) => a + f.n, 0)]))).filter(([k, v]) => v > 0).sort((a, b) => b[1] - a[1]).slice(0, 9).map(e => e[0]);
+  const dTot = {}; const flows = [];
+  const unk = {};
+  fl.filter(f => srcs.includes(f.from)).forEach(f => {
+    if (f.to === '?') { unk[f.from] = (unk[f.from] || 0) + f.n; return; }
+    const to = /custom|own|self-built|vlastn|fork/i.test(f.to) ? 'vlastný agent' : f.to;
+    flows.push({from: f.from, to, n: f.n}); dTot[to] = (dTot[to] || 0) + f.n; });
+  const keepD = Object.entries(dTot).filter(([k, v]) => v >= 2).map(e => e[0]);
+  const agg = {}; flows.forEach(f => { const to = keepD.includes(f.to) ? f.to : 'iné'; const k = f.from + '→' + to; agg[k] = agg[k] || {from: f.from, to, n: 0}; agg[k].n += f.n; });
+  const F = Object.values(agg);
+  const dsum = {}; F.forEach(f => dsum[f.to] = (dsum[f.to] || 0) + f.n);
+  const dsts = Object.keys(dsum).sort((a, b) => (a === 'iné') - (b === 'iné') || dsum[b] - dsum[a]);
+  const U = 9, gap = 14, W = 1100, x0 = 210, x1 = W - 230, nw = 12;
+  const lay = (keys, tot) => { let yy = 10; const o = {}; keys.forEach(k => { o[k] = {y: yy, h: tot[k] * U, off: 0}; yy += tot[k] * U + gap; }); return [o, yy]; };
+  const sTot = {}; F.forEach(f => sTot[f.from] = (sTot[f.from] || 0) + f.n);
+  const [S, hS] = lay(srcs, sTot), [T, hT] = lay(dsts, dsum); const H = Math.max(hS, hT) + 10;
+  let g = '';
+  F.sort((a, b) => srcs.indexOf(a.from) - srcs.indexOf(b.from) || dsts.indexOf(a.to) - dsts.indexOf(b.to)).forEach(f => {
+    const s = S[f.from], t = T[f.to], w = f.n * U;
+    const ys = s.y + s.off + w / 2, yt = t.y + t.off + w / 2; s.off += w; t.off += w;
+    const c = hex(COLORS[f.from] || '#6b6a60'), mx = (x0 + nw + x1) / 2;
+    g += `<path d="M${x0+nw},${ys} C${mx},${ys} ${mx},${yt} ${x1},${yt}" stroke="${c}" stroke-width="${w}"><title>${esc(f.from)} → ${esc(f.to)}: ${f.n}</title></path>`;
+  });
+  srcs.forEach(k => { const s = S[k]; const c = hex(COLORS[k] || '#6b6a60'); g += `<rect x="${x0}" y="${s.y}" width="${nw}" height="${s.h}" fill="${c}"/><text x="${x0-10}" y="${s.y+s.h/2+5}" text-anchor="end">${esc(k)} <tspan class="n">${sTot[k]}${unk[k] ? ' +' + unk[k] + ' bez cieľa' : ''}</tspan></text>`; });
+  dsts.forEach(k => { const t = T[k]; const c = hex(COLORS[k] || (k === 'iné' || k === 'vlastný agent' ? '#bdb9a6' : '#6b6a60')); g += `<rect x="${x1}" y="${t.y}" width="${nw}" height="${t.h}" fill="${c}"/><text x="${x1+nw+10}" y="${t.y+t.h/2+5}" style="${k==='iné'||k==='vlastný agent'?'font-style:italic;fill:var(--mute)':''}">${esc(k)} <tspan class="n">${dsum[k]}</tspan></text>`; });
+  $('sankey').innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Tok odchodov medzi nástrojmi">${g}</svg>`;
+})();
+
+// 6 local
+bars('b-local', D.local, {c: 'var(--teal)'});
+bars('b-hw', D.hw, {c: 'var(--ink)'});
+
+// 7 articles
+$('cards').innerHTML = D.articles.map(a => `<article class="card"><span class="meta">${esc(a.date)} · ${esc(a.author)}</span>
+  <h3><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a></h3>${a.spend ? `<span class="spend">~$${nf(Math.round(a.spend))}<small style="font-size:13px;font-family:var(--mono);color:var(--mute);font-weight:400"> / mes</small></span>` : ''}
+  <p>${esc(a.sum)}</p><div class="cc">${a.chips.map(([t, c]) => `<span class="${c}">${esc(t)}</span>`).join('')}</div></article>`).join('');
+
+// 9 surveys
+(function surveys() {
+  const S = D.surveys, MAX = 75, x = v => (100 * v / MAX).toFixed(2) + '%';
+  let h = `<div class="sv ax"><span></span><div class="tr">${[0, 15, 30, 45, 60, 75].map(t => `<span style="left:${x(t)}">${t} %</span>`).join('')}</div></div>`;
+  h += S.map(r => `<div class="sv"><span class="nm">${esc(r.name)}</span><div class="tr">
+    ${r.so != null ? `<i class="so" style="left:${x(r.so)}" title="Stack Overflow: ${r.so} %"></i>` : ''}
+    ${r.jb != null ? `<i class="jb" style="left:${x(r.jb)}" title="JetBrains: ${r.jb} %"></i>` : ''}
+    ${r.pe != null ? `<i class="pe" style="left:${x(r.pe)}" title="Pragmatic Engineer: ${r.pe} %"></i>` : ''}
+    <i class="c" style="left:${x(r.community)}" title="Komunita: ${r.community} %"></i><b style="left:${x(r.community)}">${Math.round(r.community)}</b></div></div>`).join('');
+  $('surveys').innerHTML = h;
+  $('s-leg').innerHTML = [['background:var(--hn)', 'Komunita (HN · Lobste.rs · Tildes · blogy)'], ['background:var(--ink);border-radius:0', 'Stack Overflow 2026'], ['background:var(--teal);border-radius:0;transform:rotate(45deg)', 'JetBrains 2026 (máj–júl)'], ['width:0;height:0;border-radius:0;background:none;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:12px solid var(--ochre)', 'Pragmatic Engineer 2026']]
+    .map(([st, t]) => `<span><i style="${st}"></i>${t}</span>`).join('');
+})();
+
+// 11 sources summary
+$('srcsum').innerHTML = D.src_summary.filter(s => s.id !== 'blogs').map(s => `<div><h3>${esc(s.label)}</h3>
+  <div class="k">${s.threads} vlákien · ${nf(s.read)} komentárov · <b style="color:var(--ink)">${s.authors}</b> autorov so setupom</div>
+  <div class="k">Top: ${s.top.map(([t, n]) => esc(t) + ' ' + n).join(' · ')}</div>
+  <ol>${s.tt.map(t => `<li><a href="${esc(t.u)}" target="_blank" rel="noopener">${esc(t.t.replace(/^Ask HN: /, ''))}</a><small>${t.a} autorov</small></li>`).join('')}</ol></div>`).join('');
+
+// reveal
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); if (e.target.id === 'trend') e.target.querySelectorAll('.ln').forEach(p => p.style.strokeDashoffset = 0); io.unobserve(e.target); } }), {threshold: .15});
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

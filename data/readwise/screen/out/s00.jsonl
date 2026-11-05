@@ -1,0 +1,55 @@
+{"id": "01m6n4kjmzqwr7eas641vqdh04", "verdict": "yes", "why": "Personal story of the author's own agent misbehaving"}
+{"id": "01m5w2p1qk9cvneeym763pf6sw", "verdict": "maybe", "why": "Claude Code team's own review workflow, first person"}
+{"id": "01m1bg8efh9j60vh3w47kk0k35", "verdict": "maybe", "why": "Author's personal decision to stop AI coding"}
+{"id": "01m13m58hj99gj10sx5v9b82b1", "verdict": "maybe", "why": "Essay likely references author's own agent use"}
+{"id": "01kzek60zabyq092f66w49jr62", "verdict": "yes", "why": "Author describes own coding assistant practice"}
+{"id": "01ksdjpbe8em7w3hnaq87w2yy7", "verdict": "maybe", "why": "Personal LLM essay, may mention own use"}
+{"id": "01ksdjn6gg1v28vapxete6atf3", "verdict": "maybe", "why": "Author's view on AI in IaC, likely own practice"}
+{"id": "01ks0r7m1n2ygn22grwkfzkzrn", "verdict": "yes", "why": "How I use AI in 2026, daily workflow"}
+{"id": "01ks0r7aq6ef18tqdpdmd0s3p3", "verdict": "maybe", "why": "Personal anecdote on AI coding debt"}
+{"id": "01kjb2yhphwrhqfxvmkr3qxtp0", "verdict": "maybe", "why": "CLI tools for author's Claude Code setup"}
+{"id": "01kh4gk6zbty8jw5k9m0vvd6gm", "verdict": "maybe", "why": "OpenClaw essay, likely author's own Mac setup"}
+{"id": "01kgg3zjc6p62r9dy8g9j57s6c", "verdict": "maybe", "why": "Sandboxing agents, likely from own experience"}
+{"id": "01kf68apsj4twbvsmcyv8qbaer", "verdict": "yes", "why": "Author's own setup restricting Claude Code secrets"}
+{"id": "01kf0cb8xnawmdtabffegqd438", "verdict": "maybe", "why": "Done list via agents, likely author's workflow"}
+{"id": "01kf0b51x2yamafef07z7dh24e", "verdict": "maybe", "why": "Simon predictions may reference own tool use"}
+{"id": "01kezya17b08edqdc8gxx16sqw", "verdict": "yes", "why": "Author had Claude Cowork read his tools folder"}
+{"id": "01kesx90gjs25ec28xpykcaxd1", "verdict": "yes", "why": "Author self-hosting with Claude Code, first person"}
+{"id": "01m6h41jh1sn2cwrd84mnh949p", "verdict": "yes", "why": "Author runs Qwen 27B on his laptop"}
+{"id": "01m65z3nhwke736adj9gmhtmjb", "verdict": "maybe", "why": "Author tried brag Claude Code skill"}
+{"id": "01m63bzcr0zvttwzvn2y6ghdkn", "verdict": "maybe", "why": "Essay on agency likely uses own AI examples"}
+{"id": "01m6216gp1jbgta4vqd8hj55j8", "verdict": "maybe", "why": "Working with agents, likely author's practice"}
+{"id": "01m61cqn06bpc35eks9egey37x", "verdict": "maybe", "why": "Simon's own vibe game dev experiments"}
+{"id": "01m5xtmfgk03t8brq6pz2ggwef", "verdict": "maybe", "why": "Team's scheduled agent prompts for dev chores"}
+{"id": "01m5qgtw08v5hz1j809skxexmh", "verdict": "yes", "why": "Developer builds own swamp workflow for blog"}
+{"id": "01m5j65n9fk453rked00wqj5zf", "verdict": "yes", "why": "Why I reach for swamp, built blog with it"}
+{"id": "01m5ejwjn156vwv5n93zg1en69", "verdict": "maybe", "why": "Author measured Claude Code plugins himself"}
+{"id": "01m5dd4x6f8q0dy4k54hmt8gc4", "verdict": "yes", "why": "Simon's vibe coded RTS game field report"}
+{"id": "01m507ec4taxrf07ykbxvp7ehc", "verdict": "maybe", "why": "Agents and IaC series, may describe own setup"}
+{"id": "01m507ebr2zy8bnaq7y6gpzse7", "verdict": "maybe", "why": "Author's agent observing infra, likely own setup"}
+{"id": "01m4zynjj29gx8kgawb6v969me", "verdict": "maybe", "why": "Encoding judgment into own AWS agent ops"}
+{"id": "01m4xyc4rmv8ydx86bdmnmerd5", "verdict": "maybe", "why": "Swamp Club personal post on LLM usage"}
+{"id": "01m4xmg9bpnjrwdd6hzzwhzkte", "verdict": "yes", "why": "Author runs business and homelab on swamp"}
+{"id": "01m4xmg99429k0tcsnj3xw7wkx", "verdict": "maybe", "why": "Developer's view on agent workflows, likely own"}
+{"id": "01m4x74jwsere5saytwtaj025v", "verdict": "yes", "why": "Developer describes own swamp agent tooling"}
+{"id": "01m4x74jvj7v1mtmajfva18cqs", "verdict": "maybe", "why": "Swamp founder on verifying agent code"}
+{"id": "01m4wse6thq3hyy1353jkrdz80", "verdict": "maybe", "why": "Response essay, likely describes own AI use"}
+{"id": "01m45r1vgdyz72g7y2cf45cn6k", "verdict": "maybe", "why": "Agent documentation approach, likely own practice"}
+{"id": "01m45mr5rz7vnjve1j817ss1dt", "verdict": "yes", "why": "Vibe coded website with coding agents, personal"}
+{"id": "01m3yfkf7znz9wxdfarmskeng4", "verdict": "maybe", "why": "Brain sandwich AI coding workflow, likely author's"}
+{"id": "01m3jnngemev6sq3mhzpjtmms2", "verdict": "maybe", "why": "Simon keynote recap likely covers own tools"}
+{"id": "01m3cxv3tvc102k334my7gft7t", "verdict": "maybe", "why": "Learning to work with agents, personal reflection"}
+{"id": "01m2xh30qsrh4ps24d7qcqea47", "verdict": "maybe", "why": "Authors' own LLM writing rules"}
+{"id": "01m2sdek9qqxrfq9hb5hwqg14r", "verdict": "maybe", "why": "Techniques with Jev model, possibly own use"}
+{"id": "01m2mh2b2c2fkbbtc8a8r845yq", "verdict": "maybe", "why": "Author experimenting with Jev structured output"}
+{"id": "01m2mg1a1t5dpt9mtg8pa2y351", "verdict": "maybe", "why": "Teaching author's Claw about Swamp"}
+{"id": "01m2mg19tz8gcrwqp39rf6ezgk", "verdict": "yes", "why": "Field report: own swamp workflow cut agent tokens"}
+{"id": "01m2j2sg8zpz1mmmvc7qdttr9a", "verdict": "maybe", "why": "Working with agents, likely author's practice"}
+{"id": "01m1f5rhz59s73z3e1j9e29jxy", "verdict": "maybe", "why": "Simon found Codex cache on his machine"}
+{"id": "01m1ajen16m3wcexqkrrkhpxd4", "verdict": "maybe", "why": "Simon likely tried ChatGPT Work himself"}
+{"id": "01m1a9a3bphdfh1d76b8esn6sz", "verdict": "yes", "why": "Three months running author's own agentic harness"}
+{"id": "01m069hs5n9qd5avzktcjg1ycw", "verdict": "maybe", "why": "Simon running Qwen 3.8 locally"}
+{"id": "01m014fy195bf5d1b7henrw308", "verdict": "maybe", "why": "Simon using LLM to classify his blog"}
+{"id": "01kzvd0fg80ptrjkp3qv2mnh0h", "verdict": "maybe", "why": "Lemire on AI programming, likely own use"}
+{"id": "01kzejt6re9jcjb6rbygtskezp", "verdict": "maybe", "why": "Simon built mcp-explorer and datasette-mcp"}
+{"id": "01kzejknbkkhfez0e1chmb9gy8", "verdict": "maybe", "why": "LLMs reward expertise, likely personal examples"}

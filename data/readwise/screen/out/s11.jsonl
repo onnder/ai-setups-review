@@ -1,0 +1,22 @@
+{"id": "01khh5cj8azse385p9c7g738tn", "verdict": "maybe", "why": "Simon reflects on OpenClaw; may include own usage"}
+{"id": "01khcmd5cwhs58cyyamg0tps8y", "verdict": "yes", "why": "Author cloned Linear using Claude Code in ~20 prompts"}
+{"id": "01kh4byb83geb387w19p5764rf", "verdict": "maybe", "why": "Simon's own tools for coding agents to demo work"}
+{"id": "01kh2m9m05t59tydxc4h7zx3hn", "verdict": "maybe", "why": "Tunguz on skills; may describe his own agent use"}
+{"id": "01kgydq06mwbw6gpvx95mc5qjs", "verdict": "yes", "why": "Author's trick for maintaining CLAUDE.md/AGENTS.md with agent"}
+{"id": "01kgthbgx0993gqz274myqp1a6", "verdict": "maybe", "why": "Simon project likely built with coding agent"}
+{"id": "01kgny8620yxd7n973e11meerj", "verdict": "yes", "why": "Author rewrote pycparser with LLM help"}
+{"id": "01kgmjr3mhbj17y6kknn6wjjxj", "verdict": "maybe", "why": "Simon Go tooling project, likely agent-assisted"}
+{"id": "01kghw9k06gwx2z3228g1ypxc3", "verdict": "maybe", "why": "Author using Cursor for non-technical work"}
+{"id": "01kgg4w688wp5bxsmz78wk6jbz", "verdict": "yes", "why": "Author's TDD shift due to using coding agents"}
+{"id": "01kgfmtg5bxfq81eq0xz9q9cx5", "verdict": "maybe", "why": "Senior engineer guide, may include own Copilot setup"}
+{"id": "01kgdts4zj68swvfy2nzg71rmq", "verdict": "yes", "why": "Simon's notes running OpenClaw in Docker on his Mac"}
+{"id": "01kfkf0h7ctb4j08vhqjkt5ccq", "verdict": "maybe", "why": "Tunguz on models managing models, possibly own stack"}
+{"id": "01kfe7ex7n7mxfy3142hgx9635", "verdict": "yes", "why": "Author's Claude Code Ralph loop setup with agent-browser"}
+{"id": "01kfe5kkvrt3nc9wdqpr5p6x3v", "verdict": "yes", "why": "Author built countdown app with Copilot Plan agent, TDD"}
+{"id": "01kf36gaapxj9by4535r8cn67w", "verdict": "maybe", "why": "Fly.io on agent sandboxes, may describe own agent use"}
+{"id": "01keyxtxy78ceb5s3725mmqd4w", "verdict": "yes", "why": "Author handed AWS creds to Claude Code, built SaaS"}
+{"id": "01kerrjgzp5ezz3yka19skjk99", "verdict": "yes", "why": "Simon porting JustHTML with Codex CLI and GPT-5.2"}
+{"id": "01kerrjg7wptj6xb4m3p8wwq75", "verdict": "maybe", "why": "Author on Agent Skills in Copilot, likely own usage"}
+{"id": "01kef8m1dzachnzfn7ar8f615c", "verdict": "yes", "why": "Author's parallel coding agent workflow"}
+{"id": "01ke6kz0zdpktgzd37fr3dd7t2", "verdict": "maybe", "why": "Simon essay on LLM-assisted coding, possibly own tools"}
+{"id": "01ke6kz0wchnqzvt7vty7v1f8v", "verdict": "maybe", "why": "Simon on GPT-5.2/Opus 4.5 inflection, own experience"}

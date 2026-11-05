@@ -1,0 +1,27 @@
+{"id": "01m1fpnzs48xj82xgcww6e9792", "verdict": "maybe", "why": "Simon's hands-on pelican test of Claude Fable 5.1"}
+{"id": "01m1dm7k08fzvwqppg9364vjpq", "verdict": "maybe", "why": "PostHog team's own AGENTS.md practices"}
+{"id": "01m1c21tecmqa2ewn4ns7y0qh7", "verdict": "maybe", "why": "Author's technique asking coding agent to quiz him"}
+{"id": "01m0x3hrraydren1ya7rrtmpgj", "verdict": "maybe", "why": "Tunguz likely describes his own agent session architecture"}
+{"id": "01m0tmk0k91f2zzwvpwnqd9jp1", "verdict": "maybe", "why": "First-person essay on LLM coding shift, may mention tools"}
+{"id": "01m0r73pdfanyxppzd2j07svpj", "verdict": "maybe", "why": "Coding agents/open weights essay, may cover own usage"}
+{"id": "01m0n376crgz3vmv74asffbr0k", "verdict": "maybe", "why": "Simon on working with coding agents, likely personal"}
+{"id": "01m0kd14ag4r8dghpkaeetvvvj", "verdict": "yes", "why": "Author's own agent.md for LLM-assisted coding"}
+{"id": "01m0gr41tjb0aj93fmfx7dwq10", "verdict": "maybe", "why": "Simon research project likely built with coding agent"}
+{"id": "01m0e6980r35kebc0vxj87vtga", "verdict": "yes", "why": "Simon ran Claude Fable 5 in Claude Code for research"}
+{"id": "01m0e3zvm8jjs007yvt260fj60", "verdict": "maybe", "why": "Podcast on AI changing dev, Simon's own practice"}
+{"id": "01m0dp1j9wxn0yjmgf3hq5822g", "verdict": "yes", "why": "Author builds own AI dev workflow, first person"}
+{"id": "01m087a6yn6kbapm58qpb5jtvb", "verdict": "yes", "why": "Author: how I use canvases with my agentic workflows"}
+{"id": "01m0843rzxq36r8ma8b6p4gm1v", "verdict": "maybe", "why": "Founder's personal Codex/ChatGPT workflow interview"}
+{"id": "01m06a67dtzxpda18bxzmhqtfn", "verdict": "maybe", "why": "Author's framework for AI costs, maybe own spend"}
+{"id": "01m042m32p0xdy59ar0z8sa0y5", "verdict": "yes", "why": "Simon built tool with GPT-5.6-Sol, local Qwen setup"}
+{"id": "01kzxx2rttnxqycv19abpqzc0w", "verdict": "yes", "why": "Author built demo generator with GitLab Duo agent"}
+{"id": "01kzpvta0s62s77rsyf5250we8", "verdict": "maybe", "why": "Agentic session cost analysis, likely own bills"}
+{"id": "01kzp37h6kadc6byfc3w0hnm8p", "verdict": "maybe", "why": "How I AI: code review bot, Claude Code usage"}
+{"id": "01kzmbv8k3h4zfwphaa6vqhgkv", "verdict": "maybe", "why": "Simon's own research repo used GitHub Models"}
+{"id": "01kzetn1mbtae13ad1aeqyhc9a", "verdict": "yes", "why": "Simon's game built with Codex + GPT-5.6 Sol"}
+{"id": "01kz9qgcvjbzqtx1hpjk8e28qw", "verdict": "yes", "why": "Simon one-shot game with Claude Fable 5 in Claude Code"}
+{"id": "01kz99speg82e8za14yh5c7rgd", "verdict": "maybe", "why": "Matt Pocock's own Claude Code skills release"}
+{"id": "01kz8sbkdwzh5rb27xc0ah326c", "verdict": "maybe", "why": "Author's own agent skill for Opus verbosity"}
+{"id": "01kz77pz8nttgwyfvbgtc10yz5", "verdict": "maybe", "why": "YOLO mode opinion, may describe author's own setup"}
+{"id": "01kz73dm62kfzjwbsxs38mnmr5", "verdict": "maybe", "why": "Team field report using Copilot CLI"}
+{"id": "01kz5h1k9dxce3gj052xhm3xqc", "verdict": "maybe", "why": "PostHog lessons writing their own agent skills"}

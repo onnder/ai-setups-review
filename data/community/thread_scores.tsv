@@ -1,0 +1,214 @@
+source	id	rel	date	title	n	hits	authors	ratio
+tildes	1viu	medium	2026-08-10	Why normal people aren’t using AI agents	135	6	6	0.04
+lobsters	cmsfbu	medium	2026-01-11	Don't fall into the anti-AI hype	296	6	5	0.02
+tildes	1t4l	medium	2026-03-10	What are people using instead of VS Code?	49	5	5	0.1
+lobsters	8pfxqy	medium	2026-03-15	I let Claude Code configure my Arch install	30	6	4	0.2
+tildes	1udu	high	2026-05-28	Actually useful MCPs	15	4	4	0.27
+lobsters	0qdgc0	high	2026-04-21	Is Claude Code going to cost $100/month? Probably not—it’s all very confusing	49	3	3	0.06
+lobsters	hwqdvt	high	2026-06-16	Running local models is good now	56	3	3	0.05
+lobsters	tdvu7a	medium	2026-06-10	Blogging with an LLM assistant	59	4	3	0.07
+lobsters	ua1gxl	medium	2026-07-06	GLM 5.2 and the coming AI margin collapse	18	3	3	0.17
+lobsters	77kygu	high	2026-06-20	Effective use-cases for LLMs	15	2	2	0.13
+lobsters	7tpc5q	medium	2026-09-04	Surviving Code Reviews in the era of AI	98	2	2	0.02
+lobsters	cw6f2s	medium	2026-01-24	AI tribalism	135	2	2	0.01
+lobsters	galkdh	medium	2026-06-09	Grit: rewriting Git in Rust with agents	20	2	2	0.1
+lobsters	kkqqdn	high	2026-08-10	No, local models will not win	51	2	2	0.04
+lobsters	n1h2tl	high	2026-03-22	Is Local the Future of AI?	42	2	2	0.05
+lobsters	rfiuko	medium	2026-08-12	I'm done using AI	81	2	2	0.02
+lobsters	txknsm	high	2026-01-18	My thoughts on Gas Town after 10,000 hours of Claude Code	20	2	2	0.1
+lobsters	u4bws9	high	2026-03-28	BubbleWrap your dev env and agents	25	2	2	0.08
+lobsters	wdrawa	medium	2026-02-27	AI sandbox that runs on your homelab	25	2	2	0.08
+lobsters	wevegu	medium	2026-10-02	The Four Horsemen of Agentic Coding	28	3	2	0.11
+lobsters	zljfgp	medium	2026-07-27	On AI	76	2	2	0.03
+tildes	1t2j	high	2026-03-06	Is it worthwhile to run local LLMs for coding today?	40	2	2	0.05
+tildes	1t9w	medium	2026-03-19	That one study that proves developers using AI are deluded	61	3	2	0.05
+tildes	1un9	high	2026-06-12	Any fellow software engineers using paid GitHub copilot?	32	2	2	0.06
+tildes	1up9	medium	2026-06-16	What about having an LLM teach you to code?	23	2	2	0.09
+tildes	1uzm	medium	2026-07-05	Agentic test processes, LLM benchmarks, and other notes on agentic coding	10	2	2	0.2
+tildes	1v5t	medium	2026-07-17	I wonder if years from now hand written code will be antique	27	3	2	0.11
+tildes	1vs0	medium	2026-08-26	Software engineers / programmers: how’s it going?	25	2	2	0.08
+tildes	1vzt	medium	2026-09-12	Where do we go from here? (Regarding AI)	98	2	2	0.02
+tildes	1wd1	medium	2026-10-07	Given everything we know about AI so far, what do you think it can or cannot be good for?	39	2	2	0.05
+lobsters	5t3wzn	medium	2026-07-13	Control the ideas, not the code	41	1	1	0.02
+lobsters	6c8cwq	medium	2026-03-31	Reading leaked Claude Code source code	46	1	1	0.02
+lobsters	7d8dxv	high	2026-04-02	I used AI. It worked. I hated it	42	1	1	0.02
+lobsters	87rudf	high	2026-02-05	My AI Adoption Journey	19	1	1	0.05
+lobsters	aso7dh	high	2026-08-02	I'm (mostly) picking models on speed now, not intelligence	24	1	1	0.04
+lobsters	ccbjxb	medium	2026-04-28	Warp is now open-source	14	1	1	0.07
+lobsters	d0vsgl	medium	2026-06-21	Is AI ruining our skills? Early results are in and they’re not good	68	1	1	0.01
+lobsters	fooyux	medium	2026-08-15	Why I remain a skeptic	144	1	1	0.01
+lobsters	fxccx9	medium	2026-09-05	Is it too much to ask devs to use AI to review their hand-crafted code?	113	1	1	0.01
+lobsters	gpqkcx	medium	2026-04-05	Eight years of wanting, three months of building with AI	17	1	1	0.06
+lobsters	hbjy0b	medium	2026-09-30	The AI Pascal’s Wager	80	1	1	0.01
+lobsters	humg0y	high	2026-06-04	What happened to tab autocomplete?	18	1	1	0.06
+lobsters	iq5xtw	medium	2026-10-12	Linus Torvalds Working On A Hefty Linux Kernel Improvement With Claude Code	112	1	1	0.01
+lobsters	k0cm8c	high	2026-03-14	Getting started with Claude for software development	17	1	1	0.06
+lobsters	lkv0sh	high	2026-05-25	Using AI to write better code more slowly	46	1	1	0.02
+lobsters	mhgog9	high	2026-01-12	Anthropic blocks third-party tools using Claude Code OAuth tokens	30	1	1	0.03
+lobsters	mj7k0s	medium	2026-01-14	Coding on a Phone: What I Learned Building Software on Mobile in the Last Three Weeks	19	1	1	0.05
+lobsters	nmyrxg	medium	2026-02-24	How I got Claude to teach me dbt	11	1	1	0.09
+lobsters	os20fa	medium	2026-08-17	Vetted AI code is hard to justify	33	1	1	0.03
+lobsters	oxeeyz	high	2026-01-20	My week with opencode	10	1	1	0.1
+lobsters	pkj7mf	medium	2026-09-17	I Don't Like LLMs	45	1	1	0.02
+lobsters	q2rymh	medium	2026-09-28	What Would A Serious AI Product Look Like?	17	1	1	0.06
+lobsters	qmjejh	medium	2026-02-15	AI is slowly munching away my passion	63	1	1	0.02
+lobsters	qnffyn	medium	2026-09-01	The Endless Temptation of Claude	44	1	1	0.02
+lobsters	ri4flr	medium	2026-06-04	AI enthusiasts are in a race against time, AI skeptics are in a race against entropy	57	1	1	0.02
+lobsters	tiktds	medium	2026-03-10	AI should help us produce better code	95	1	1	0.01
+lobsters	tsgoap	medium	2026-05-31	vibecoding as adhd multiplier	26	1	1	0.04
+lobsters	utloro	medium	2026-09-04	Is AI ruining my brain?	20	1	1	0.05
+lobsters	uvwcdo	medium	2026-06-08	Cleaning up after AI rockstar developers	62	1	1	0.02
+lobsters	vd8q8g	medium	2026-01-02	Welcome to Gas Town	12	1	1	0.08
+lobsters	x0qrlm	medium	2026-01-23	AGENTS.md as a dark signal	73	1	1	0.01
+lobsters	xaicu8	medium	2026-04-16	The Claude Coding Vibes Are Getting Worse	16	1	1	0.06
+lobsters	xgtyyu	medium	2026-04-25	Do I belong in tech anymore?	72	1	1	0.01
+lobsters	ykwb2z	high	2026-02-27	An AI agent coding skeptic tries AI agent coding, in excessive detail	21	1	1	0.05
+tildes	1sim	medium	2026-02-04	Any software engineers considering a career switch due to AI?	71	1	1	0.01
+tildes	1sul	medium	2026-02-23	Why doesn’t Anthropic use Claude to make a good Claude desktop app?	41	1	1	0.02
+tildes	1t3p	medium	2026-03-08	I don’t know if my software engineering job will still exist in ten years	41	1	1	0.02
+tildes	1tkx	high	2026-04-06	AI Coding agents are the opposite of what I want	46	1	1	0.02
+tildes	1tnd	medium	2026-04-10	Prototyping with LLMs	8	1	1	0.12
+tildes	1ume	medium	2026-06-10	AI is bringing my friend out of retirement	19	1	1	0.05
+tildes	1un2	medium	2026-06-11	Our workplace LLM mass delusion	14	1	1	0.07
+tildes	1ux8	medium	2026-06-30	AI adoption and IntelliSense	14	1	1	0.07
+tildes	1v5j	medium	2026-07-16	Claude Code is the ceiling on vibe-coded software	29	1	1	0.03
+tildes	1vya	medium	2026-09-09	Software for humans	68	1	1	0.01
+tildes	1w5w	medium	2026-09-24	The plunging price of AI	24	1	1	0.04
+tildes	1wew	medium	2026-10-10	Solo developer rebuilds Adobe Creative Suite in Rust using Claude, releases it free to all	100	1	1	0.01
+tildes	1wrg	medium	2026-11-03	Qwen 3.8 27B on my laptop can interpret model weights, too	11	1	1	0.09
+lobsters	05o8yu	medium	2026-04-04	If you thought the speed of writing code was your problem - you have bigger problems	21	0	0	0.0
+lobsters	0gvyif	medium	2026-10-07	Software developers are not okay	116	0	0	0.0
+lobsters	0o60nu	medium	2026-03-30	copilot edited an ad into my pr	31	0	0	0.0
+lobsters	0pxvyd	medium	2026-01-18	Agent Psychosis: Are We Going Insane?	100	0	0	0.0
+lobsters	0r8fgx	medium	2026-01-02	Bespoke software is the future	32	0	0	0.0
+lobsters	0rtina	medium	2026-08-12	Why Go is an Ideal Language for AI-Assisted Software Engineering	27	0	0	0.0
+lobsters	1ifr5f	medium	2026-09-14	The contagion of fear	74	0	0	0.0
+lobsters	2fqahd	medium	2026-05-19	I am not a Software Engineer	12	0	0	0.0
+lobsters	2svv99	medium	2026-02-04	Competence as Tragedy	51	0	0	0.0
+lobsters	3ltdmy	medium	2026-05-20	Twelve Ways to Be Wrong About AI-Assisted Coding	23	0	0	0.0
+lobsters	3w0o3y	medium	2026-04-06	The machines are fine. I'm worried about us	17	0	0	0.0
+lobsters	435bmi	medium	2026-05-06	Vibe coding and agentic engineering are getting closer than I’d like	16	0	0	0.0
+lobsters	4i8uad	medium	2026-03-25	Thoughts on slowing the fuck down	17	0	0	0.0
+lobsters	4jgfcx	medium	2026-03-15	LLM time	18	0	0	0.0
+lobsters	4qfkrz	medium	2026-08-06	Taste Is All That's Left	47	0	0	0.0
+lobsters	4rcwmh	medium	2026-06-13	Talk more to your coding agents	12	0	0	0.0
+lobsters	6ifznf	medium	2026-02-01	Vibe: Easy VM sandboxes for LLM agents on MacOS	11	0	0	0.0
+lobsters	6jlrx2	medium	2026-03-30	2026 has been the most pivotal year in my career… and it's only March	20	0	0	0.0
+lobsters	6nahuh	medium	2026-02-05	Building a C compiler with a team of parallel Claudes	47	0	0	0.0
+lobsters	6pvtem	medium	2026-03-09	AI will fuck you up if you’re not on board	43	0	0	0.0
+lobsters	6skrep	medium	2026-01-13	AI Coding Assistants Are Getting Worse	20	0	0	0.0
+lobsters	7guove	medium	2026-09-11	Feeling sad about AI	136	0	0	0.0
+lobsters	7iford	medium	2026-02-10	I Started Programming When I Was 7. I'm 50 Now, and the Thing I Loved Has Changed	29	0	0	0.0
+lobsters	8izobt	medium	2026-08-16	You can just choose how many bugs you want now	18	0	0	0.0
+lobsters	8ohth3	medium	2026-06-02	Quality in the Age of Slop	28	0	0	0.0
+lobsters	972mji	medium	2026-04-01	Everything Claude Saw: A Transparent Account of the Chardet v7 Rewrite	17	0	0	0.0
+lobsters	9fjar3	medium	2026-10-07	Reasons to dislike AI coding	35	0	0	0.0
+lobsters	9kb1xw	high	2026-02-09	Fine, I'll Try AI	57	0	0	0.0
+lobsters	a7thxr	medium	2026-06-24	The Coming Loop	22	0	0	0.0
+lobsters	agbpkq	medium	2026-09-14	We are all Product Engineers now	24	0	0	0.0
+lobsters	aixljs	medium	2026-08-27	The turbulent AI era is here	29	0	0	0.0
+lobsters	awjqvn	medium	2026-10-12	What I've been seeing lately (in software)	22	0	0	0.0
+lobsters	bnldoy	medium	2026-02-08	I Am Happier Writing Code by Hand	12	0	0	0.0
+lobsters	csgzki	medium	2026-06-25	The Exhaustion of Talking to a Tool	32	0	0	0.0
+lobsters	dd6if1	medium	2026-09-18	There's no point at which turning your brain off will work	24	0	0	0.0
+lobsters	dmlzwx	medium	2026-09-13	Don't call yourself an artisanal programmer	37	0	0	0.0
+lobsters	dnqcvh	medium	2026-03-09	Your LLM Doesn't Write Correct Code. It Writes Plausible Code	24	0	0	0.0
+lobsters	dtkjsz	medium	2026-04-25	It's OK to use coding assistance tools to revive the projects you never were going to finish	18	0	0	0.0
+lobsters	el8ocy	medium	2026-07-14	Hating AI in 2026	37	0	0	0.0
+lobsters	elhi7o	medium	2026-07-11	In defense of not understanding your codebase	18	0	0	0.0
+lobsters	elziso	medium	2026-10-03	The Era of Software Quality, or the Era of Ostriches?	66	0	0	0.0
+lobsters	eyaz5f	medium	2026-08-22	Linus Torvalds uses AI to debug an Intel GPU driver bug	26	0	0	0.0
+lobsters	fadbev	medium	2026-08-23	Amazon kept shutting down my tablet, so I spent $266 on four AI models to own it	16	0	0	0.0
+lobsters	fjrzzm	medium	2026-02-24	How we rebuilt Next.js with AI in one week	11	0	0	0.0
+lobsters	g4sj0m	medium	2026-03-22	The diminished art of coding	15	0	0	0.0
+lobsters	gfsl25	medium	2026-02-08	AI fatigue is real and nobody talks about it	17	0	0	0.0
+lobsters	ghtnpx	medium	2026-03-20	I'm OK being left behind, thanks	33	0	0	0.0
+lobsters	go7hr7	medium	2026-01-16	Histomat of F/OSS: We should reclaim LLMs, not reject them	35	0	0	0.0
+lobsters	gzddgr	medium	2026-08-24	AI Coding will Prevent Expertise	22	0	0	0.0
+lobsters	hf6q1n	medium	2026-01-27	Why AI Coding Advice Contradicts Itself	18	0	0	0.0
+lobsters	hfbqr3	medium	2026-08-03	Don't be a meat proxy	51	0	0	0.0
+lobsters	hfuiti	medium	2026-02-04	I miss thinking hard	34	0	0	0.0
+lobsters	hjhufj	medium	2026-10-13	Where is all the new, good software?	75	0	0	0.0
+lobsters	ifvdvx	medium	2026-09-10	Bad Vibes Coding	12	0	0	0.0
+lobsters	iixlsm	medium	2026-08-08	"""Code was never the hard part"" is an insult to all programmers"	32	0	0	0.0
+lobsters	ily7as	medium	2026-10-09	Programming Isn’t Special	49	0	0	0.0
+lobsters	irxjid	medium	2026-02-11	The AI Vampire	23	0	0	0.0
+lobsters	ishgbs	medium	2026-06-12	AI Agent Bankrupted Their Operator While Trying to Scan DN42	28	0	0	0.0
+lobsters	ivbx5f	medium	2026-09-27	One month without AI	14	0	0	0.0
+lobsters	iwvjr0	medium	2026-10-01	Reducing the cognitive load of AI changes	19	0	0	0.0
+lobsters	j2l2ya	medium	2026-04-09	Let’s talk about LLMs	42	0	0	0.0
+lobsters	j5rw8d	medium	2026-03-27	Which Programming Language Is Best for Claude Code?	29	0	0	0.0
+lobsters	j65lz5	medium	2026-08-02	23 languages, one I can check	41	0	0	0.0
+lobsters	jiv1c5	medium	2026-09-24	Pencils Down, Eyes Open: A Rails Developer After Rails World	54	0	0	0.0
+lobsters	jsw3wk	medium	2026-01-14	Why We Don't Use AI	58	0	0	0.0
+lobsters	k3delj	medium	2026-05-02	Agentic Coding is Burning Me Out	16	0	0	0.0
+lobsters	kn0jwm	medium	2026-05-05	claude code is not making your product better	26	0	0	0.0
+lobsters	kp6eap	medium	2026-03-31	The Subprime Technical Debt Crisis	18	0	0	0.0
+lobsters	kx2sp3	medium	2026-02-24	Lines of Code Are Back (And It's Worse Than Before)	23	0	0	0.0
+lobsters	lfaddj	medium	2026-09-06	Maybe We Shouldn't Be Reviewing All This Code	15	0	0	0.0
+lobsters	lrjceq	medium	2026-06-11	our workplace LLM mass delusion	25	0	0	0.0
+lobsters	m0twb1	medium	2026-01-22	Your App Subscription Is Now My Weekend Project	68	0	0	0.0
+lobsters	m1mkjm	medium	2026-02-14	A programmer's loss of identity	65	0	0	0.0
+lobsters	mfizts	medium	2026-05-04	Losing Skills	14	0	0	0.0
+lobsters	miwcai	high	2026-10-16	Do you let LLMs write both your tests and your code?	23	0	0	0.0
+lobsters	mosbat	medium	2026-10-08	Thinking will become a hobby	19	0	0	0.0
+lobsters	n4vfwm	medium	2026-09-22	tokens too cheap to meter	14	0	0	0.0
+lobsters	nlyezv	medium	2026-03-17	A sufficiently detailed spec is code	27	0	0	0.0
+lobsters	nmnmnq	medium	2026-05-04	Nondeterminism's not the problem	21	0	0	0.0
+lobsters	npaxtp	medium	2026-04-26	LLM-assisted coding is not deterministic. Does it matter?	20	0	0	0.0
+lobsters	o7zxmn	medium	2026-04-13	Programming used to be free	14	0	0	0.0
+lobsters	olipz6	medium	2026-03-31	Early observations from Interviews with Engineering Teams Adopting AI	13	0	0	0.0
+lobsters	onbcu5	medium	2026-06-04	Code is Cheap(er)	11	0	0	0.0
+lobsters	pf0hfr	medium	2026-08-14	There Is Still No Silver Bullet	19	0	0	0.0
+lobsters	prer9l	medium	2026-05-19	Software's Centaur Era	12	0	0	0.0
+lobsters	qhszda	medium	2026-09-29	AI Didn’t Make Programming Easier. It Just Made It Differently Difficult	13	0	0	0.0
+lobsters	qiwlzz	medium	2026-09-14	"""Do You Still Read the Code?"""	20	0	0	0.0
+lobsters	qorrgl	medium	2026-03-06	I'm not consulting an LLM	26	0	0	0.0
+lobsters	qywh3s	medium	2026-04-11	With AI, you barely need a frontend framework	13	0	0	0.0
+lobsters	rboeor	medium	2026-01-31	Automatic programming	24	0	0	0.0
+lobsters	rhsst0	medium	2026-04-30	The LLM Is Not a Junior Engineer	18	0	0	0.0
+lobsters	rntyvm	medium	2026-09-03	The asteroid currently hitting frontend web development	18	0	0	0.0
+lobsters	s8awlf	medium	2026-02-06	Programming is Dead: The Future of Software Engineering	24	0	0	0.0
+lobsters	scyufg	medium	2026-09-12	Opusfived	12	0	0	0.0
+lobsters	sd1rsy	medium	2026-03-09	I don't know if my job will still exist in ten years	15	0	0	0.0
+lobsters	sshhsl	medium	2026-10-06	What is Codemode	11	0	0	0.0
+lobsters	stwus1	high	2026-02-16	I Sold Out for $20 a Month and All I Got Was This Perfectly Generated Terraform	15	0	0	0.0
+lobsters	syk1hi	medium	2026-07-24	Nothing Works and Everyone Is Euphoric	11	0	0	0.0
+lobsters	t5htlf	medium	2026-10-09	Why Are Coding Agents So Dumb?	22	0	0	0.0
+lobsters	tmddcs	medium	2026-04-12	The peril of laziness lost	14	0	0	0.0
+lobsters	ub8q3s	high	2026-09-12	Useful Things Agents Can Do That Are Not Writing Code	18	0	0	0.0
+lobsters	ui2vor	medium	2026-08-02	Prevent cognitive debt by manually retyping LLM-generated code	20	0	0	0.0
+lobsters	uvdj0c	medium	2026-02-15	A Single Reason To Not Vibe Code	39	0	0	0.0
+lobsters	uxqdfr	medium	2026-08-31	On not becoming a cyborg	37	0	0	0.0
+lobsters	vdueen	medium	2026-02-22	You are not left behind	61	0	0	0.0
+lobsters	vjcymq	medium	2026-04-07	Multi-agentic Software Development is a Distributed Systems Problem (AGI can't save you)	25	0	0	0.0
+lobsters	vwmojf	medium	2026-05-01	Why I Don’t Vibe Code	35	0	0	0.0
+lobsters	vxsjiv	medium	2026-03-21	Why craft-lovers are losing their craft	37	0	0	0.0
+lobsters	wssz9m	medium	2026-03-12	Grief and the AI Split	18	0	0	0.0
+lobsters	wtobpt	medium	2026-10-18	My obituary for programming	26	0	0	0.0
+lobsters	x1s5oq	medium	2026-10-25	“AI Skills” are worthless in 2026	59	0	0	0.0
+lobsters	xankns	medium	2026-01-16	Cutting LLM token Usage by ~80% using REPL driven document analysis	14	0	0	0.0
+lobsters	xg8zbk	medium	2026-09-24	Clankers Made Me Build a Second Brain	11	0	0	0.0
+lobsters	xk3ley	medium	2026-08-13	AI is removing the middle class of software engineering	18	0	0	0.0
+lobsters	xkwswd	medium	2026-10-04	We’re going to need default hard budget caps on pretty much everything	18	0	0	0.0
+lobsters	xmwgtx	medium	2026-01-25	How to think about Gas Town	21	0	0	0.0
+lobsters	xq1ta4	medium	2026-02-06	Tactical tornado is the new default	11	0	0	0.0
+lobsters	ypes5v	medium	2026-03-14	Thoughts on generative A.I	50	0	0	0.0
+lobsters	yrmpxy	high	2026-07-04	Better Models: Worse Tools	50	0	0	0.0
+lobsters	zcr7in	medium	2026-10-01	Is sandboxing sufficient to contain rogue agents?	17	0	0	0.0
+lobsters	zdwvdw	medium	2026-01-09	Prompting 101: Show, don’t tell	26	0	0	0.0
+lobsters	zotppg	medium	2026-05-19	Type out the code	45	0	0	0.0
+lobsters	zvcupc	medium	2026-02-17	Are We Becoming Architects or Butlers to LLMs?	13	0	0	0.0
+tildes	1s2s	medium	2026-01-07	Feeling weird about my career with respect to AI	33	0	0	0.0
+tildes	1sr8	medium	2026-02-18	The AI disruption has arrived, and it sure is fun	52	0	0	0.0
+tildes	1su9	medium	2026-02-23	My personal AI assistant project	13	0	0	0.0
+tildes	1t9c	medium	2026-03-18	I hope you don't use generative AI - an essay about my experience offering an open-source tool	95	0	0	0.0
+tildes	1tjo	medium	2026-04-03	What if AI just makes us work harder?	69	0	0	0.0
+tildes	1tqz	medium	2026-04-16	Vibe coding is just the return of Excel/Access, with more danger	39	0	0	0.0
+tildes	1uj1	high	2026-06-04	Have you tried Pewdiepies' self-hosted AI workspace, Odysseus?	30	0	0	0.0
+tildes	1uoy	high	2026-06-15	Will you be left behind if you don't use LLMs to code?	15	0	0	0.0
+tildes	1uy1	medium	2026-07-02	What AI does to the minds of novice coders	17	0	0	0.0
+tildes	1v41	medium	2026-07-14	Who cleans up after the vibe-coding party?	26	0	0	0.0
+tildes	1vqh	medium	2026-08-23	Amazon kept shutting down my tablet, so I spent $266 on four AI models to own it	15	0	0	0.0
+tildes	1wf9	medium	2026-10-11	Software developers are not okay	34	0	0	0.0
+tildes	1wqy	medium	2026-11-02	A lukewarm defense of LLMs	13	0	0	0.0

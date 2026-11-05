@@ -1,0 +1,28 @@
+{"id": "01kw84288tywfmh7pc14kmgwey", "verdict": "maybe", "why": "Udell on recruiting agents into his own loop"}
+{"id": "01kw2kczdcfqzh8f8k2113ntk6", "verdict": "maybe", "why": "Author's own AI assistant attacked by 2,000 people"}
+{"id": "01kw0carfzmqda1z5vqtqx1jpb", "verdict": "maybe", "why": "Q&A on AI-assisted dev may cover author's tools"}
+{"id": "01kw0carcv908g47jzjaam1vnp", "verdict": "maybe", "why": "Author builds health board using Honeycomb MCP"}
+{"id": "01kw0capq018wane7b1qy88gtp", "verdict": "maybe", "why": "Q&A answers may describe author's agent use"}
+{"id": "01kw0cam2n98apqr5vz29cxzsp", "verdict": "maybe", "why": "Support team's own MCP/Canvas debugging workflow"}
+{"id": "01kvy1n8aperc1nbpx0y16b6vh", "verdict": "maybe", "why": "Simon project likely built with coding agent"}
+{"id": "01kvty2s6wp034n84gt613dsrp", "verdict": "maybe", "why": "Simon tool likely built with Claude Code"}
+{"id": "01kvtt529a33xvmcq708kc5sq2", "verdict": "yes", "why": "Ex-Meta engineer describes personal agentic engineering setup"}
+{"id": "01kvrvvbp4v9q85czvwxawx2jn", "verdict": "yes", "why": "Simon ports model to browser using Claude Code"}
+{"id": "01kvqxzh54kp6pvjzt5phrcr44", "verdict": "maybe", "why": "How I AI: guests' agent loops in Claude Code/Codex"}
+{"id": "01kvp8t6xec1f6e1qx62mxy49h", "verdict": "maybe", "why": "Simon release; likely mentions agent-assisted development"}
+{"id": "01kvjw34fgbd0d8rwmhspx3pp9", "verdict": "maybe", "why": "Community shares Claude Code context across teams"}
+{"id": "01kvek808daxn5jvdp8z5ktgtf", "verdict": "maybe", "why": "Simon launch post may describe agent-built apps"}
+{"id": "01kvd7d80d42yq1hah72ga4j4z", "verdict": "maybe", "why": "Fly people building their own agents"}
+{"id": "01kv8k29zs8pfqsty1r1ym4g72", "verdict": "yes", "why": "Gerganov uses Qwen3.6-27B locally for coding daily"}
+{"id": "01kv5wyymcgzj01sbgmvp45zt3", "verdict": "maybe", "why": "How I AI: Fable 5 review, personal usage"}
+{"id": "01kv1qh8pwjmdc5n89e2qymf2t", "verdict": "maybe", "why": "Simon project write-up likely AI-assisted"}
+{"id": "01ktz4w5ar19rab76ef0wrk233", "verdict": "maybe", "why": "Simon tool update likely built with Claude"}
+{"id": "01ktwgpcndz48ng507sr81xpzq", "verdict": "yes", "why": "Simon's two-day hands-on experience with Claude Fable 5"}
+{"id": "01ktq5jan60pf9r8mz5112evt8", "verdict": "yes", "why": "Simon tracks his own token usage via AgentsView"}
+{"id": "01ktfrs7p13mq7tx50chd4tfj5", "verdict": "yes", "why": "Bendersky on his own LLM-agent project workflow"}
+{"id": "01ktc3aerajw1q5wkk183wf5tg", "verdict": "yes", "why": "Tunguz: laptop handles 78% of his AI work"}
+{"id": "01kt4my1bre04dbnbpsa1vbrqt", "verdict": "maybe", "why": "Orosz essay on working with AI agents"}
+{"id": "01kt4epxck0wxzvftcecq29x84", "verdict": "maybe", "why": "Parallel coding playbook, likely author's workflow"}
+{"id": "01kt483ef8af4bqrca6npdjk2p", "verdict": "maybe", "why": "Alderson podcast on agents, possibly his setup"}
+{"id": "01kt3bjnawh9nabyv02m8vs1nx", "verdict": "maybe", "why": "Simon tool likely vibe-coded with Claude"}
+{"id": "01kt1vcryeh4s7vdwnp7rqr4q8", "verdict": "maybe", "why": "How I AI: Codex Goals, Opus review, app building"}

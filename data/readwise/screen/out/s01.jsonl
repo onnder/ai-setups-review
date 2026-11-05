@@ -1,0 +1,34 @@
+{"id": "01kz303c3eax524jbakrg5m7f1", "verdict": "yes", "why": "Author's practical GitHub Copilot workflow"}
+{"id": "01kyx7hvgs7fq5qhkw5ynhc98y", "verdict": "maybe", "why": "Simon built MCP tools, likely mentions own setup"}
+{"id": "01kyx21ygwer4wv5q3n1y31emv", "verdict": "maybe", "why": "Simon podcast on open weights, likely own local use"}
+{"id": "01kymyf7wf3a7wj588e0jvk889", "verdict": "maybe", "why": "Agent delegation guide, may reflect own use"}
+{"id": "01kyjsgj4ph2x7xt475pq1nat3", "verdict": "maybe", "why": "Which-AI-to-use guide, Simon may add own picks"}
+{"id": "01kyjcrsmzse4je3wteyfdc19w", "verdict": "yes", "why": "Author's practical GitHub Copilot workflow"}
+{"id": "01kya2mtkwg1x01q0d3xkftwb1", "verdict": "maybe", "why": "Essay on LLMs, likely mentions author's usage"}
+{"id": "01ky0fx6heemh9d9j06yhavb8f", "verdict": "maybe", "why": "Reverse-engineering with coding agents, possible own anecdote"}
+{"id": "01kxm5zy1wvegfddby85eagz2t", "verdict": "maybe", "why": "Tool likely built with author's coding agent"}
+{"id": "01kxeaxcmcgpzwtztdztmmj71s", "verdict": "yes", "why": "How the author writes software with LLMs"}
+{"id": "01kxd9ehcy0y25rw9n8ch2n43x", "verdict": "yes", "why": "Simon on vibe coding converging in his own work"}
+{"id": "01kxd8y7ytcwb2mm94a8w2dzdv", "verdict": "maybe", "why": "Agentic coding essay, may describe own use"}
+{"id": "01kwffw03c6qwpcg37wjpmtjer", "verdict": "yes", "why": "Author's local agentic coding with local models"}
+{"id": "01kwcqa3n0t932aph3aca0sehd", "verdict": "maybe", "why": "Simon's agent video demo tool, own agent workflow"}
+{"id": "01kv9njba19g17xeeww8yxzgnx", "verdict": "maybe", "why": "Local coding stack, author may share own"}
+{"id": "01ktpkq4g8pa3d8y7qkfeszp13", "verdict": "maybe", "why": "Coding agent loop essay, likely author's practice"}
+{"id": "01kt1793whxbj4g5pe0rcfa66j", "verdict": "yes", "why": "Author's projects shipped with AI"}
+{"id": "01kswrqe9d480gg5ptctsxbzhq", "verdict": "maybe", "why": "Token-saving in Copilot, likely author's own practice"}
+{"id": "01kst8f88a1smqyxbj4hkj3ddq", "verdict": "yes", "why": "Author's personal Pi-based agent and local models"}
+{"id": "01ksjj9609e5sfe1h5ge304asa", "verdict": "maybe", "why": "Harness essay, likely author's own setup"}
+{"id": "01ksj7ta6cep4thpg7fd7kdtb2", "verdict": "maybe", "why": "Opens with author migrating blog via Claude Code"}
+{"id": "01ksdjqyvrxjpwcw8ka5erjj85", "verdict": "maybe", "why": "AI coding agent essay, may reflect own use"}
+{"id": "01kry537dzvs4v6xn5y2m4zvbj", "verdict": "yes", "why": "Author tested 10+ AI systems for own writing"}
+{"id": "01kr4pjxar3sx0xbx6y5h499mg", "verdict": "maybe", "why": "Claude Code HTML usage tips from practitioner"}
+{"id": "01kqytw0yby9std1bms7c7cgng", "verdict": "yes", "why": "Simon on vibe coding converging in his own work"}
+{"id": "01kqrpqk7rs8fxt1jzxn37e4kp", "verdict": "maybe", "why": "Token-saving in Copilot, likely author's own practice"}
+{"id": "01knhnahqr010xffa5eqdxecg9", "verdict": "maybe", "why": "Guest gave Claude Code entire codebase"}
+{"id": "01kng1q5qyfj85s1jqf6h4p12j", "verdict": "maybe", "why": "Field report of building with AI, quoted"}
+{"id": "01kn9f587nsxwq8mkxk7rrk0mh", "verdict": "maybe", "why": "Programming with agents essay, likely own experience"}
+{"id": "01kn7yywg6qwwxee0098xc6pjs", "verdict": "maybe", "why": "Simon on agentic engineering, likely own tools"}
+{"id": "01kn4zcnyw62fqmph69zpkt4zh", "verdict": "yes", "why": "Author burns 250M tokens/day, parallel agent workflow"}
+{"id": "01kmyqb3qew5jsv170vbr62h0j", "verdict": "yes", "why": "Author's home experiment with AI agent at core"}
+{"id": "01kmqvj3a2j86evsn9v2k9msxv", "verdict": "maybe", "why": "Author built Docker Agent skill for own news roundups"}
+{"id": "01kmp9tdvfs22w1d3mm58vhf2j", "verdict": "maybe", "why": "Incident response possibly using AI tools"}

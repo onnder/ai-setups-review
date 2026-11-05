@@ -1,0 +1,10 @@
+# Full texts of third-party articles (copyrighted) — re-create locally with pipeline/fetch_full.py
+data/readwise/full/
+data/readwise/extract/input/
+# Python / OS
+__pycache__/
+*.pyc
+.DS_Store
+# Cloudflare / local tooling
+.wrangler/
+node_modules/

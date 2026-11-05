@@ -1,0 +1,27 @@
+{"id": "01kmc12d61x9gmwjwjs32sqqvk", "verdict": "yes", "why": "Simon experiments with Starlette 1.0 using Claude skills"}
+{"id": "01km9dnyrt8854mvpaktmn1m57", "verdict": "maybe", "why": "Simon's own HN-profiling prompt experiments"}
+{"id": "01km973f5j2h9w7jcnfvzhkjas", "verdict": "maybe", "why": "Simon's agentic patterns; likely his own git+agent workflow"}
+{"id": "01km1x917qbb2wn2pb4rb1q5cb", "verdict": "yes", "why": "Tunguz races Claude Code Opus 4.5 building a payment app"}
+{"id": "01kkyzbky2dp617y8tfmwm5ce5", "verdict": "yes", "why": "Author used Claude Code to fix Linux/Wine setup"}
+{"id": "01kkyn396azyj1b4qsd9a1kn01", "verdict": "maybe", "why": "Model release; Simon likely ran his own photo test"}
+{"id": "01kkxx05sxdvf6xyffqadzg4dq", "verdict": "maybe", "why": "Agentic patterns guide likely references Simon's own tools"}
+{"id": "01kkweer75mnetqfcxywct3awt", "verdict": "maybe", "why": "Codex subagents note; may compare to his Claude Code use"}
+{"id": "01kkw4hm3wevjwk3qz673tk9ew", "verdict": "maybe", "why": "Workshop handout showing Simon's coding agent data workflow"}
+{"id": "01kkv1dg4bs0h4sr6hd4vc7fdm", "verdict": "maybe", "why": "Thompson essay on agents; may mention his own usage"}
+{"id": "01kkstnmz7440mnq9dh72w2wga", "verdict": "maybe", "why": "Simon defines agentic engineering; likely his practice"}
+{"id": "01kkpsjadsnyv7e4nza4vwtg1r", "verdict": "maybe", "why": "Fireside chat; Simon discusses his agentic engineering"}
+{"id": "01kkmrrssd7ymzg3mhqy0f8hv2", "verdict": "maybe", "why": "Author's own Qwen 3.5 OCR workflow locally/OpenRouter"}
+{"id": "01kkfjkx88832cng7b6awv2gm8", "verdict": "yes", "why": "Simon built sorting animations with Claude Artifacts on phone"}
+{"id": "01kk9mv9hsxhqwcz6xyxqjtyyg", "verdict": "maybe", "why": "Tunguz on whether his inbox is agent-run"}
+{"id": "01kjzm2zdgq52fn0b9vaz24hqq", "verdict": "yes", "why": "Author burned 84M tokens running Kimi K2.5 agents"}
+{"id": "01kjqpg4daapfsmwa70dbmbag6", "verdict": "yes", "why": "Simon builds GIF tool with coding agent, agentic pattern"}
+{"id": "01kjnr8akjseprv6t28dmdcrnt", "verdict": "maybe", "why": "Geerling essay on LLM era; may describe own use"}
+{"id": "01kjndpgarhzhy6phwk91s03th", "verdict": "yes", "why": "Author's own $5 AWS OpenClaw personal agent setup"}
+{"id": "01kjn9ryx7chggfv6kat904n5r", "verdict": "maybe", "why": "Tunguz debugging his Julius agent loops"}
+{"id": "01kjg4e4d0t8an6gepmkj82v6n", "verdict": "yes", "why": "Simon prototyped Unicode Explorer from phone with LLMs"}
+{"id": "01kjdew09gkjj7k0hnczagjaac", "verdict": "yes", "why": "Why I replaced SaaS review with OpenCode in CI"}
+{"id": "01kj5mwj2pv538cd9xk1wj9dyz", "verdict": "maybe", "why": "Agentic engineering essay likely drawing on Simon's use"}
+{"id": "01khyqbbd7gznak6hgfjz852at", "verdict": "maybe", "why": "Blog feature likely built with coding agents"}
+{"id": "01khs25xf85npk7cse5xven14p", "verdict": "maybe", "why": "Simon on typing preference shifting with agent coding"}
+{"id": "01khmzbw40nfghsgy1ds7yvccy", "verdict": "maybe", "why": "Simon experiment turning diffs into webcomic with Nano Banana"}
+{"id": "01khmh7rqcadrmmjexsxpr6pdw", "verdict": "yes", "why": "Simon's Showboat tooling for coding agents, daily use"}

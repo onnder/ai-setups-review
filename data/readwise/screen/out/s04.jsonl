@@ -1,0 +1,18 @@
+{"id": "01m48xrke5pmapgp8k0kkn3g1n", "verdict": "yes", "why": "Simon builds music tool with Claude Opus 5.5"}
+{"id": "01m45w6pwx3rc4sqqbd441bmqg", "verdict": "maybe", "why": "Lemire proposes AI-enabled testing, may describe own use"}
+{"id": "01m41wkrr0jsgqsj24a6j3yhaa", "verdict": "maybe", "why": "Simon newsletter may cover models he uses"}
+{"id": "01m3kvp8amdxna1p5rz6anvtv4", "verdict": "maybe", "why": "Author routes his Claude Code messages via Jev"}
+{"id": "01m3g2pq28vxtdr1r2mc68mppp", "verdict": "maybe", "why": "Simon built keynote tool, likely with agent"}
+{"id": "01m3ckb4pv9vakvsfe0bhmyygk", "verdict": "maybe", "why": "Simon reflects on his coding agent work"}
+{"id": "01m3aa4scqhg79cq9rftj4ak9r", "verdict": "maybe", "why": "Author describes personally using Muse agent"}
+{"id": "01m32e7mq2njh96e3v4phjrb74", "verdict": "maybe", "why": "First-person coding agent tips, likely own setup"}
+{"id": "01m2pc7n26ya8ctjq65g4dwnvb", "verdict": "yes", "why": "Field report porting Copilot runtime to Rust with Copilot"}
+{"id": "01m2krnfp03eh3f5f5zbzvjvpr", "verdict": "yes", "why": "Simon builds tool using GPT-6 Astra"}
+{"id": "01m2ensmycbs4wpv3a95x4046v", "verdict": "maybe", "why": "Simon vibe-coded app; coding agent cruft"}
+{"id": "01m2c15h6dk9q4w1dx9nqjeck6", "verdict": "yes", "why": "Simon uses ChatGPT Work with GPT-6 Astra"}
+{"id": "01m278h6tf41g9pxcz5g55gcvn", "verdict": "maybe", "why": "Security releases possibly done with coding agents"}
+{"id": "01m24cnsahj3dggep8a39hbz0t", "verdict": "yes", "why": "Simon builds Blender viewer with GPT-6 Astra"}
+{"id": "01m1yx2e25m4hqwpqkqf1rgfxb", "verdict": "yes", "why": "Simon had Claude Fable 5 build video tool"}
+{"id": "01m1y6gbarcp03c3d0t1n32kkq", "verdict": "yes", "why": "Host replaced her entire agent stack"}
+{"id": "01m1s4j1jyfdxt6kcmbtsdvrxj", "verdict": "yes", "why": "Simon's Blender setup with ChatGPT Codex on Mac"}
+{"id": "01m1qdw8ftf2kpmp9vd5frmnw6", "verdict": "maybe", "why": "Simon personally tests GPT-6 Astra pelicans"}
