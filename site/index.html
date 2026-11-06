@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Setups Review 2026 — what the IT community actually uses (HN · Lobste.rs · Tildes)</title>
+<title>AI Setups Review 2026: what the IT community actually uses (HN · Lobste.rs · Tildes)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -230,7 +230,7 @@ footer{padding:36px 0 64px;font-family:var(--mono);font-size:12px;color:var(--mu
     <div class="rv">
       <div class="kicker">Infographic report · counted by unique authors</div>
       <h1>What the IT community <em>actually</em> uses for AI&nbsp;work</h1>
-      <p class="dek">We read <strong id="h-com"></strong> comments from Hacker News, Lobste.rs and Tildes posted in 2026, plus personal blogs. Each author counts once per tool, and only if they <strong>currently use it themselves</strong>. New in this edition: <strong>which interface</strong> people use to work with AI and <strong>how the communities differ</strong>.</p>
+      <p class="dek">I wanted to know what people actually run, not what gets announced. So I went through <strong id="h-com"></strong> comments from Hacker News, Lobste.rs and Tildes posted in 2026, plus a pile of personal blogs. Each person counts once per tool, and only if they say they use it now. This edition also looks at the interface people work in and at how the three communities differ.</p>
     </div>
     <div class="big rv">
       <span class="num" id="h-big"></span>
@@ -251,7 +251,7 @@ footer{padding:36px 0 64px;font-family:var(--mono);font-size:12px;color:var(--mu
         <p class="eyebrow">Each dot = 1 author</p>
         <div class="waffle" id="waffle" role="img" aria-label="Waffle chart of authors by Claude Code and Codex CLI use"></div>
         <div class="legend" id="w-leg"></div>
-        <p class="note">Claude Code and Codex CLI are often not mutually exclusive. <b id="w-both"></b> authors use both, typically Claude Code as the main tool and Codex for review or as a fallback.</p>
+        <p class="note">Plenty of people run both. <b id="w-both"></b> authors use Claude Code and Codex CLI side by side, usually Claude Code for the main work and Codex for review or when Claude gets stuck.</p>
         <p class="eyebrow" style="margin-top:34px">Beyond coding · apps and services</p>
         <div class="bars" id="b-app"></div>
       </div>
@@ -263,7 +263,7 @@ footer{padding:36px 0 64px;font-family:var(--mono);font-size:12px;color:var(--mu
   <section>
     <div class="sh rv"><div class="sec-no">02</div><div>
       <h2>Communities side by side: same leader, different tail</h2>
-      <p class="lede">Share of authors in each source who use the tool. Cell colour reflects the share within the row. Blogs = authors of articles about their own setup (1 vote per author). They are mostly enthusiasts, so naturally “pro-AI”.</p>
+      <p class="lede">Share of authors in each source who use the tool. Cell colour reflects the share within the row. Blogs means authors of articles about their own setup, one vote each. People who blog about their AI setup tend to like AI, so expect higher numbers in that row.</p>
     </div></div>
     <div class="rv" style="overflow-x:auto"><table class="heat" id="srcmap"></table></div>
     <p class="note rv" id="src-note"></p>
@@ -272,8 +272,8 @@ footer{padding:36px 0 64px;font-family:var(--mono);font-size:12px;color:var(--mu
   <!-- interfaces -->
   <section>
     <div class="sh rv"><div class="sec-no">03</div><div>
-      <h2>Interfaces: the terminal rules, but not alone</h2>
-      <p class="lede">Which surface people use to work with a tool or model. <b>Solid fill</b> = the author named the interface explicitly. <b>Hatching</b> = inferred from the tool’s default interface (e.g. “Codex CLI” → terminal), since most people don’t mention it.</p>
+      <h2>Interfaces: mostly the terminal</h2>
+      <p class="lede">Where people actually type: terminal, IDE, desktop app, browser, phone. Solid bars are people who said so. Hatched bars are my inference from the tool's default interface (someone who says "Codex CLI" is in a terminal), because most people never mention it.</p>
     </div></div>
     <div class="grid2">
       <div class="rv"><p class="eyebrow">Interface type · unique authors · <span class="sw" style="background:var(--ink)"></span>explicit <span class="sw" style="background:repeating-linear-gradient(-45deg,var(--ink) 0 2px,transparent 2px 6px);outline:1px solid var(--ink)"></span>inferred</p><div class="bars" id="b-iface"></div>
@@ -284,14 +284,14 @@ footer{padding:36px 0 64px;font-family:var(--mono);font-size:12px;color:var(--mu
     </div>
     <p class="eyebrow rv" style="margin-top:44px">Model × what the author uses it through · number of authors who stated the pairing explicitly</p>
     <div class="rv" style="overflow-x:auto"><table class="heat" id="viamap"></table></div>
-    <p class="note rv">Claude is used mostly through <b>Claude Code</b>. Open models (Qwen, DeepSeek, GLM) run mainly through the open harnesses <b>Pi</b> and <b>OpenCode</b>, via <b>OpenRouter</b>, or directly on <b>llama.cpp</b>. GPT is most often paired with <b>Codex CLI</b>.</p>
+    <p class="note rv">Claude mostly goes through Claude Code. Open models like Qwen, DeepSeek and GLM go through Pi and OpenCode, through OpenRouter, or straight into llama.cpp. GPT usually shows up with Codex CLI. No surprises there, but it is nice to see it in numbers.</p>
   </section>
 
   <!-- 2 trend -->
   <section>
     <div class="sh rv"><div class="sec-no">04</div><div>
-      <h2>Trend: open-source agents rise, Cursor fades</h2>
-      <p class="lede">Share of authors in each quarter who use the tool. Shares rather than absolute counts, because sample size varies (Q4 is mostly one big HN thread from November). Every panel uses the same axis; grey lines are the other tools for comparison.</p>
+      <h2>Trend: open-source agents up, Cursor down</h2>
+      <p class="lede">Share of authors in each quarter who use the tool. I use shares, not counts, because sample size jumps around between quarters. Q4 is mostly one big HN thread from early November. All panels share the same axis, and the grey lines are the other tools.</p>
     </div></div>
     <div class="chart rv" id="trend"></div>
     
@@ -300,13 +300,13 @@ footer{padding:36px 0 64px;font-family:var(--mono);font-size:12px;color:var(--mu
   <!-- 3 models -->
   <section>
     <div class="sh rv"><div class="sec-no">05</div><div>
-      <h2>Models: Claude leads, open weights are well represented</h2>
-      <p class="lede">Solid fill means the author names the model explicitly. Hatching means the model is inferred from a harness tied to a single provider (Claude Code → Claude, Codex/ChatGPT → GPT, Gemini CLI/Antigravity → Gemini).</p>
+      <h2>Models: Claude first, open weights not far behind</h2>
+      <p class="lede">Solid bars are people who named the model. Hatched bars are inferred from a harness that only talks to one provider: Claude Code means Claude, Codex and ChatGPT mean GPT, Gemini CLI and Antigravity mean Gemini.</p>
     </div></div>
     <div class="grid2">
       <div class="rv"><p class="eyebrow">Model groups · <span class="sw" style="background:var(--ink)"></span>explicit <span class="sw" style="background:repeating-linear-gradient(-45deg,var(--ink) 0 2px,transparent 2px 6px);outline:1px solid var(--ink)"></span>implicit <span class="sw" style="background:var(--teal)"></span>open weights</p><div class="bars" id="b-mgrp"></div></div>
       <div class="rv"><p class="eyebrow">Families · explicit mentions only · most common versions</p><div class="bars" id="b-mfam"></div>
-        <p class="note"><b>Qwen</b> and <b>DeepSeek</b> owe much of their count to the thread “Has anyone replaced Claude/GPT with a local model…”. Even without it, Qwen remains the most frequently named open model.</p></div>
+        <p class="note">A lot of the Qwen and DeepSeek mentions come from a single June thread, "Has anyone replaced Claude/GPT with a local model…". Take that thread out and Qwen is still the open model people name most.</p></div>
     </div>
   </section>
 
@@ -314,7 +314,7 @@ footer{padding:36px 0 64px;font-family:var(--mono);font-size:12px;color:var(--mu
   <section>
     <div class="sh rv"><div class="sec-no">06</div><div>
       <h2>Money: median <span id="h-med"></span> a month, a tail in the thousands</h2>
-      <p class="lede">Paid plans by provider (unique authors) and monthly spend for those who stated it.</p>
+      <p class="lede">Who pays whom, and how much, for the people who mentioned it. Most don't, so the spend chart is a small sample.</p>
     </div></div>
     <div class="tiles rv" id="tiles"></div>
     <div class="grid2">
@@ -331,43 +331,43 @@ footer{padding:36px 0 64px;font-family:var(--mono);font-size:12px;color:var(--mu
   <!-- 5 churn -->
   <section>
     <div class="sh rv"><div class="sec-no">07</div><div>
-      <h2>Churn: from where to where</h2>
-      <p class="lede">Authors who wrote that they stopped using a tool (<span class="mono" id="n-left"></span> author × tool cases in total, across all categories). Left is the original harness or app, right is the destination. Only departures with a known destination are drawn; the rest are listed next to the source as “no destination”.</p>
+      <h2>Churn: who left what, and for what</h2>
+      <p class="lede">Authors who wrote that they stopped using a tool (<span class="mono" id="n-left"></span> author × tool cases in total, across all categories). Left is what they left, right is where they went. I only draw moves with a known destination. The rest are counted next to the tool as "no destination".</p>
     </div></div>
     <div class="chart sankey rv" id="sankey"></div>
-    <p class="note rv">People move between <b>Claude Code</b> and <b>Codex CLI</b> in both directions, so it looks more like switching to whichever model is better at the moment. <b>Cursor</b> and <b>Aider</b> lose almost exclusively to Claude Code. <b>OpenClaw</b> lost users after Anthropic changed its subscription rules, partly to Hermes Agent.</p>
+    <p class="note rv">Claude Code and Codex CLI trade users in both directions. That reads to me less like loyalty and more like people following whichever model is better this month. Cursor and Aider users who left went mostly to Claude Code. OpenClaw lost people after Anthropic changed its subscription rules, and some of them ended up on Hermes Agent.</p>
   </section>
 
   <!-- 6 local -->
   <section>
     <div class="sh rv"><div class="sec-no">08</div><div>
-      <h2>Local models: llama.cpp has overtaken Ollama</h2>
+      <h2>Local models: llama.cpp ahead of Ollama</h2>
       <p class="lede"><b class="mono" id="n-local"></b> authors mention running their own local inference (runtime or hardware).</p>
     </div></div>
     <div class="grid2 rev">
       <div class="rv"><p class="eyebrow">Runtime</p><div class="bars" id="b-local"></div></div>
       <div class="rv"><p class="eyebrow">Hardware (classes)</p><div class="bars" id="b-hw"></div>
-        <p class="note">Most common are <b>Apple Silicon Macs</b> with lots of unified memory, followed by gaming GeForce cards (RTX 3090 to 5090). 128 GB <b>DGX Spark / GB10</b> and <b>AMD Strix Halo</b> boxes also show up fairly often.</p></div>
+        <p class="note">Macs with a lot of unified memory are the most common box, then gaming GeForce cards from the 3090 to the 5090. The 128 GB DGX Spark / GB10 and AMD Strix Halo machines come up more often than I expected.</p></div>
     </div>
   </section>
 
   <!-- surveys -->
   <section>
     <div class="sh rv"><div class="sec-no">09</div><div>
-      <h2>Calibration: the community vs. the big 2026 surveys</h2>
-      <p class="lede">Community share = authors using the tool / <span class="mono" id="n-harn"></span> authors who named at least one coding harness. The surveys ask differently (“in the past year”, “weekly at work”, “regular agent users”), so compare <b>rank and direction</b>, not absolute percentages.</p>
+      <h2>Calibration: these communities vs. the big 2026 surveys</h2>
+      <p class="lede">Community share = authors using the tool / <span class="mono" id="n-harn"></span> authors who named at least one coding harness. Each survey asks a different question ("in the past year", "weekly at work", "regular agent users"), so compare the order and the direction, not the exact percentages.</p>
     </div></div>
     <div class="rv" id="surveys"></div>
     <div class="legend rv" id="s-leg"></div>
-    <p class="note rv">HN, Lobste.rs and Tildes skew strongly <b>terminal and open source</b> compared with the average: Pi’s share in the community is 3× its Stack Overflow figure, and OpenCode’s is 2× its JetBrains figure. <b>Copilot, Cursor and JetBrains AI</b>, on the other hand, are well below average. Those tools are used mainly by the “silent majority” at companies, who don’t post in threads like these.</p>
-    <p class="qn rv">Sources: <a href="https://survey.stackoverflow.co/2026/ai/data/ai-code-agent">Stack Overflow Developer Survey 2026</a> (n≈12,260, “used in the past year”) · <a href="https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/">JetBrains Developer Ecosystem 2026</a> (n&gt;15,000, May–Jul, “at work”) · <a href="https://newsletter.pragmaticengineer.com/p/ai-tooling-2026">Pragmatic Engineer AI Tooling 2026</a> (n=507 regular agent users).</p>
+    <p class="note rv">These three communities lean hard toward the terminal and open source. Pi gets 3× its Stack Overflow share here, OpenCode 2× its JetBrains share. Copilot, Cursor and JetBrains AI sit well below the surveys. My guess is that their users are mostly people at companies who simply don't post in threads like these, but I can't prove that from this data.</p>
+    <p class="qn rv">Sources: <a href="https://survey.stackoverflow.co/2026/ai/data/ai-code-agent">Stack Overflow Developer Survey 2026</a> (n≈12,260, "used in the past year") · <a href="https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/">JetBrains Developer Ecosystem 2026</a> (n&gt;15,000, May–Jul, "at work") · <a href="https://newsletter.pragmaticengineer.com/p/ai-tooling-2026">Pragmatic Engineer AI Tooling 2026</a> (n=507 regular agent users).</p>
   </section>
 
   <!-- 7 articles -->
   <section>
     <div class="sh rv"><div class="sec-no">10</div><div>
       <h2>How the bloggers do it</h2>
-      <p class="lede"><span id="n-art"></span> articles about personal setups from 2026 by <span id="n-auth-b"></span> authors (HN front page + library and ITech feeds in Readwise Reader, including Swamp Club). Only the article’s author was counted, not the comments under it. Below is one article per author, at most 24.</p>
+      <p class="lede"><span id="n-art"></span> articles about personal setups from 2026 by <span id="n-auth-b"></span> authors (HN front page + library and ITech feeds in Readwise Reader, including Swamp Club). Only the author of each article counts, not the comments under it. Below: one article per author, up to 24.</p>
     </div></div>
     <div class="cards rv" id="cards"></div>
   </section>
@@ -376,7 +376,7 @@ footer{padding:36px 0 64px;font-family:var(--mono);font-size:12px;color:var(--mu
   <section>
     <div class="sh rv"><div class="sec-no">11</div><div>
       <h2>Sources and the richest threads</h2>
-      <p class="lede">How much we read, how many authors described their own setup, and which threads were richest (by number of authors with a setup).</p>
+      <p class="lede">How much I read in each place, how many people described a setup, and the threads where the most people did.</p>
     </div></div>
     <div class="srcgrid rv" id="srcsum"></div>
   </section>
@@ -385,25 +385,25 @@ footer{padding:36px 0 64px;font-family:var(--mono);font-size:12px;color:var(--mu
     <div class="sh rv"><div class="sec-no">§</div><div><h2>Methodology and limitations</h2></div></div>
     <div class="method rv">
       <div><h4>Process</h4><ol>
-        <li>HN (Algolia API): 21 hand-approved Ask HN threads about setups and workflows, 19 of them with comments from 2026. Lobste.rs (JSON API) and Tildes: 213 discussions about AI in practice from 2026.</li>
-        <li>Downloaded full comment trees, keeping only comments from 2026 (<span id="m-com"></span>).</li>
-        <li>An LLM read every comment, with no pre-filter, and extracted the tool, <i>uses/left</i> status, interface, host and model → harness pairing.</li>
-        <li>Blogs: HN front page + Readwise Reader (later/starred/archive library and 100 ITech feeds, including Swamp Club). Triaged by title and summary, then an LLM read the full text. Only the author counts.</li>
-        <li>Alias normalisation, author × tool deduplication, latest status wins.</li>
+        <li>I picked 21 Ask HN threads about setups and workflows by hand (19 had 2026 comments) and 213 Lobste.rs and Tildes discussions about using AI in practice.</li>
+        <li>I downloaded the full comment trees and kept only comments from 2026 (<span id="m-com"></span>).</li>
+        <li>An LLM read every one of them, no keyword pre-filter, and pulled out the tool, whether the person still uses it, the interface, the host and which model runs in which harness.</li>
+        <li>Blogs came from the HN front page and my own Readwise Reader library and feeds (including Swamp Club). I triaged them by title and summary, then an LLM read the full text. Only the author counts.</li>
+        <li>Tool names were normalised, duplicates removed per author and tool, and the latest statement wins.</li>
       </ol></div>
       <div><h4>Counting rules</h4><ul>
-        <li>Unit = unique author × tool within a source. The same handle on two sites counts as two authors.</li>
-        <li>Only the author’s own current use counts, not recommendations or “I’ve heard”.</li>
-        <li>Interface: explicitly stated vs. inferred from the tool’s default interface; both numbers are shown.</li>
-        <li>Surveys are for calibration only and are not merged into the rankings.</li>
-        <li>Tools with fewer than 3 authors are left out of the charts (long tail).</li>
+        <li>One person, one tool, one vote per site. The same handle on two sites counts twice, because I can't tell if it is the same person.</li>
+        <li>Only the author's own current use counts, not recommendations or "I've heard".</li>
+        <li>Interfaces are shown two ways: what people said, and what I inferred from the tool's default.</li>
+        <li>The surveys are only a reference point. They are not mixed into the rankings.</li>
+        <li>Tools with fewer than 3 users are left out of the charts.</li>
       </ul></div>
       <div><h4>Biases and limitations</h4><ul>
-        <li>Discussion communities are not a representative sample of developers; they lean more terminal and open source.</li>
-        <li>The HN thread on local models (June) inflates Qwen, DeepSeek, Pi and OpenCode.</li>
-        <li>Swamp is a product of the Swamp Club community, so it is excluded from the source comparison.</li>
-        <li><b>Reddit excluded:</b> the Reddit Responsible Builder Policy requires API approval and prohibits research outside the Reddit for Researchers program.</li>
-        <li>LLM classification: 99.6% of quotes verified verbatim against the source comment.</li>
+        <li>People who comment on HN, Lobste.rs and Tildes are not typical developers. They lean toward the terminal and open source.</li>
+        <li>One June HN thread about local models pushes up Qwen, DeepSeek, Pi and OpenCode.</li>
+        <li>Swamp is the product behind the Swamp Club feed, so I left it out of the comparison between sources.</li>
+        <li>No Reddit. Its Responsible Builder Policy requires approval for API access and does not allow research outside the Reddit for Researchers program.</li>
+        <li>The LLM can misread things. As a check, 99.6% of the extracted quotes match the source comment word for word.</li>
       </ul></div>
     </div>
   </section>
@@ -433,13 +433,13 @@ $('h-com').textContent = nf(qSum);
 $('m-com').textContent = nf(qSum) + ' comments';
 const cc = D.harness[0];
 $('h-big').innerHTML = Math.round(100 * cc.n / N) + '<sup>%</sup>';
-$('h-bigsub').textContent = `${cc.n} of ${N} authors · ${(cc.n / D.harness[1].n).toFixed(1)}× more than #2 ${D.harness[1].name}`;
-$('n-auth').textContent = N;
+$('h-bigsub').textContent = `${cc.n} of ${nf(N)} authors · ${(cc.n / D.harness[1].n).toFixed(1)}× more than #2 ${D.harness[1].name}`;
+$('n-auth').textContent = nf(N);
 $('n-left').textContent = D.n_left;
 $('n-local').textContent = D.local_any;
 $('f-rows').textContent = `${nf(D.n_rows)} author × tool × comment rows`;
 const med = D.spend.slice().sort((a,b)=>a-b)[Math.floor(D.spend.length/2)];
-$('stats').innerHTML = [[N,'authors with a setup'],[nf(qSum),'comments read'],[D.sources.length,'communities and blogs'],['$'+Math.round((D.spend[Math.floor((D.spend.length-1)/2)]+D.spend[Math.ceil((D.spend.length-1)/2)])/2),'median spend / mo'],[D.local_any,'with local models']]
+$('stats').innerHTML = [[nf(N),'authors with a setup'],[nf(qSum),'comments read'],[D.sources.length,'communities and blogs'],['$'+Math.round((D.spend[Math.floor((D.spend.length-1)/2)]+D.spend[Math.ceil((D.spend.length-1)/2)])/2),'median spend / mo'],[D.local_any,'with local models']]
   .map(([b, s]) => `<div><b>${b}</b><span>${s}</span></div>`).join('');
 
 const MED = (() => { const v = D.spend.slice().sort((a, b) => a - b), n = v.length; return (v[Math.floor((n-1)/2)] + v[Math.ceil((n-1)/2)]) / 2; })();
@@ -466,7 +466,7 @@ $('w-both').textContent = V.both;
       return `<td class="${v === 0 ? 'z' : a > .55 ? 'hi' : ''}" style="--a:${(a * .95).toFixed(3)}" title="${esc(r.label)} · ${esc(B.tools[i])}: ${r.cnt[i]} of ${r.n} (${v}%)">${v === 0 ? '·' : Math.round(v)}</td>`; }).join('') + '</tr>'; });
   $('srcmap').innerHTML = h + '</tbody>';
   const g = (src, tool) => { const r = rows.find(x => x.src === src); return r ? r.share[B.tools.indexOf(tool)] : 0; };
-  $('src-note').innerHTML = `Claude Code leads everywhere (HN ${Math.round(g('hn','Claude Code'))}%, Lobste.rs ${Math.round(g('lobsters','Claude Code'))}%, Tildes ${Math.round(g('tildes','Claude Code'))}%). The differences are in the tail: <b>HN</b> is the stronghold of Codex and open-source agents (OpenCode ${Math.round(g('hn','OpenCode'))}%, Pi ${Math.round(g('hn','Pi'))}%). <b>Lobste.rs</b> uses chat more often (Claude app ${Math.round(g('lobsters','Claude (app/web)'))}%) and is more sceptical. <b>Tildes</b> has the most GitHub Copilot users (${Math.round(g('tildes','GitHub Copilot'))}%).`;
+  $('src-note').innerHTML = `Claude Code leads everywhere (HN ${Math.round(g('hn','Claude Code'))}%, Lobste.rs ${Math.round(g('lobsters','Claude Code'))}%, Tildes ${Math.round(g('tildes','Claude Code'))}%). The interesting part is further down. HN has the most Codex and open-source agent users (OpenCode ${Math.round(g('hn','OpenCode'))}%, Pi ${Math.round(g('hn','Pi'))}%). Lobste.rs leans more on plain chat (Claude app ${Math.round(g('lobsters','Claude (app/web)'))}%), and its threads read more sceptical overall. Tildes has the most GitHub Copilot users (${Math.round(g('tildes','GitHub Copilot'))}%).`;
 })();
 
 // 3 interfaces
@@ -477,7 +477,7 @@ $('w-both').textContent = V.both;
   bars('b-host', D.hosts, {c: 'var(--ink2)', sub: r => ''});
   const cc = D.tool_split['Claude Code'], ccn = cc.explicit.reduce((a, r) => a + r.n, 0);
   bars('b-ccsplit', cc.explicit, {c: 'var(--hn)', sub: r => Math.round(100 * r.n / ccn) + '%'});
-  $('cc-note').innerHTML = `Of <b>${cc.total}</b> Claude Code users, ${ccn} cases named an interface. The terminal clearly dominates, but the <b>desktop app</b> and the <b>mobile app</b> (steering the agent from a phone) are no longer marginal.`;
+  $('cc-note').innerHTML = `Of ${cc.total} Claude Code users, ${ccn} mentioned the interface. Most of them are in a terminal. What surprised me is how many use the desktop app, and that people drive the agent from their phone.`;
   const cp = D.tool_split['GitHub Copilot'], cpn = cp.explicit.reduce((a, r) => a + r.n, 0);
   bars('b-cpsplit', cp.explicit, {c: 'var(--sky)', sub: r => Math.round(100 * r.n / cpn) + '%'});
   const Vm = D.via; const mx = Math.max(...Vm.m.flat());
@@ -495,7 +495,7 @@ $('w-both').textContent = V.both;
   const W = 220, H = 120, m = {l: 6, r: 6, t: 10, b: 18};
   const x = i => m.l + i * (W - m.l - m.r) / (n - 1), y = v => m.t + (H - m.t - m.b) * (1 - v / ymax);
   const path = p => p.map((v, i) => (i ? 'L' : 'M') + x(i).toFixed(1) + ',' + y(v).toFixed(1)).join('');
-  const ql = qs.map(q => q + "’26");
+  const ql = qs.map(q => q + "'26");
   $('trend').innerHTML = `<div class="sm">${series.map((s, k) => {
     const c = hex(COLORS[s.name] || '#6b6a60'), last = s.p[n-1], dl = last - s.p[0];
     const pi = s.p.indexOf(Math.max(...s.p)), pk = (pi > 0 && pi < n-1 && s.p[pi] - last >= 5) ? ` · peak ${s.p[pi].toFixed(0)}% in ${ql[pi]}` : '';
